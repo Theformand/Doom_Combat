@@ -1,0 +1,10 @@
+{
+	"character_width": 140,
+	"tabs": false,
+	"tabs_width": 2,
+  "spaces":2,
+  "inline_single_stmt_case" : true
+  "brace_style" : "K_And_R", //Thats right losers!
+  
+
+}
