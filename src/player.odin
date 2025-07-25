@@ -37,8 +37,10 @@ init_player :: proc()
 {
   player_model = rl.LoadModelFromMesh(rl.GenMeshCube(1, 2, 1))
   player_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].color = rl.WHITE
+
   player_handle = create_entity()
   player := get_entity(player_handle)
+  player.flags = {.player}
   player.position = float3_zero
   player.rotation = quaternion_identity
   init_player_stats()
@@ -81,9 +83,8 @@ ts_dash_ready: float
 
 tick_player :: proc() 
 {
-
+  //TODO: Remove this, it should go in actionmap.odin
   player_input = {}
-
   if rl.IsKeyDown(.W) {
     player_input.vertical = 1
   }
@@ -96,15 +97,13 @@ tick_player :: proc()
   if (rl.IsKeyDown(.D)) {
     player_input.horizontal = -1
   }
-
   if core_input.shootHeld {
     player_input.shoot = true
   }
 
-
   player := get_entity(player_handle)
 
-  // read inpput, construct move vector and transform move vector by camera rotation so its camera relative
+  // read input, construct move vector and transform move vector by camera rotation so its camera relative
   moveVec := norm(float3{player_input.horizontal, 0, player_input.vertical})
   moveVec = rl.Vector3RotateByAxisAngle(moveVec, float3_up, RAD_45)
 
@@ -194,6 +193,17 @@ tick_player :: proc()
 }
 
 
+draw_player :: proc() 
+{
+  player := get_entity(player_handle)
+  rl.DrawModel(player_model, player.position + float3_up, 1, rl.SKYBLUE)
+
+  if is_valid_handle(player.target) {
+    rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.5, rl.BLUE)
+  }
+}
+
+
 get_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle 
 {
   list := make([dynamic]EntityHandle, context.temp_allocator)
@@ -211,15 +221,4 @@ get_mouse_pos_world :: proc() -> float3
   hitInfo: rl.RayCollision
   hitInfo = rl.GetRayCollisionQuad(ray, q1, q2, q3, q4)
   return hitInfo.point
-}
-
-
-draw_player :: proc() 
-{
-  player := get_entity(player_handle)
-  rl.DrawModel(player_model, player.position + float3_up, 1, rl.SKYBLUE)
-
-  if is_valid_handle(player.target) {
-    rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.5, rl.BLUE)
-  }
 }

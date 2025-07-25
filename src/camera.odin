@@ -25,7 +25,7 @@ shake_org: CameraShakeData
 cam_shake_offset: float
 
 ShakeDatas :: [CameraShakeType]CameraShakeData {
-  .small = CameraShakeData{duration = 0.2, power = 0.15, freq = 20},
+  .small = CameraShakeData{duration = 0.15, power = 0.19, freq = 20},
   .medium = CameraShakeData{duration = 0.35, power = 0.25, freq = 20},
   .large = CameraShakeData{duration = 0.3, power = 1, freq = 20},
 }

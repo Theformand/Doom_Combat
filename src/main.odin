@@ -51,7 +51,8 @@ draw_procs: [dynamic]proc()
 
 render_target: rl.RenderTexture2D
 bloom_shader: rl.Shader
-// Example usage
+
+
 main :: proc() 
 {
   SCREEN_WIDTH = FULL_SCREEN ? width_full : width_windowed
