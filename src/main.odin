@@ -40,7 +40,7 @@ RAD_180: float
 RAD_225: float
 RAD_270: float
 
-MAX_ENTITIES :: 100
+MAX_ENTITIES :: 10000
 
 now: float
 now_f64: f64
@@ -96,7 +96,7 @@ main :: proc()
   init_player()
   init_projectiles()
   init_level_gen()
-  create_rifle()
+  //create_rifle()
   init_enemies()
 
   for !rl.WindowShouldClose() {
@@ -121,7 +121,6 @@ main :: proc()
     begin_bloom_scene(&bloom_ctx)
 
     rl.BeginMode3D(camera)
-
     rl.ClearBackground(rl.BLACK)
     //rl.DrawGrid(100, 1)
 

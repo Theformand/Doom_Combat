@@ -13,11 +13,10 @@ Entity :: struct {
   handle:             EntityHandle,
   flags:              bit_set[Entity_Flags],
   stats:              EntityStats,
-  mesh_pointer:       ^rl.Mesh,
   target:             EntityHandle,
   yRot:               float,
   collisionRadiusSqr: float,
-  active:             bool, // Whether the entity is active
+  active:             bool,
 }
 
 Entity_Flags :: enum {

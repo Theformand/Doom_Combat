@@ -29,7 +29,6 @@ animIndex: i32
 player_input: PlayerInput
 player_model: rl.Model
 player_anims: [^]rl.ModelAnimation
-light: Light
 player_shader: rl.Shader
 anims_loaded: bool
 
@@ -60,10 +59,6 @@ init_player :: proc()
   ambientLoc := rl.GetShaderLocation(player_shader, "ambient")
   ambientColor := [4]float{0.1, 0.1, 0.1, 1.0}
   rl.SetShaderValue(player_shader, ambientLoc, &ambientColor, rl.ShaderUniformDataType.VEC4)
-
-  light = create_light(int(LightType.LIGHT_POINT), float3{-4, 2, 0}, float3_zero, rl.WHITE, player_shader)
-  light.attenuation = 10
-  update_lightValues(player_shader, &light)
 
   //player_model.materials[0].shader = player_shader
   //player_anims = rl.LoadModelAnimations("idle.glb", &animCount)
@@ -201,18 +196,6 @@ draw_player :: proc()
   if is_valid_handle(player.target) {
     rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.5, rl.BLUE)
   }
-}
-
-
-get_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle 
-{
-  list := make([dynamic]EntityHandle, context.temp_allocator)
-  for &handle in enemies {
-    if linalg.distance(get_entity(handle).position, pos) < range {
-      append(&list, handle)
-    }
-  }
-  return list
 }
 
 get_mouse_pos_world :: proc() -> float3 

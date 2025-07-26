@@ -24,13 +24,13 @@ active_cam_shake: CameraShakeData
 shake_org: CameraShakeData
 cam_shake_offset: float
 
-ShakeDatas :: [CameraShakeType]CameraShakeData {
+@(rodata)
+ShakeDatas := [CameraShakeType]CameraShakeData {
   .small = CameraShakeData{duration = 0.15, power = 0.19, freq = 20},
   .medium = CameraShakeData{duration = 0.35, power = 0.25, freq = 20},
   .large = CameraShakeData{duration = 0.3, power = 1, freq = 20},
 }
 
-dataLUT: [CameraShakeType]CameraShakeData
 noise_seed: i64
 camera_offset_from_player :: float3{-10.0, 20.0, -10.0}
 
@@ -45,8 +45,7 @@ init_camera :: proc()
   camera.projection = .PERSPECTIVE
 
   append(&tick_procs, tick_camera)
-  dataLUT = ShakeDatas
-  active_cam_shake = dataLUT[.small]
+  active_cam_shake = ShakeDatas[.small]
   active_cam_shake.duration = 0
   noise_seed = 1337
 }
@@ -54,8 +53,8 @@ init_camera :: proc()
 camera_shake :: proc(shakeType: CameraShakeType) 
 {
   if active_cam_shake.duration <= 0 {
-    active_cam_shake = dataLUT[shakeType]
-    shake_org = dataLUT[shakeType]
+    active_cam_shake = ShakeDatas[shakeType]
+    shake_org = ShakeDatas[shakeType]
   }
 }
 

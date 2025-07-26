@@ -100,7 +100,7 @@ modify_bullet_speed :: proc(e: ^Entity)
 
 late_tick_projectiles :: proc() 
 {
-  #reverse for &handle, i in projectiles {
+  for &handle, i in projectiles {
     e := get_entity(handle)
     if .dead in e.flags {
       destroy_entity(handle)

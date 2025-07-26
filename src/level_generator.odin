@@ -16,6 +16,12 @@ ground_tiles: [dynamic]EntityHandle
 ground_tile_model: rl.Model
 scaleFactor: float
 
+PATH_MODELS :: "resources/models/"
+PATH_TEXTURES :: "resources/textures/"
+PATH_SHADERS :: "resources/shaders/"
+synty_mat: rl.Material
+default_shader: rl.Shader
+color_scene_ambient: rl.Color
 
 init_level_gen :: proc() 
 {
@@ -29,13 +35,23 @@ init_level_gen :: proc()
   seed: i64 = 1337
   ground_tiles = make([dynamic]EntityHandle)
 
+  color_scene_ambient = rl.Color{100 / 255, 100 / 255, 100 / 255, 255}
 
-  ground_tile_model = rl.LoadModel("GroundTile.glb")
-  ground_mesh = ground_tile_model.meshes[0]
-  ground_tile_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].texture = rl.LoadTexture("atlas_01a.png")
-  //ground_mesh = generate_flat_mesh_with_holes(width, height, grid_size_x, grid_size_y, noise_scale, threshold, use_two_layers, seed)
-  //ground_model = rl.LoadModelFromMesh(ground_mesh)
-  //ground_model.materials[0] = ground_mat
+  default_shader = rl.LoadShader(PATH_SHADERS + "lighting.vs", PATH_SHADERS + "lighting.fs")
+  default_shader.locs[rl.ShaderLocationIndex.VECTOR_VIEW] = rl.GetShaderLocation(default_shader, "viewPos")
+  rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "ambient"), &color_scene_ambient, rl.ShaderUniformDataType.VEC4)
+
+  synty_mat = rl.LoadMaterialDefault()
+  synty_mat.shader = default_shader
+  tex := rl.LoadTexture(PATH_TEXTURES + "atlas_01a.png")
+  rl.SetMaterialTexture(&synty_mat, rl.MaterialMapIndex.ALBEDO, tex)
+
+  //ground_tile_model = rl.LoadModel(PATH_MODELS + "FloorTile1.glb")
+  //fmt.println("model", ground_tile_model)
+  //ground_tile_model.materials[0] = synty_mat
+  //ground_tile_model.materials[1] = synty_mat
+  //ground_tile_model.materials[2] = synty_mat
+  ground_mesh = rl.GenMeshPlane(3, 3, 1, 1)
 
 
   rows: int = 20
@@ -53,12 +69,10 @@ init_level_gen :: proc()
 
       x := offset_x + float(col) * total_spacing
       y := offset_y + float(row) * total_spacing
-
       ground_handle = create_entity()
       ground_ent := get_entity(ground_handle)
-      ground_ent.position = float3{x, 0, y}
-      ground_ent.yRot = float(rand_range_int(0, 3) * 90)
-      ground_ent.mesh_pointer = &ground_mesh
+      ground_ent.position = float3{x, rand_range(0, 0.8), y}
+      //ground_ent.yRot = float(rand_range_int(0, 3) * 90)
       append(&ground_tiles, ground_handle)
     }
   }
@@ -69,14 +83,22 @@ init_level_gen :: proc()
 
 draw_ground_mesh :: proc() 
 {
+  rl.SetShaderValue(
+    default_shader,
+    default_shader.locs[rl.ShaderLocationIndex.VECTOR_VIEW],
+    &camera.position,
+    rl.ShaderUniformDataType.VEC3,
+  )
+  rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "ambient"), &color_scene_ambient, rl.ShaderUniformDataType.VEC4)
+
   pos := get_entity(ground_handle).position
   for &handle in ground_tiles {
     ent := get_entity(handle)
     rl.DrawMesh(
       ground_mesh,
-      ground_tile_model.materials[0],
+      synty_mat,
       rl.MatrixTranslate(ent.position.x, ent.position.y, ent.position.z) *
-      rl.MatrixRotateY(ent.yRot * math.RAD_PER_DEG) *
+      rl.MatrixRotateY(radians(ent.yRot)) *
       rl.MatrixScale(scaleFactor, scaleFactor, scaleFactor),
     )
   }
