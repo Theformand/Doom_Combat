@@ -29,10 +29,10 @@ init_input_handling :: proc()
   core_ui_input = ActionMap{}
   maps = [2]ActionMap{core_input, core_ui_input}
   set_action_map(.Core)
-  append(&tick_procs, tick_input_handling)
+  append(&update_procs, update_input)
 }
 
-tick_input_handling :: proc() 
+update_input :: proc() 
 {
   core_input.shield_held = rl.IsMouseButtonDown(.RIGHT)
   core_input.shield_dash_triggered = rl.IsMouseButtonDown(.RIGHT) && rl.IsMouseButtonPressed(.LEFT)

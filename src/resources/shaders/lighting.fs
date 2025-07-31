@@ -5,9 +5,12 @@ in vec3 fragPosition;
 in vec2 fragTexCoord;
 in vec4 fragColor;
 in vec3 fragNormal;
+in vec3 tangent;
+in vec3 binormal;
 
 // Input uniform values
-uniform sampler2D texture0;
+uniform sampler2D texture0; //albedo
+uniform sampler2D normalMap; //normals
 uniform vec4 colDiffuse;
 
 // Output fragment color
@@ -37,7 +40,10 @@ void main()
     // Texel color fetching from texture sampler
     vec4 texelColor = texture(texture0, fragTexCoord);
     vec3 lightDot = vec3(0.0);
-    vec3 normal = normalize(fragNormal);
+    //vec3 binormal = normalize(cross(worldNormal, tangent));
+    vec3 normal = texture(normalMap, fragTexCoord).xyz;
+    normal = normalize(normal * 2.0 - 1.0) * 0.5; 
+    //vec3 reflectDir = reflect(-lightDir, normal); 
     vec3 viewD = normalize(viewPos - fragPosition);
     vec3 specular = vec3(0.0);
 
@@ -61,7 +67,8 @@ void main()
                 light = normalize(lights[i].position - fragPosition);
             }
 
-            float NdotL = max(dot(normal, light), 0.0);
+            float NdotL = clamp(dot(normal, light), 0.1, 1.0);
+            //float NdotL = max(dot(normal, light), 0.0);
             lightDot += lights[i].color.rgb*NdotL;
 
             float specCo = 0.0;
@@ -70,11 +77,10 @@ void main()
         }
     }
 
-    texelColor = vec4(237/255, 83/255, 109/255,1.0);
     finalColor = (texelColor*((tint + vec4(specular, 1.0))*vec4(lightDot, 1.0)));
-    finalColor += texelColor*(ambient/10.0)*tint;
+    finalColor += texelColor*(ambient)*tint;
 
-    finalColor = ambient; 
+    //finalColor = ambient; 
     // Gamma correction
     finalColor = pow(finalColor, vec4(1.0/2.2));
 }

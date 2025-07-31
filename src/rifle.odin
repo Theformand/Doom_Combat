@@ -33,11 +33,11 @@ create_rifle :: proc()
   rifle_model = rl.LoadModel("rifle.glb")
   rifle_model.materials[1].maps[rl.MaterialMapIndex.ALBEDO].texture = synty_tex1
 
-  append(&tick_procs, tick_rifle)
+  append(&update_procs, update_rifle)
   append(&draw_procs, draw_rifle)
 }
 
-tick_rifle :: proc() 
+update_rifle :: proc() 
 {
   player := get_entity(player_handle)
   child_pos := float3_up + entity_right(player) * 0.55

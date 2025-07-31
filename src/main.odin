@@ -2,7 +2,9 @@ package main
 
 import "core:c"
 import "core:fmt"
+import "core:log"
 import linalg "core:math/linalg"
+import "core:reflect"
 import rl "vendor:raylib"
 
 manager: EntityManager
@@ -41,12 +43,13 @@ RAD_225: float
 RAD_270: float
 
 MAX_ENTITIES :: 10000
+PRINT_ENTITY_STRUCT: bool = false
 
 now: float
 now_f64: f64
 dt: float
-tick_procs: [dynamic]proc()
-late_tick_procs: [dynamic]proc()
+update_procs: [dynamic]proc()
+late_update_procs: [dynamic]proc()
 draw_procs: [dynamic]proc()
 
 render_target: rl.RenderTexture2D
@@ -55,6 +58,8 @@ bloom_shader: rl.Shader
 
 main :: proc() 
 {
+  context.logger = log.create_console_logger(.Debug, log.Location_Header_Opts)
+
   SCREEN_WIDTH = FULL_SCREEN ? width_full : width_windowed
   SCREEN_HEIGHT = FULL_SCREEN ? height_full : height_windowed
   flags: rl.ConfigFlags = FULL_SCREEN ? {.MSAA_4X_HINT, .FULLSCREEN_MODE} : {.MSAA_4X_HINT, .WINDOW_UNDECORATED}
@@ -66,12 +71,25 @@ main :: proc()
   RAD_225 = linalg.to_radians(float(225))
   RAD_270 = linalg.to_radians(float(270))
 
-
-  tick_procs = make([dynamic]proc())
-  late_tick_procs = make([dynamic]proc())
+  update_procs = make([dynamic]proc())
+  late_update_procs = make([dynamic]proc())
 
   manager = init_entity_manager()
   defer destroy_entity_manager()
+
+  if PRINT_ENTITY_STRUCT {
+    log.debug("\n")
+    log.debug("==================")
+    log.debug("ENTITY STRUCT INFO")
+    log.debug("\n")
+    type_infos := reflect.struct_field_types(Entity)
+    type_names := reflect.struct_field_names(Entity)
+    for t, i in type_infos {
+      log.debug("field: ", type_names[i], type_infos[i].size)
+    }
+    log.debug("entity size total: ", size_of(Entity))
+  }
+
 
   rl.SetTraceLogLevel(.WARNING)
   rl.SetConfigFlags(flags)
@@ -90,6 +108,7 @@ main :: proc()
   init_bloom(&bloom_ctx, SCREEN_WIDTH, SCREEN_HEIGHT)
   defer cleanup_bloom(&bloom_ctx)
 
+  init_lighting()
   init_input_handling()
 
   init_camera()
@@ -106,22 +125,22 @@ main :: proc()
 
 
     //tick
-    for &p in tick_procs {
+    for &p in update_procs {
       p()
     }
 
     //late tick
-    for &p in late_tick_procs {
+    for &p in late_update_procs {
       p()
     }
 
 
     //Render
+
     // Render scene to bloom buffer
     begin_bloom_scene(&bloom_ctx)
 
     rl.BeginMode3D(camera)
-    rl.ClearBackground(rl.BLACK)
     //rl.DrawGrid(100, 1)
 
     for &p in draw_procs {
@@ -146,7 +165,7 @@ main :: proc()
     free_all(context.temp_allocator)
   }
 
-  fmt.println("\n")
-  fmt.println("==================== SHUT DOWN ====================\n")
+  log.debug("\n")
+  log.debug("==================== SHUT DOWN ====================\n")
   rl.CloseWindow()
 }

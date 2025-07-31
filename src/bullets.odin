@@ -27,8 +27,8 @@ init_projectiles :: proc()
   rl.SetShaderValue(shader, rl.GetShaderLocation(shader, "colDiffuse"), &white, rl.ShaderUniformDataType.VEC4)
 
 
-  append(&tick_procs, tick_projectiles)
-  append(&late_tick_procs, late_tick_projectiles)
+  append(&update_procs, update_projectiles)
+  append(&late_update_procs, late_update_projectiles)
   append(&draw_procs, draw_projectiles)
 }
 
@@ -47,7 +47,7 @@ BulletHit :: struct {
   pos:    float3,
 }
 
-tick_projectiles :: proc() 
+update_projectiles :: proc() 
 {
   hits := make([dynamic]BulletHit, context.temp_allocator)
   for &handle in projectiles {
@@ -98,7 +98,7 @@ modify_bullet_speed :: proc(e: ^Entity)
   }
 }
 
-late_tick_projectiles :: proc() 
+late_update_projectiles :: proc() 
 {
   for &handle, i in projectiles {
     e := get_entity(handle)

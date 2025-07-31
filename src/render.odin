@@ -86,7 +86,7 @@ cleanup_bloom :: proc(ctx: ^BloomContext)
 begin_bloom_scene :: proc(ctx: ^BloomContext) 
 {
   rl.BeginTextureMode(ctx.scene_target)
-  rl.ClearBackground(rl.BLACK)
+  rl.ClearBackground(rl.DARKGRAY)
 }
 
 end_bloom_scene :: proc(ctx: ^BloomContext) 

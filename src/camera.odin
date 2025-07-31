@@ -41,10 +41,10 @@ init_camera :: proc()
   camera.position = camera_offset_from_player
   camera.target = float3_zero
   camera.up = float3_up
-  camera.fovy = 65.0
+  camera.fovy = 35.0
   camera.projection = .PERSPECTIVE
 
-  append(&tick_procs, tick_camera)
+  append(&update_procs, update_camera)
   active_cam_shake = ShakeDatas[.small]
   active_cam_shake.duration = 0
   noise_seed = 1337
@@ -58,7 +58,7 @@ camera_shake :: proc(shakeType: CameraShakeType)
   }
 }
 
-tick_camera :: proc() 
+update_camera :: proc() 
 {
   if rl.IsKeyPressed(rl.KeyboardKey.T) {
     camera_shake(.small)

@@ -1,22 +1,24 @@
 package main
 
 import "core:fmt"
+import "core:reflect"
 import "core:slice"
 import rl "vendor:raylib"
 
 
 // Entity struct, stored directly in a dynamic array
 Entity :: struct {
+  stats:              EntityStats,
   rotation:           quaternion,
   position:           float3,
   forward:            float3,
-  handle:             EntityHandle,
-  flags:              bit_set[Entity_Flags],
-  stats:              EntityStats,
+  idx_model:          int,
   target:             EntityHandle,
+  handle:             EntityHandle,
   yRot:               float,
   collisionRadiusSqr: float,
   active:             bool,
+  flags:              bit_set[Entity_Flags],
 }
 
 Entity_Flags :: enum {
@@ -24,7 +26,7 @@ Entity_Flags :: enum {
   bullet,
   dead,
   enemy_fodder,
-  enemy_heavy,
+  enemy_ranged,
 }
 
 EntityStats :: struct {
@@ -60,6 +62,7 @@ zero_handle :: EntityHandle{0, -1}
 // Initialize the entity manager
 init_entity_manager :: proc() -> EntityManager 
 {
+
   return EntityManager{entities = make([dynamic]Entity, 0, MAX_ENTITIES), free_indices = make([dynamic]u32), next_id = 1}
 }
 

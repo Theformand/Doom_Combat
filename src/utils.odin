@@ -62,6 +62,12 @@ float3_rand :: proc() -> float3
   return float3{rand_range(-1, 1), rand_range(-1, 1), rand_range(-1, 1)}
 }
 
+float3_rand_xz :: proc(radius: float = 1) -> float3 
+{
+  return float3{rand_range(-radius, radius), 0, rand_range(-radius, radius)}
+
+}
+
 float4_rand01 :: proc() -> float4 
 {
   return float4{rand_range(0, 1), rand_range(0, 1), rand_range(0, 1), 1}

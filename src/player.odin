@@ -31,11 +31,13 @@ player_model: rl.Model
 player_anims: [^]rl.ModelAnimation
 player_shader: rl.Shader
 anims_loaded: bool
+player_accel: float
+synt_atlas_1: rl.Texture
 
 init_player :: proc() 
 {
-  player_model = rl.LoadModelFromMesh(rl.GenMeshCube(1, 2, 1))
-  player_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].color = rl.WHITE
+  //player_model = rl.LoadModelFromMesh(rl.GenMeshCube(1, 2, 1))
+  //player_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].color = rl.WHITE
 
   player_handle = create_entity()
   player := get_entity(player_handle)
@@ -43,7 +45,7 @@ init_player :: proc()
   player.position = float3_zero
   player.rotation = quaternion_identity
   init_player_stats()
-  append(&tick_procs, tick_player)
+  append(&update_procs, update_player)
   append(&draw_procs, draw_player)
 
   //animation test
@@ -52,17 +54,11 @@ init_player :: proc()
   animCurrentFrame = 0
 
   //material and shader setup
-  //player_model = rl.LoadModel("idle.glb")
-  player_shader = rl.LoadShader("resources/shaders/lighting.vs", "resources/shaders/lighting.fs")
-  player_shader.locs[rl.ShaderLocationIndex.VECTOR_VIEW] = rl.GetShaderLocation(player_shader, "viewPos")
+  player_model = rl.LoadModel(PATH_MODELS + "player.glb")
 
-  ambientLoc := rl.GetShaderLocation(player_shader, "ambient")
-  ambientColor := [4]float{0.1, 0.1, 0.1, 1.0}
-  rl.SetShaderValue(player_shader, ambientLoc, &ambientColor, rl.ShaderUniformDataType.VEC4)
-
-  //player_model.materials[0].shader = player_shader
-  //player_anims = rl.LoadModelAnimations("idle.glb", &animCount)
-
+  //player_model.materials[0] = synty_mat
+  //player_model.materials[1] = synty_mat
+  //player_model.materials[2] = synty_mat
   if animCount != 0 {
     anims_loaded = true
   }
@@ -75,8 +71,9 @@ ts_dash_start: float
 dash_cd :: 1
 dash_speed :: 100.0
 ts_dash_ready: float
+player_velocity: float3
 
-tick_player :: proc() 
+update_player :: proc() 
 {
   //TODO: Remove this, it should go in actionmap.odin
   player_input = {}
@@ -97,14 +94,31 @@ tick_player :: proc()
   }
 
   player := get_entity(player_handle)
-
+  player.stats.speed = 5
+  accel: float = 40
+  decel: float = 50
   // read input, construct move vector and transform move vector by camera rotation so its camera relative
   moveVec := norm(float3{player_input.horizontal, 0, player_input.vertical})
   moveVec = rl.Vector3RotateByAxisAngle(moveVec, float3_up, RAD_45)
+  // Calculate desired velocity based on input
+  desiredVelocity := moveVec * player.stats.speed
+
+  // Apply acceleration or deceleration
+  if linalg.length(moveVec) > 0 {
+    // Accelerate towards desired velocity
+    player_velocity = linalg.lerp(player_velocity, desiredVelocity, accel * dt)
+  } else {
+    // Decelerate when no input
+    currentSpeed := linalg.length(player_velocity)
+    if currentSpeed > 0 {
+      decelAmount := decel * dt
+      newSpeed := max(0, currentSpeed - decelAmount)
+      player_velocity = norm(player_velocity) * newSpeed
+    }
+  }
 
 
-  player.stats.speed = 6
-  player.position += moveVec * dt * player.stats.speed
+  player.position += player_velocity * dt
 
   //scan for dash targets
   if core_input.shield_held && now > ts_dash_ready {
@@ -191,7 +205,7 @@ tick_player :: proc()
 draw_player :: proc() 
 {
   player := get_entity(player_handle)
-  rl.DrawModel(player_model, player.position + float3_up, 1, rl.SKYBLUE)
+  rl.DrawModel(player_model, player.position, 1, rl.WHITE)
 
   if is_valid_handle(player.target) {
     rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.5, rl.BLUE)
