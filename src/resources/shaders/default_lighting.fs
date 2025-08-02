@@ -177,7 +177,7 @@ void main() {
     vec3 finalColor = ambient + directional + pointLighting;
     
     float fresnelPower = 30;
-    float fresnelIntensity = .35;
+    float fresnelIntensity = .1;
     float fresnelBias = 1;
     vec3 viewDir = normalize(viewPos - fragPosition);
 
