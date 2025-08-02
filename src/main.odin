@@ -118,6 +118,7 @@ main :: proc()
   init_projectiles()
   init_level_gen()
   init_enemies()
+  init_knockback()
 
   for !rl.WindowShouldClose() {
 

@@ -129,8 +129,10 @@ update_player :: proc()
     }
   }
 
+  knockback := float3_zero
+  if player.knockback.power > 0.01 do knockback = player.knockback.current_offset
 
-  player.position += player_velocity * dt
+  player.position += knockback + player_velocity * dt
 
   //scan for dash targets
   if core_input.shield_held && now > ts_dash_ready {

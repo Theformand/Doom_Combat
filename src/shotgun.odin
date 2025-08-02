@@ -38,7 +38,7 @@ create_shotgun :: proc()
   shotgun = Shotgun {
     damage = 50,
     shot_interval = 1.5,
-    cone_angle = 15,
+    cone_angle = 60,
     range = 3,
     recoil = Recoil{recoilKick = 0.4, spring = 1},
   }
@@ -60,7 +60,6 @@ update_shotgun :: proc()
   if core_input.shootTriggered && now > shotgun.tsReady {
     shotgun.tsReady = now + shotgun.shot_interval
     targets := get_enemies_in_cone(player.position, player.forward, shotgun.cone_angle, shotgun.range)
-    shotgun.recoil.t = 1
     for h in targets {
       target := get_entity(h)
       target.stats.health -= shotgun.damage
@@ -68,7 +67,13 @@ update_shotgun :: proc()
         target.flags += {.dead}
       }
     }
+
+    knockback(player, -player.forward, 15, 3)
+
     camera_shake(.small)
+    shotgun.recoil.t = 1
+
+    //temp vfx
     cone := ConeVFX {
       lifetime = 1.0,
       center   = player.position,
@@ -127,7 +132,7 @@ get_enemies_in_cone :: proc(pos, forward: float3, angle, range: float) -> [dynam
     e := get_entity(h)
     dir := e.position - pos
     dot := linalg.dot(norm(dir), forward)
-    if dot >= half_angle && linalg.length(dir) < range {
+    if dot >= cos_half_angle && linalg.length(dir) < range {
       append(&list, h)
     }
   }

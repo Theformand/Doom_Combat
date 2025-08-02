@@ -14,6 +14,17 @@ get_player :: proc() -> ^Entity
   return get_entity(player_handle)
 }
 
+knockback :: proc(entity: ^Entity, direction: float3, power, spring: float) 
+{
+  entity.knockback = Knockback {
+    direction     = direction,
+    power         = power,
+    initial_power = power,
+    spring        = spring,
+    time          = 0,
+  }
+}
+
 load_entity_model :: proc(path: string) -> int 
 {
   fullPath := strings.concatenate([]string{PATH_MODELS, path}, context.temp_allocator)

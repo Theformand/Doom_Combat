@@ -20,6 +20,7 @@ Entity :: struct {
   active:             bool,
   flags:              bit_set[Entity_Flags],
   aabb:               rl.BoundingBox,
+  knockback:          Knockback,
 }
 
 Entity_Flags :: enum {
@@ -39,6 +40,7 @@ EntityStats :: struct {
   damage:    float,
   speedMode: SpeedDecreaseMode,
 }
+
 
 SpeedDecreaseMode :: enum byte {
   None = 0,
