@@ -62,14 +62,14 @@ main :: proc()
 
   SCREEN_WIDTH = FULL_SCREEN ? width_full : width_windowed
   SCREEN_HEIGHT = FULL_SCREEN ? height_full : height_windowed
-  flags: rl.ConfigFlags = FULL_SCREEN ? {.MSAA_4X_HINT, .FULLSCREEN_MODE} : {.MSAA_4X_HINT, .WINDOW_UNDECORATED}
+  flags: rl.ConfigFlags = FULL_SCREEN ? {.MSAA_4X_HINT, .FULLSCREEN_MODE} : {.MSAA_4X_HINT}
 
-  RAD_45 = linalg.to_radians(float(45))
-  RAD_90 = linalg.to_radians(float(90))
-  RAD_135 = linalg.to_radians(float(135))
-  RAD_180 = linalg.to_radians(float(180))
-  RAD_225 = linalg.to_radians(float(225))
-  RAD_270 = linalg.to_radians(float(270))
+  RAD_45 = radians(float(45))
+  RAD_90 = radians(float(90))
+  RAD_135 = radians(float(135))
+  RAD_180 = radians(float(180))
+  RAD_225 = radians(float(225))
+  RAD_270 = radians(float(270))
 
   update_procs = make([dynamic]proc())
   late_update_procs = make([dynamic]proc())
@@ -111,11 +111,12 @@ main :: proc()
   init_lighting()
   init_input_handling()
 
+  append(&update_procs, update_aabbs)
+  append(&draw_procs, draw_aabbs)
   init_camera()
   init_player()
   init_projectiles()
   init_level_gen()
-  //create_rifle()
   init_enemies()
 
   for !rl.WindowShouldClose() {

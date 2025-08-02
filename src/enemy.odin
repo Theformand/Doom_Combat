@@ -2,33 +2,30 @@ package main
 import "core:log"
 import "core:math/linalg"
 import "core:math/rand"
-import "core:strings"
 import rl "vendor:raylib"
 
 enemies: [dynamic]EntityHandle
 entity_models: [dynamic]rl.Model
 
-load_entity_model :: proc(path: string) -> int 
-{
-  fullPath := strings.concatenate([]string{PATH_MODELS, path}, context.temp_allocator)
-  model := rl.LoadModel(cstring(raw_data(fullPath)))
-  append(&entity_models, model)
-  return int(len(entity_models) - 1)
-}
 
 init_enemies :: proc() 
 {
   idx_skeleton := load_entity_model("skeleton.glb")
   idx_ranger := load_entity_model("skeleton_ranger.glb")
+
+
   skeleton := entity_models[idx_skeleton]
   ranger := entity_models[idx_ranger]
-  skeleton.materials[0] = synty_mat
-  skeleton.materials[1] = synty_mat
-  ranger.materials[0] = synty_mat
-  ranger.materials[1] = synty_mat
-  ranger.materials[2] = synty_mat
+  for i in 0 ..< skeleton.meshCount {
+    smooth_all_mesh_normals(&skeleton.meshes[i])
+  }
+  for i in 0 ..< ranger.meshCount {
+    smooth_all_mesh_normals(&ranger.meshes[i])
+  }
+  assign_material_all_mats(&skeleton, synty_mat)
+  assign_material_all_mats(&ranger, synty_mat)
 
-  enemyCount := 100
+  enemyCount := 10
   for i in 0 ..< enemyCount {
     handle := create_entity()
     e := get_entity(handle)
@@ -52,8 +49,8 @@ init_enemies :: proc()
   }
 
   append(&update_procs, update_enemies)
-  append(&draw_procs, draw_enemies)
   append(&late_update_procs, late_update_enemies)
+  append(&draw_procs, draw_enemies)
 }
 
 update_enemies :: proc() 
@@ -72,7 +69,7 @@ late_update_enemies :: proc()
   for &handle, i in enemies {
     enemy := get_entity(handle)
     if .dead in enemy.flags {
-      destroy_entity(handle)
+      destroy_entity(enemy.handle)
       unordered_remove(&enemies, i)
     }
   }
@@ -93,8 +90,9 @@ get_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle
 {
   list := make([dynamic]EntityHandle, context.temp_allocator)
   for &handle in enemies {
-    if linalg.distance(get_entity(handle).position, pos) < range {
-      append(&list, handle)
+    e := get_entity(handle)
+    if linalg.distance(e.position, pos) < range {
+      append(&list, e.handle)
     }
   }
   return list

@@ -23,20 +23,6 @@ PATH_SHADERS :: "resources/shaders/"
 floor_mat: rl.Material
 
 
-SceneLightingValues :: struct {
-  fogColor:        rl.Color,
-  ambientColor:    rl.Color,
-  fogDensity:      float,
-  fogStart:        float,
-  fogEnd:          float,
-  saturation:      float,
-  contrast:        float,
-  brightness:      float,
-  gamma:           float,
-  ambientStrength: float,
-}
-
-
 //uniform locations
 ambientLoc: int
 normalLoc: int
@@ -74,7 +60,6 @@ init_level_gen :: proc()
   floor_normal := rl.LoadTexture(PATH_TEXTURES + "Floor_Tiles_Normals.png")
 
   floor_mat = rl.LoadMaterialDefault()
-  synty_mat = rl.LoadMaterialDefault()
 
 
   //rl.SetShaderValueTexture(default_shader, normalLoc, floor_normal)
@@ -86,7 +71,6 @@ init_level_gen :: proc()
   //rl.SetMaterialTexture(&synty_mat, rl.MaterialMapIndex.NORMAL, atlas_normal)
   ground_tile_model = rl.LoadModel(PATH_MODELS + "FloorTile.glb")
   idx_prop_barrel := load_entity_model("Prop_Barrel.glb")
-  synty_mat.shader = default_shader
   floor_mat.shader = default_shader
 
   ground_tile_model.materials[0] = floor_mat
@@ -94,10 +78,6 @@ init_level_gen :: proc()
 
   entity_models[idx_prop_barrel].materials[0] = synty_mat
   entity_models[idx_prop_barrel].materials[1] = synty_mat
-
-  player_model.materials[0] = synty_mat
-  player_model.materials[1] = synty_mat
-  player_model.materials[2] = synty_mat
 
 
   rows: int = 4
@@ -115,6 +95,8 @@ init_level_gen :: proc()
       y := offset_y + float(row) * total_spacing
       ground_handle = create_entity()
       ground_ent := get_entity(ground_handle)
+      ground_ent.flags += {.static}
+      ground_ent.flags += {.aabb_dirty}
       ground_ent.position = float3{x, 0, y}
       //ground_ent.yRot = float(rand_range_int(0, 3) * 90)
       append(&ground_tiles, ground_handle)
@@ -138,8 +120,9 @@ init_level_gen :: proc()
 
   for i in 0 ..< 10 {
     pos := float3_rand_xz(10) + float3{10, 1, 10}
-    range := rand_range(1, 10)
+    range := rand_range(3, 10)
     intensity := rand_range(1, 1.5)
+    //col := rl.Color{224, 119, 49, 255}
     create_point_light(pos, rl.PURPLE, 1, range)
   }
   append(&draw_procs, draw_ground_mesh)

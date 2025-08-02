@@ -27,6 +27,7 @@ uniform vec3 dirLightDirection;
 uniform vec4 dirLightColor;
 uniform float dirLightIntensity;
 
+uniform vec4 fresnelColor;
 // Fog parameters
 uniform vec4 fogColor;
 uniform float fogDensity;
@@ -65,53 +66,9 @@ vec3 calculatePointLight(vec3 lightPos, vec4 lightColor, float intensity, float 
     return (diff + rim) * lightColor.rgb * intensity * attenuation * albedo;
 }
 
-//// Enhanced fog calculation with height-based density
-//float calculateFog(vec3 worldPos, vec3 viewPos) {
-//    float distance = length(worldPos - viewPos);
-//    
-//    // Linear fog transition between fogStart and fogEnd
-//    float linearFog = (distance - fogStart) / (fogEnd - fogStart);
-//    linearFog = clamp(linearFog, 0.0, 1.0);
-//    
-//    // Height-based fog (denser at lower elevations)
-//    float heightFactor = exp(-max(worldPos.y - 50.0, 0.0) * 0.02);
-//    float adjustedDensity = fogDensity * (1.0 + heightFactor);
-//    
-//    // Exponential fog with smooth transition
-//    float exponentialFog = 1.0 - exp(-adjustedDensity * distance * distance);
-//    
-//    // Combine linear and exponential fog
-//    float fogFactor = max(linearFog, exponentialFog);
-//    return clamp(fogFactor, 0.0, 1.0);
-//}
 
-// float calculateFog(vec3 worldPos, vec3 viewPos) {
-//     // Calculate distance in the XZ plane (top-down perspective)
-//     float distance = length(worldPos.xz - viewPos.xz);
-    
-//     // Define fog parameters
-//     float fogStart = 10.0; // Distance where fog starts
-//     float fogEnd = 50.0;   // Distance where fog is fully opaque
-//     float fogDensity = 0.002; // Controls fog thickness
-
-//     // Linear fog for smooth transition
-//     float linearFog = smoothstep(fogStart, fogEnd, distance);
-    
-//     // Optional: Slight height influence for subtle vertical variation
-//     float heightFactor = smoothstep(-10.0, 10.0, worldPos.y); // Adjusts fog based on height
-//     float adjustedDensity = fogDensity * (0.8 + 0.2 * heightFactor); // Subtle height modulation
-    
-//     // Exponential fog for natural falloff
-//     float exponentialFog = 1.0 - exp(-adjustedDensity * distance);
-    
-//     // Blend linear and exponential fog for balanced effect
-//     float fogFactor = mix(linearFog, exponentialFog, 0.5);
-    
-//     return clamp(fogFactor, 0.0, 1.0);
-// }
-
-// Color grading function
 vec3 colorGrade(vec3 color) {
+
     // Adjust brightness and contrast
     color = (color - 0.5) * contrast + 0.5 + brightness;
     
@@ -129,18 +86,55 @@ vec3 colorGrade(vec3 color) {
     return color;
 }
 
-float calculateFresnel(vec3 worldPos, vec3 viewPos, vec3 normal, float fresnelPower, float fresnelScale, float fresnelBias) {
-    // Normalize inputs
-    vec3 normalizedNormal = normalize(normal);
-    vec3 viewDir = normalize(viewPos - worldPos);
+
+float calculateDirectionalFresnel(vec3 viewDir, vec3 normal, vec3 rimDirection, float rimPower,
+ float rimIntensity, float rimBias) {
+    // Base fresnel calculation
+    float fresnel = 1.0 - max(dot(viewDir, normal), 0.0);
     
-    // Calculate view angle (dot product between normal and view direction)
-    float fresnelTerm = max(dot(normalizedNormal, viewDir), 0.0);
+    // Soft base rim using rimPower for main control
+    float softRim = pow(fresnel, rimPower * 0.5); // Half power for softer base
+    softRim = smoothstep(0.0, 0.8, softRim) * 0.3;
     
-    // Apply Fresnel equation with tunable parameters
-    float fresnel = fresnelBias + fresnelScale * pow(1.0 - fresnelTerm, fresnelPower);
+    // Sharp accent rim using rimPower for consistent control
+    float sharpRim = pow(fresnel, rimPower); // Double power for sharper accent
+    sharpRim = smoothstep(0.2, 0.8, sharpRim) * 0.7;
     
-    return clamp(fresnel, 0.0, 1.0);
+    // Combine the two rim effects
+    float finalRim = softRim + sharpRim;
+    
+    // Directional bias - stronger rim in the direction of rimDirection
+    float directionalFactor = max(dot(normal, rimDirection), 0.0);
+    directionalFactor = pow(directionalFactor, 2.0); // Square for smoother falloff
+    
+    // Combine fresnel with directional bias
+    float directionalFresnel = finalRim * (rimBias + directionalFactor * (1.0 - rimBias));
+    
+    return directionalFresnel * rimIntensity;
+}
+
+// ACES tone mapping (more cinematic)
+vec3 acesToneMapping(vec3 color) {
+    float a = 2.51;
+    float b = 0.03;
+    float c = 2.43;
+    float d = 0.59;
+    float e = 0.14;
+    return clamp((color * (a * color + b)) / (color * (c * color + d) + e), 0.0, 1.0);
+}
+
+
+// Vibrance (more natural than saturation)
+vec3 adjustVibrance(vec3 color, float vibrance) {
+    float maxComponent = max(max(color.r, color.g), color.b);
+    float minComponent = min(min(color.r, color.g), color.b);
+    float saturation = maxComponent - minComponent;
+    
+    // Apply vibrance more to less saturated colors
+    float vibranceAmount = (1.0 - saturation) * vibrance;
+    vec3 grayscale = vec3(dot(color, vec3(0.299, 0.587, 0.114)));
+    
+    return mix(grayscale, color, 1.0 + vibranceAmount);
 }
 
 
@@ -159,10 +153,8 @@ void main() {
     //     //normal = normalize(normal_from_tex * 2.0 - 1.0) * 0.5; 
     // }
     
-    // Ambient lighting with slight color variation
     vec3 ambient = ambientColor.rgb * ambientStrength * albedo;
     
-    // Directional lighting (global illumination)
     float dirDiff = max(dot(normal, -dirLightDirection) * 0.7 + 0.3, 0.0);
     vec3 directional = dirLightColor.rgb * dirLightIntensity * dirDiff * albedo;
     
@@ -184,12 +176,31 @@ void main() {
     // Combine all lighting
     vec3 finalColor = ambient + directional + pointLighting;
     
+    float fresnelPower = 30;
+    float fresnelIntensity = .35;
+    float fresnelBias = 1;
+    vec3 viewDir = normalize(viewPos - fragPosition);
+
+    vec3 rimDirection = -dirLightDirection;
+    vec4 fresnel = calculateDirectionalFresnel(
+        viewDir,
+        normal,
+        rimDirection,
+        fresnelPower,
+        fresnelIntensity,
+        fresnelBias) * fresnelColor;
+
+    finalColor += fresnel.rgb;
     // Apply fog
     //float fogFactor = calculateFog(fragPosition, viewPos);
     //finalColor = mix(finalColor, fogColor.rgb, fogFactor);
     
     // Color grading and post-processing
     finalColor = colorGrade(finalColor);
+
+    finalColor = adjustVibrance(finalColor,0.3);
+
+    finalColor = acesToneMapping(finalColor);
     
     // Gamma correction
     finalColor = pow(finalColor, vec3(1.0 / gamma));

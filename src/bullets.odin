@@ -1,6 +1,6 @@
 package main
 
-import "core:fmt"
+import "core:log"
 import "core:math"
 import alg "core:math/linalg"
 import rl "vendor:raylib"
@@ -63,13 +63,12 @@ update_projectiles :: proc()
     }
 
     //COLLISION CHECK
-    for &bullet_handle in enemies {
-      enemy := get_entity(bullet_handle)
+    for &handle in enemies {
+      enemy := get_entity(handle)
       distToEnemy := alg.vector_length2(bullet.position - enemy.position)
       if distToEnemy - bullet.collisionRadiusSqr - enemy.collisionRadiusSqr < 0 {
         bullet.flags += {.dead}
-
-        append(&hits, BulletHit{bullet = handle, target = bullet_handle, pos = enemy.position})
+        append(&hits, BulletHit{bullet = handle, target = handle, pos = enemy.position})
         //TODO: damage code
       }
     }
@@ -113,6 +112,6 @@ draw_projectiles :: proc()
 {
   for &h in projectiles {
     ent := get_entity(h)
-    rl.DrawModel(projectileModel, ent.position, 1.5, rl.WHITE)
+    rl.DrawModel(projectileModel, ent.position, 1.5, rl.PURPLE * 3)
   }
 }

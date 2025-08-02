@@ -1,7 +1,10 @@
 package main
+import "core:c"
 import "core:log"
 import "core:math/linalg"
+import "core:strings"
 import rl "vendor:raylib"
+import gl "vendor:raylib/rlgl"
 
 Light :: struct {
   position:  float3,
@@ -16,10 +19,26 @@ LightType :: enum {
   POINT       = 1,
 }
 
+
+SceneLightingValues :: struct {
+  fogColor:        rl.Color,
+  ambientColor:    rl.Color,
+  fogDensity:      float,
+  fogStart:        float,
+  fogEnd:          float,
+  saturation:      float,
+  contrast:        float,
+  brightness:      float,
+  gamma:           float,
+  ambientStrength: float,
+}
+
+
 scene_lighting_values: SceneLightingValues
 scene_lights: [dynamic]Light
 default_shader: rl.Shader
 scene_lights_dirty: bool
+ts_last_shader_file_mod: c.long
 
 init_lighting :: proc() 
 {
@@ -27,7 +46,7 @@ init_lighting :: proc()
   append(&update_procs, update_scene_lights)
 
   scene_lighting_values = {
-    ambientColor    = rl.DARKBLUE,
+    ambientColor    = rl.DARKGRAY,
     ambientStrength = .4,
     saturation      = 1.1,
     contrast        = 1.2,
@@ -47,6 +66,17 @@ init_lighting :: proc()
   }
 
   default_shader = rl.LoadShader(PATH_SHADERS + "default_lighting.vs", PATH_SHADERS + "default_lighting.fs")
+
+  set_default_uniforms()
+  synty_mat = rl.LoadMaterialDefault()
+  synty_mat.shader = default_shader
+
+
+  //rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "ambientColor"), &color_scene_ambient, .VEC4)
+}
+
+set_default_uniforms :: proc() 
+{
 
   default_shader.locs[rl.ShaderLocationIndex.MAP_ALBEDO] = i32(rl.GetShaderLocation(default_shader, "diffuseTexture"))
   default_shader.locs[rl.ShaderLocationIndex.MAP_NORMAL] = i32(normalLoc)
@@ -88,9 +118,6 @@ init_lighting :: proc()
   rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "contrast"), &scene_lighting_values.contrast, .FLOAT)
   rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "brightness"), &scene_lighting_values.brightness, .FLOAT)
   rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "gamma"), &scene_lighting_values.gamma, .FLOAT)
-
-
-  //rl.SetShaderValue(default_shader, rl.GetShaderLocation(default_shader, "ambientColor"), &color_scene_ambient, .VEC4)
 }
 
 
@@ -109,6 +136,25 @@ create_point_light :: proc(position: float3, color: rl.Color, intensity, range: 
 
 update_scene_lights :: proc() 
 {
+
+  //SHADER HOT RELOAD - BORKED
+  // if rl.IsKeyDown(.LEFT_CONTROL) && rl.IsKeyPressed(.R) {
+  // log.debug("RELOAD")
+  // ts_shader_mod := rl.GetFileModTime(PATH_SHADERS + "default_lighting.fs")
+  // if ts_shader_mod != ts_last_shader_file_mod {
+  // ts_last_shader_file_mod = ts_shader_mod
+  // updated_shader := rl.LoadShader(PATH_SHADERS + "default_lighting.vs", PATH_SHADERS + "default_lighting.fs")
+  // 
+  // if updated_shader.id != gl.GetShaderIdDefault() {
+  // 
+  // rl.UnloadShader(default_shader)
+  // default_shader = updated_shader
+  // set_default_uniforms()
+  // synty_mat.shader = default_shader
+  // }
+  // }
+  // }
+
   if !scene_lights_dirty {
     return
   }
@@ -138,4 +184,6 @@ update_scene_lights :: proc()
   rl.SetShaderValue(default_shader, loc_dirlight_pos, &sun_light.position, rl.ShaderUniformDataType.VEC3)
   rl.SetShaderValue(default_shader, loc_dirlight_color, &sun_color, rl.ShaderUniformDataType.VEC4)
   rl.SetShaderValue(default_shader, loc_dir_light_intensity, &sun_light.intensity, rl.ShaderUniformDataType.FLOAT)
+
+
 }

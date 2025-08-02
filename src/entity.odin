@@ -1,6 +1,6 @@
 package main
 
-import "core:fmt"
+import "core:log"
 import "core:reflect"
 import "core:slice"
 import rl "vendor:raylib"
@@ -19,6 +19,7 @@ Entity :: struct {
   collisionRadiusSqr: float,
   active:             bool,
   flags:              bit_set[Entity_Flags],
+  aabb:               rl.BoundingBox,
 }
 
 Entity_Flags :: enum {
@@ -27,6 +28,8 @@ Entity_Flags :: enum {
   dead,
   enemy_fodder,
   enemy_ranged,
+  static,
+  aabb_dirty,
 }
 
 EntityStats :: struct {
@@ -44,29 +47,27 @@ SpeedDecreaseMode :: enum byte {
   Circ,
 }
 
-// EntityHandle to reference entities
 EntityHandle :: struct {
   index:      u32, // Index into the entity array
   generation: i32, // Generation to ensure handle validity
 }
 
-// EntityManager to manage the collection of entities
 EntityManager :: struct {
   entities:     [dynamic]Entity,
   free_indices: [dynamic]u32,
-  next_id:      u32,
 }
+
+entity_debug_names: map[EntityHandle]string
 
 zero_handle :: EntityHandle{0, -1}
 
-// Initialize the entity manager
 init_entity_manager :: proc() -> EntityManager 
 {
-
-  return EntityManager{entities = make([dynamic]Entity, 0, MAX_ENTITIES), free_indices = make([dynamic]u32), next_id = 1}
+  entity_debug_names = make(map[EntityHandle]string)
+  reserve(&entity_debug_names, MAX_ENTITIES)
+  return EntityManager{entities = make([dynamic]Entity, 0, MAX_ENTITIES), free_indices = make([dynamic]u32)}
 }
 
-// Destroy the entity manager
 destroy_entity_manager :: proc() 
 {
   delete(manager.entities)
@@ -79,7 +80,21 @@ create_and_get_entity :: proc() -> ^Entity
   return get_entity(handle)
 }
 
-// Create a new entity and return its handle
+set_entity_debug_name :: proc(name: string, handle: EntityHandle) 
+{
+  if handle not_in entity_debug_names {
+    entity_debug_names[handle] = name
+  }
+}
+
+get_entity_debug_name :: proc(name: string, handle: EntityHandle) -> string 
+{
+  if handle in entity_debug_names {
+    return entity_debug_names[handle]
+  }
+  return "DEBUG NAME NOT FOUND"
+}
+
 create_entity :: proc() -> EntityHandle 
 {
   index: u32
@@ -96,23 +111,19 @@ create_entity :: proc() -> EntityHandle
     append(&manager.entities, Entity{})
   }
 
-  // Initialize the entity
   manager.entities[index] = Entity {
-    handle = EntityHandle{index = manager.next_id, generation = generation},
+    handle = EntityHandle{index = index, generation = generation},
     active = true,
   }
-  manager.next_id += 1
 
   return EntityHandle{index, generation}
 }
 
-// Destroy an entity by handle
 destroy_entity :: proc(handle: EntityHandle) -> bool 
 {
   if !is_valid_handle(handle) {
     return false
   }
-  // Mark entity as inactive and increment generation
   manager.entities[handle.index].active = false
   manager.entities[handle.index].handle.generation += 1
   manager.entities[handle.index].flags = {}
@@ -120,7 +131,6 @@ destroy_entity :: proc(handle: EntityHandle) -> bool
   return true
 }
 
-// Check if a handle is valid
 is_valid_handle :: proc(handle: EntityHandle) -> bool 
 {
   if handle.index >= u32(len(manager.entities)) {
@@ -130,7 +140,6 @@ is_valid_handle :: proc(handle: EntityHandle) -> bool
   return entity.active && entity.handle.generation == handle.generation
 }
 
-// Get an entity by handle (returns nil if invalid)
 get_entity :: proc(handle: EntityHandle) -> ^Entity 
 {
   if !is_valid_handle(handle) {

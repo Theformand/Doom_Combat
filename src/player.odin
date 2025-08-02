@@ -1,6 +1,7 @@
 package main
 
 import "core:fmt"
+import "core:log"
 import "core:math"
 import "core:math/linalg"
 import "core:slice"
@@ -33,12 +34,15 @@ player_shader: rl.Shader
 anims_loaded: bool
 player_accel: float
 synt_atlas_1: rl.Texture
+player_fresnel_color :: rl.Color{114, 232, 195, 255}
+loc_fresnel: int
 
 init_player :: proc() 
 {
   //player_model = rl.LoadModelFromMesh(rl.GenMeshCube(1, 2, 1))
   //player_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].color = rl.WHITE
 
+  loc_fresnel = rl.GetShaderLocation(default_shader, "fresnelColor")
   player_handle = create_entity()
   player := get_entity(player_handle)
   player.flags = {.player}
@@ -47,6 +51,8 @@ init_player :: proc()
   init_player_stats()
   append(&update_procs, update_player)
   append(&draw_procs, draw_player)
+  //create_crossbow()
+  create_shotgun()
 
   //animation test
   animCount = 0
@@ -55,6 +61,11 @@ init_player :: proc()
 
   //material and shader setup
   player_model = rl.LoadModel(PATH_MODELS + "player.glb")
+  for i in 0 ..< player_model.meshCount {
+    smooth_all_mesh_normals(&player_model.meshes[i])
+  }
+
+  assign_material_all_mats(&player_model, synty_mat)
 
   //player_model.materials[0] = synty_mat
   //player_model.materials[1] = synty_mat
@@ -69,7 +80,8 @@ dashing_end: float3
 dashing_start: float3
 ts_dash_start: float
 dash_cd :: 1
-dash_speed :: 100.0
+dash_speed :: 50.0
+dash_range :: 15.0
 ts_dash_ready: float
 player_velocity: float3
 
@@ -122,8 +134,8 @@ update_player :: proc()
 
   //scan for dash targets
   if core_input.shield_held && now > ts_dash_ready {
-    targets := get_enemies_in_range(24, player.position)
-    #reverse for &handle, i in targets {
+    targets := get_enemies_in_range(dash_range, player.position)
+    for &handle, i in targets {
       enemy := get_entity(handle)
       dir := norm(enemy.position - player.position)
       dot := linalg.dot(player.forward, dir)
@@ -132,14 +144,16 @@ update_player :: proc()
       }
     }
 
-    //sort by distance to player
-    slice.sort_by(targets[:], proc(a, b: EntityHandle) -> bool 
-    {
-      posA := get_entity(a).position
-      posB := get_entity(b).position
-      player := get_entity(player_handle)
-      return linalg.distance(posA, player.position) < linalg.distance(posB, player.position)
-    })
+    if len(targets) > 1 {
+      //sort by distance to player
+      slice.sort_by(targets[:], proc(a, b: EntityHandle) -> bool 
+      {
+        posA := get_entity(a).position
+        posB := get_entity(b).position
+        player := get_entity(player_handle)
+        return linalg.distance(posA, player.position) < linalg.distance(posB, player.position)
+      })
+    }
 
     if len(targets) > 0 && !dashing {
       player.target = targets[0]
@@ -179,7 +193,7 @@ update_player :: proc()
         e := get_entity(player.target)
         in_range := get_enemies_in_range(3, e.position)
 
-        for handle in in_range {
+        for &handle in in_range {
           enemy := get_entity(handle)
           dmg := .enemy_fodder in enemy.flags ? enemy.stats.health : 10
           enemy.stats.health -= dmg
@@ -205,10 +219,15 @@ update_player :: proc()
 draw_player :: proc() 
 {
   player := get_entity(player_handle)
+  fresnel := rl.ColorNormalize(player_fresnel_color)
+  black := rl.ColorNormalize(rl.BLACK)
+
+  rl.SetShaderValue(default_shader, loc_fresnel, &fresnel, .VEC4)
   rl.DrawModel(player_model, player.position, 1, rl.WHITE)
+  rl.SetShaderValue(default_shader, loc_fresnel, &black, .VEC4)
 
   if is_valid_handle(player.target) {
-    rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.5, rl.BLUE)
+    rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.25, rl.BLUE)
   }
 }
 

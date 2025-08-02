@@ -1,9 +1,33 @@
 ﻿package main
 
+import "core:log"
 import "core:math"
 import linalg "core:math/linalg"
 import rand "core:math/rand"
+import "core:strings"
+import "core:time"
 import rl "vendor:raylib"
+
+
+get_player :: proc() -> ^Entity 
+{
+  return get_entity(player_handle)
+}
+
+load_entity_model :: proc(path: string) -> int 
+{
+  fullPath := strings.concatenate([]string{PATH_MODELS, path}, context.temp_allocator)
+  model := rl.LoadModel(cstring(raw_data(fullPath)))
+  append(&entity_models, model)
+  return int(len(entity_models) - 1)
+}
+
+assign_material_all_mats :: proc(model: ^rl.Model, mat: rl.Material) 
+{
+  for i in 0 ..< model.materialCount {
+    model.materials[i] = mat
+  }
+}
 
 norm :: proc(v: float3) -> float3 
 {
