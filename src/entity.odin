@@ -38,6 +38,7 @@ EntityStats :: struct {
   speed:     float,
   lifetime:  float,
   damage:    float,
+  shield:    float,
   speedMode: SpeedDecreaseMode,
 }
 

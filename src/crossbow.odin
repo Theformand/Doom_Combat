@@ -44,9 +44,9 @@ update_crossbow :: proc()
   child_pos := float3_up + entity_right(player) * 0.25
 
   //SHOOTING
-  if core_input.shootHeld && now > crossbow.tsReady {
+  if core_input.shootHeld && time_now > crossbow.tsReady {
     forward := entity_fwd(player)
-    crossbow.tsReady = now + crossbow.shotInterval
+    crossbow.tsReady = time_now + crossbow.shotInterval
 
     handle := make_projectile()
     bullet := get_entity(handle)

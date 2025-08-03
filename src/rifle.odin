@@ -43,9 +43,9 @@ update_rifle :: proc()
   child_pos := float3_up + entity_right(player) * 0.55
 
   //SHOOTING
-  if core_input.shootHeld && now > rifle.tsReady {
+  if core_input.shootHeld && time_now > rifle.tsReady {
     forward := entity_fwd(player)
-    rifle.tsReady = now + rifle.shotInterval
+    rifle.tsReady = time_now + rifle.shotInterval
 
     handle := make_projectile()
     bullet := get_entity(handle)

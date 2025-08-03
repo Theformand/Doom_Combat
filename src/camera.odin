@@ -66,7 +66,7 @@ update_camera :: proc()
 
 
   player := get_entity(player_handle)
-  time := f64(now)
+  time := f64(time_now)
 
   if active_cam_shake.duration > 0 {
     active_cam_shake.duration -= dt

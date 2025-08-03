@@ -11,23 +11,15 @@ import rl "vendor:raylib"
 player_handle: EntityHandle
 
 //ground plane
-q1 :: float3{-1000, 0, -1000}
-q2 :: float3{-1000, 0, 1000}
-q3 :: float3{1000, 0, 1000}
-q4 :: float3{1000, 0, -1000}
-
-
-PlayerInput :: struct {
-  vertical:   float,
-  horizontal: float,
-  shoot:      bool,
-}
+ground_plane_p1 :: float3{-1000, 0, -1000}
+ground_plane_p2 :: float3{-1000, 0, 1000}
+ground_plane_p3 :: float3{1000, 0, 1000}
+ground_plane_p4 :: float3{1000, 0, -1000}
 
 animCurrentFrame: i32
 animCount: i32
 animIndex: i32
 
-player_input: PlayerInput
 player_model: rl.Model
 player_anims: [^]rl.ModelAnimation
 player_shader: rl.Shader
@@ -37,11 +29,9 @@ synt_atlas_1: rl.Texture
 player_fresnel_color :: rl.Color{114, 232, 195, 255}
 loc_fresnel: int
 
+
 init_player :: proc() 
 {
-  //player_model = rl.LoadModelFromMesh(rl.GenMeshCube(1, 2, 1))
-  //player_model.materials[0].maps[rl.MaterialMapIndex.ALBEDO].color = rl.WHITE
-
   loc_fresnel = rl.GetShaderLocation(default_shader, "fresnelColor")
   player_handle = create_entity()
   player := get_entity(player_handle)
@@ -53,6 +43,8 @@ init_player :: proc()
   append(&draw_procs, draw_player)
   //create_crossbow()
   create_shotgun()
+  create_divine_weapons()
+  //create_shield_dash()
 
   //animation test
   animCount = 0
@@ -60,7 +52,8 @@ init_player :: proc()
   animCurrentFrame = 0
 
   //material and shader setup
-  player_model = rl.LoadModel(PATH_MODELS + "player.glb")
+  idx := load_entity_model("player.glb")
+  player_model = entity_models[idx]
   for i in 0 ..< player_model.meshCount {
     smooth_all_mesh_normals(&player_model.meshes[i])
   }
@@ -75,47 +68,21 @@ init_player :: proc()
   }
 }
 
-dashing: bool
-dashing_end: float3
-dashing_start: float3
-ts_dash_start: float
-dash_cd :: 1
-dash_speed :: 50.0
-dash_range :: 15.0
-ts_dash_ready: float
-player_velocity: float3
 
 update_player :: proc() 
 {
-  //TODO: Remove this, it should go in actionmap.odin
-  player_input = {}
-  if rl.IsKeyDown(.W) {
-    player_input.vertical = 1
-  }
-  if (rl.IsKeyDown(.S)) {
-    player_input.vertical = -1
-  }
-  if (rl.IsKeyDown(.A)) {
-    player_input.horizontal = 1
-  }
-  if (rl.IsKeyDown(.D)) {
-    player_input.horizontal = -1
-  }
-  if core_input.shootHeld {
-    player_input.shoot = true
-  }
-
   player := get_entity(player_handle)
   player.stats.speed = 5
   accel: float = 40
   decel: float = 50
+
   // read input, construct move vector and transform move vector by camera rotation so its camera relative
-  moveVec := norm(float3{player_input.horizontal, 0, player_input.vertical})
+  moveVec := norm(float3{core_input.moveHorizontal, 0, core_input.moveVertical})
   moveVec = rl.Vector3RotateByAxisAngle(moveVec, float3_up, RAD_45)
-  // Calculate desired velocity based on input
+  // calculate desired velocity based on input
   desiredVelocity := moveVec * player.stats.speed
 
-  // Apply acceleration or deceleration
+  // apply acceleration or deceleration
   if linalg.length(moveVec) > 0 {
     // Accelerate towards desired velocity
     player_velocity = linalg.lerp(player_velocity, desiredVelocity, accel * dt)
@@ -134,44 +101,15 @@ update_player :: proc()
 
   player.position += knockback + player_velocity * dt
 
-  //scan for dash targets
-  if core_input.shield_held && now > ts_dash_ready {
-    targets := get_enemies_in_range(dash_range, player.position)
-    for &handle, i in targets {
-      enemy := get_entity(handle)
-      dir := norm(enemy.position - player.position)
-      dot := linalg.dot(player.forward, dir)
-      if (dot < 0.98 || enemy == player || !is_valid_handle(handle)) {
-        unordered_remove(&targets, i)
-      }
-    }
-
-    if len(targets) > 1 {
-      //sort by distance to player
-      slice.sort_by(targets[:], proc(a, b: EntityHandle) -> bool 
-      {
-        posA := get_entity(a).position
-        posB := get_entity(b).position
-        player := get_entity(player_handle)
-        return linalg.distance(posA, player.position) < linalg.distance(posB, player.position)
-      })
-    }
-
-    if len(targets) > 0 && !dashing {
-      player.target = targets[0]
-    }
-  } else {
-    player.target = zero_handle
-  }
 
   //trigger dash
-  if core_input.shield_dash_triggered && now > ts_dash_ready && is_valid_handle(player.target) {
+  if core_input.ability_triggered && time_now > ts_dash_ready && is_valid_handle(player.target) {
     dashing = true
     targetPos := get_entity(player.target).position
     dirVec := targetPos - player.position
     dashing_start = player.position
     dashing_end = targetPos - norm(dirVec) * 1.5
-    ts_dash_start = now
+    ts_dash_start = time_now
   }
 
   // player rotation
@@ -180,35 +118,6 @@ update_player :: proc()
   player.forward = norm(mousePos - player.position)
   player_model.transform = matrix_trs(float3_zero, float3_one, player.rotation)
 
-
-  //execute dash
-  if dashing {
-    distCovered := (now - ts_dash_start) * dash_speed
-    t := distCovered / linalg.length(dashing_end - dashing_start)
-    player.position = linalg.lerp(dashing_start, dashing_end, t)
-
-    //Dash End
-    if t >= 1.0 {
-      dashing = false
-      ts_dash_ready = now + dash_cd
-      if is_valid_handle(player.target) {
-        e := get_entity(player.target)
-        in_range := get_enemies_in_range(3, e.position)
-
-        for &handle in in_range {
-          enemy := get_entity(handle)
-          dmg := .enemy_fodder in enemy.flags ? enemy.stats.health : 10
-          enemy.stats.health -= dmg
-          if enemy.stats.health <= 0 {
-            enemy.flags += {.dead}
-          }
-        }
-
-        camera_shake(.small)
-        //player.target = zero_handle
-      }
-    }
-  }
 
   if anims_loaded {
     anim := player_anims[animIndex]
@@ -227,16 +136,12 @@ draw_player :: proc()
   rl.SetShaderValue(default_shader, loc_fresnel, &fresnel, .VEC4)
   rl.DrawModel(player_model, player.position, 1, rl.WHITE)
   rl.SetShaderValue(default_shader, loc_fresnel, &black, .VEC4)
-
-  if is_valid_handle(player.target) {
-    rl.DrawSphere(get_entity(player.target).position + float3_up * 3, 0.25, rl.BLUE)
-  }
 }
 
 get_mouse_pos_world :: proc() -> float3 
 {
   ray := rl.GetScreenToWorldRay(rl.GetMousePosition(), camera)
   hitInfo: rl.RayCollision
-  hitInfo = rl.GetRayCollisionQuad(ray, q1, q2, q3, q4)
+  hitInfo = rl.GetRayCollisionQuad(ray, ground_plane_p1, ground_plane_p2, ground_plane_p3, ground_plane_p4)
   return hitInfo.point
 }

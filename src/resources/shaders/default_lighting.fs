@@ -113,7 +113,7 @@ float calculateDirectionalFresnel(vec3 viewDir, vec3 normal, vec3 rimDirection, 
     return directionalFresnel * rimIntensity;
 }
 
-// ACES tone mapping (more cinematic)
+// ACES tone mapping (its cinematic, bro)
 vec3 acesToneMapping(vec3 color) {
     float a = 2.51;
     float b = 0.03;
@@ -141,17 +141,8 @@ vec3 adjustVibrance(vec3 color, float vibrance) {
 void main() {
     vec4 texColor = texture(diffuseTexture, fragTexCoord);
     vec3 albedo = texColor.rgb;
-    
-     // Subtle texture noise for variation
-     //vec2 noiseCoord = fragTexCoord * 64.0 + time * 0.1;
-     //float noise = random(noiseCoord) * 0.05;
-     //albedo += noise;
-    
+        
     vec3 normal = normalize(fragNormal);
-    // vec3 normal_from_tex = texture(normalTexture, fragTexCoord).xyz;
-    // if (normal_from_tex.b > 0){
-    //     //normal = normalize(normal_from_tex * 2.0 - 1.0) * 0.5; 
-    // }
     
     vec3 ambient = ambientColor.rgb * ambientStrength * albedo;
     
@@ -172,7 +163,6 @@ void main() {
         );
     }
     
-    //float fresnel = calculateFresnel(fragPosition,viewPos,fragNormal,0.1,0.1,0.1);
     // Combine all lighting
     vec3 finalColor = ambient + directional + pointLighting;
     
@@ -197,9 +187,7 @@ void main() {
     
     // Color grading and post-processing
     finalColor = colorGrade(finalColor);
-
     finalColor = adjustVibrance(finalColor,0.3);
-
     finalColor = acesToneMapping(finalColor);
     
     // Gamma correction

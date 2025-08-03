@@ -14,6 +14,7 @@ Shotgun :: struct {
   tsReady:       float,
   idxModel:      int,
   recoil:        Recoil,
+  id:            int,
 }
 
 Recoil :: struct {
@@ -39,7 +40,7 @@ create_shotgun :: proc()
     damage = 50,
     shot_interval = 1.5,
     cone_angle = 60,
-    range = 3,
+    range = 4,
     recoil = Recoil{recoilKick = 0.4, spring = 1},
   }
 
@@ -56,15 +57,26 @@ update_shotgun :: proc()
   player := get_entity(player_handle)
   child_pos := float3_up + entity_right(player) * 0.25
 
-
-  if core_input.shootTriggered && now > shotgun.tsReady {
-    shotgun.tsReady = now + shotgun.shot_interval
+  if core_input.shootTriggered && time_now > shotgun.tsReady {
+    shotgun.tsReady = time_now + shotgun.shot_interval
     targets := get_enemies_in_cone(player.position, player.forward, shotgun.cone_angle, shotgun.range)
     for h in targets {
       target := get_entity(h)
       target.stats.health -= shotgun.damage
+
+      //DEATH
       if target.stats.health <= 0 {
         target.flags += {.dead}
+
+        fire_event(
+          DeathEvent {
+            damage = shotgun.damage,
+            direction = player.forward,
+            flags = target.flags,
+            pos = target.position,
+            weaponId = shotgun.id,
+          },
+        )
       }
     }
 
@@ -83,6 +95,7 @@ update_shotgun :: proc()
     }
     append(&shotgunvfxses, cone)
   }
+
 
   //RECOIL ANIMATION
   t, kick_offset := weapon_recoil(shotgun.recoil)

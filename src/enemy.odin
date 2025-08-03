@@ -7,12 +7,10 @@ import rl "vendor:raylib"
 enemies: [dynamic]EntityHandle
 entity_models: [dynamic]rl.Model
 
-
 init_enemies :: proc() 
 {
   idx_skeleton := load_entity_model("skeleton.glb")
   idx_ranger := load_entity_model("skeleton_ranger.glb")
-
 
   skeleton := entity_models[idx_skeleton]
   ranger := entity_models[idx_ranger]
@@ -24,6 +22,7 @@ init_enemies :: proc()
   }
   assign_material_all_mats(&skeleton, synty_mat)
   assign_material_all_mats(&ranger, synty_mat)
+
 
   enemyCount := 10
   for i in 0 ..< enemyCount {

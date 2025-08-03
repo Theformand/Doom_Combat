@@ -5,6 +5,7 @@ import "core:fmt"
 import "core:log"
 import linalg "core:math/linalg"
 import "core:reflect"
+import "core:time"
 import rl "vendor:raylib"
 
 manager: EntityManager
@@ -34,6 +35,8 @@ width_full: int = 2560
 height_full: int = 1440
 
 FULL_SCREEN: bool = false
+PRINT_ENTITY_STRUCT: bool = false
+PRINT_PERF_METRICS: bool = false
 
 RAD_45: float
 RAD_90: float
@@ -43,9 +46,8 @@ RAD_225: float
 RAD_270: float
 
 MAX_ENTITIES :: 10000
-PRINT_ENTITY_STRUCT: bool = false
 
-now: float
+time_now: float
 now_f64: f64
 dt: float
 update_procs: [dynamic]proc()
@@ -54,6 +56,7 @@ draw_procs: [dynamic]proc()
 
 render_target: rl.RenderTexture2D
 bloom_shader: rl.Shader
+sw: time.Stopwatch
 
 
 main :: proc() 
@@ -120,9 +123,15 @@ main :: proc()
   init_enemies()
   init_knockback()
 
-  for !rl.WindowShouldClose() {
 
-    now = float(rl.GetTime())
+  //late stuff
+  init_eventsystems()
+
+  for !rl.WindowShouldClose() {
+    time.stopwatch_reset(&sw)
+    time.stopwatch_start(&sw)
+
+    time_now = float(rl.GetTime())
     dt = rl.GetFrameTime()
 
 
@@ -149,22 +158,29 @@ main :: proc()
       p()
     }
 
-
     rl.EndMode3D()
-
     end_bloom_scene(&bloom_ctx)
+
     rl.BeginDrawing()
     rl.ClearBackground(rl.BLACK)
-
     render_bloom(&bloom_ctx)
-
-    rl.DrawFPS(10, 10)
+    
+    // PERF METRICS DISPLAY
+    if (rl.IsKeyPressed(.F1)) {
+      PRINT_PERF_METRICS = !PRINT_PERF_METRICS
+    }
+    if PRINT_PERF_METRICS {
+      rl.DrawFPS(10, 10)
+      dur := time.stopwatch_duration(sw)
+      rl.DrawText(rl.TextFormat("CPU %.2f", dur), 10, 40, 18, rl.WHITE)
+    }
 
     rl.EndDrawing()
 
 
     //REST TEMP ALLOC
     free_all(context.temp_allocator)
+    time.stopwatch_stop(&sw)
   }
 
   log.debug("\n")
