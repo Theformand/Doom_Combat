@@ -39,8 +39,6 @@ init_player :: proc()
   player.position = float3_zero
   player.rotation = quaternion_identity
   init_player_stats()
-  append(&update_procs, update_player)
-  append(&draw_procs, draw_player)
   //create_crossbow()
   create_shotgun()
   create_divine_weapons()
@@ -59,13 +57,12 @@ init_player :: proc()
   }
 
   assign_material_all_mats(&player_model, synty_mat)
-
-  //player_model.materials[0] = synty_mat
-  //player_model.materials[1] = synty_mat
-  //player_model.materials[2] = synty_mat
   if animCount != 0 {
     anims_loaded = true
   }
+
+  append(&update_procs, update_player)
+  append(&draw_procs, draw_player)
 }
 
 

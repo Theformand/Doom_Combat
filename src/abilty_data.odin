@@ -5,12 +5,12 @@ AbilityType :: enum {
   Divine_Weapons,
 }
 
-AbilityData :: struct {
+AbilityLibraryData :: struct {
   title: string,
   desc:  string,
 }
 
-datas :: [AbilityType]AbilityData {
+ability_library :: [AbilityType]AbilityLibraryData {
   .Divine_Weapons = {
     title = "Divine Weapons",
     desc = "Summons shields around you, granting extra shield value. If the shields are still alive after a few seconds, activate the ability again to turn them into swords and fire them towards the enemy",

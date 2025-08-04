@@ -11,14 +11,19 @@ Divine_Weapons :: struct {
   rotation_speed:   float,
   ts_swords_active: float,
   ts_ready:         float,
-  attack_range:     float,
   attack_t:         float, //lerp from attack position to attack target 0-1
   num_swords:       int,
   state:            Divine_Weapons_State,
   idx_model:        int,
   mouse_pos:        float3,
-  type:             AbilityType,
   positions:        [dynamic]float3,
+  data:             AbilityData,
+}
+
+AbilityData :: struct {
+  type:     AbilityType,
+  cooldown: float,
+  range:    float,
 }
 
 Divine_Weapons_State :: enum byte {
@@ -36,10 +41,10 @@ create_divine_weapons :: proc()
 {
 
   ability = Divine_Weapons {
-    attack_range   = 3,
     rotation_speed = 6,
-    state          = .READY,
-    num_swords     = 6,
+    state = .READY,
+    num_swords = 6,
+    data = AbilityData{cooldown = 3, range = 5, type = .Divine_Weapons},
   }
 
   //this is stupid
@@ -52,15 +57,22 @@ create_divine_weapons :: proc()
   append(&draw_procs, draw_divine_weapons)
 }
 
-
+// Summon spinning shields, after x seconds, click again to turn shields into swords.
+// Swords fly behind you, and then quickly attacks in front of you
 update_divine_weapons :: proc() 
 {
   player := get_player()
 
+  if ability.state == .COOLDOWN {
+    if time_now > ability.ts_ready {
+      ability.state = .READY
+    }
+  }
+
   //trigger
   if ability.state == .READY && core_input.ability_triggered && time_now > ability.ts_ready {
     ability.state = .ROTATING_SHIELDS
-    ability.ts_swords_active = time_now + 3
+    ability.ts_swords_active = time_now + 2
     player.stats.shield += ability.shield_stat
 
     for i in 0 ..< ability.num_swords {
@@ -85,35 +97,45 @@ update_divine_weapons :: proc()
   }
 
   if ability.state == .CHARGING {
-
     charge_dur: float = 0.4
     ability.attack_t += dt / charge_dur
 
     //calculate the positions behind the player, and lerp towards them
     end_positions := make([dynamic]float3, context.temp_allocator)
-    arc: float = math.PI / 2.0
+    arc: float = math.PI / 1.1
     interval := arc / float(ability.num_swords)
+    player_rads := math.atan2(-player.forward.x, player.forward.z) - math.PI * 0.88
 
     for i in 0 ..< ability.num_swords {
-      angle := float(i) * interval
-      offset := float3{math.cos(angle), 0, math.sin(angle)}
+      angle := float(i) * interval + player_rads
+      offset := float3{math.cos(angle), 0, math.sin(angle)} * 2
       append(&end_positions, player.position + offset + float3_up)
       ability.positions[i] = linalg.lerp(ability.positions[i], end_positions[i], dt * 30)
     }
 
-
     if ability.attack_t > 1 {
       ability.state = .ATTACKING
       ability.attack_t = 0
-      ability.mouse_pos = get_mouse_pos_world()
+      mouse_pos := get_mouse_pos_world() + float3_up
+      ability.mouse_pos = mouse_pos
+      dir := mouse_pos - player.position
+      length := linalg.length(dir)
+      if length > ability.data.range {
+        ability.mouse_pos = player.position + norm(dir) * ability.data.range
+      }
     }
   }
 
   if ability.state == .ATTACKING {
     attack_dur: float = 0.5
     ability.attack_t += dt / attack_dur
+
+    for &p in ability.positions {
+      p = linalg.lerp(p, ability.mouse_pos, ability.attack_t)
+    }
     if ability.attack_t > 1 {
       ability.state = .COOLDOWN
+      ability.ts_ready = time_now + ability.data.cooldown
     }
   }
 }
