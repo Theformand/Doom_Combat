@@ -21,10 +21,13 @@ update_aabbs :: proc()
 
 draw_aabbs :: proc() 
 {
+  if !PRINT_PERF_METRICS {
+    return
+  }
   for &e in manager.entities {
     if !e.active || (.static in e.flags && .aabb_dirty not_in e.flags) {
       continue
     }
-    //rl.DrawBoundingBox(e.aabb, rl.GREEN)
+    rl.DrawBoundingBox(e.aabb, rl.GREEN)
   }
 }

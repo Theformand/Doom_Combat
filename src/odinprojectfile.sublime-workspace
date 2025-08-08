@@ -1,0 +1,3103 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"type",
+				"type_id"
+			],
+			[
+				"to",
+				"clone_to_cstring(s: string, allocator := context.allocator, loc := #caller_location) "
+			],
+			[
+				"variant",
+				"union_variant_type_info(a: any) "
+			],
+			[
+				"En",
+				"EnemyState"
+			],
+			[
+				"EnemyState",
+				"EnemyStateSeeking"
+			],
+			[
+				"Ene",
+				"EnemyStateAttacking"
+			],
+			[
+				"tostrin",
+				"clone_to_cstring(s: string, allocator := context.allocator, loc := #caller_location) "
+			],
+			[
+				"sta",
+				"enemy_state"
+			],
+			[
+				"Enem",
+				"EnemyStateIdle"
+			],
+			[
+				"enti",
+				"Entity"
+			],
+			[
+				"stat",
+				"enemy_state"
+			],
+			[
+				"enemy",
+				"EnemyStateSeeking"
+			],
+			[
+				"ene",
+				"EnemyStateSeeking"
+			],
+			[
+				"Ent",
+				"EntityStats"
+			],
+			[
+				"hei",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"getmon",
+				"GetMonitorWidth(monitor: c.int) "
+			],
+			[
+				"scree",
+				"SCREEN_WIDTH"
+			],
+			[
+				"crate",
+				"create_entity() "
+			],
+			[
+				"window",
+				"IsWindowResized() "
+			],
+			[
+				"len",
+				"length2"
+			],
+			[
+				"eas",
+				"ease_cubic_in(x: float) "
+			],
+			[
+				"abi",
+				"AbilityType"
+			],
+			[
+				"attac",
+				"attack_t"
+			],
+			[
+				"atta",
+				"attack_t"
+			],
+			[
+				"float",
+				"float3_zero"
+			],
+			[
+				"float3",
+				"float3_one"
+			],
+			[
+				"Abi",
+				"AbilityType"
+			],
+			[
+				"atat",
+				"attak_t"
+			],
+			[
+				"ts",
+				"ts_swords_active"
+			],
+			[
+				"isk",
+				"IsKeyDown"
+			],
+			[
+				"sphere",
+				"DrawSphereWires(centerPos: Vector3, radius: f32, rings, slices: c.int, color: Color)"
+			],
+			[
+				"drawwi",
+				"DrawCapsuleWires(startPos, endPos: Vector3, radius: f32, slices, rings: c.int, color: Color)"
+			],
+			[
+				"ro",
+				"ROTATING_SHIELDS"
+			],
+			[
+				"tsre",
+				"ts_ready"
+			],
+			[
+				"die",
+				"Divine_Weapons_Mode"
+			],
+			[
+				"entit",
+				"Entity"
+			],
+			[
+				"di",
+				"Divine_Weapons"
+			],
+			[
+				"ab",
+				"ability_triggered"
+			],
+			[
+				"darkgr",
+				"DARKGREEN"
+			],
+			[
+				"stopw",
+				"stopwatch_stop(stopwatch: ^Stopwatch)"
+			],
+			[
+				"stopwatc_",
+				"stopwatch_reset(stopwatch: ^Stopwatch)"
+			],
+			[
+				"up",
+				"update_eventsystems"
+			],
+			[
+				"firee",
+				"fire_event_spawninfo"
+			],
+			[
+				"fire",
+				"fire_event_deathinfo"
+			],
+			[
+				"evt",
+				"evt_buffer_enemy_death"
+			],
+			[
+				"entityf",
+				"Entity_Flags"
+			],
+			[
+				"Core",
+				"Core_UI"
+			],
+			[
+				"mov",
+				"moveHorizontal"
+			],
+			[
+				"kno",
+				"Knockback"
+			],
+			[
+				"entity",
+				"Entity"
+			],
+			[
+				"cubi",
+				"ease_cubic_out(x: float) "
+			],
+			[
+				"cub",
+				"ease_cubic_out(x: float) "
+			],
+			[
+				"rotatey",
+				"Vector3RotateByAxisAngle(v: Vector3, axis: Vector3, angle: f32) "
+			],
+			[
+				"shot",
+				"shotgunvfxses"
+			],
+			[
+				"shotg",
+				"shotgunvfxses"
+			],
+			[
+				"con",
+				"ConeVFX"
+			],
+			[
+				"calc",
+				"calculateDirectionalFresnel"
+			],
+			[
+				"assig",
+				"assign_material_all_mats(model: ^raylib.Model, mat: raylib.Material)"
+			],
+			[
+				"getene",
+				"get_enemies_in_cone(pos, forward: float3, angle, range: float) "
+			],
+			[
+				"sho",
+				"shootTriggered"
+			],
+			[
+				"stop",
+				"Stopwatch"
+			],
+			[
+				"aa",
+				"aabb_dirty"
+			],
+			[
+				"boun",
+				"DrawBoundingBox(box: BoundingBox, color: Color)"
+			],
+			[
+				"bound",
+				"GetMeshBoundingBox(mesh: Mesh) "
+			],
+			[
+				"def",
+				"default_lighting"
+			],
+			[
+				"shaderid",
+				"GetShaderIdDefault() "
+			],
+			[
+				"max",
+				"MAX_ENTITIES"
+			],
+			[
+				"entma",
+				"init_entity_manager() "
+			],
+			[
+				"keypress",
+				"IsKeyPressed(key: KeyboardKey) "
+			],
+			[
+				"cro",
+				"crossbow_model"
+			],
+			[
+				"fres",
+				"loc_fresnel"
+			],
+			[
+				"fre",
+				"player_fresnel_color"
+			],
+			[
+				"setshaderv",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"cros",
+				"crossbow_model"
+			],
+			[
+				"assi",
+				"assign_material_all_mats(model: ^raylib.Model, mat: raylib.Material)"
+			],
+			[
+				"materia",
+				"Material"
+			],
+			[
+				"view",
+				"viewDir"
+			],
+			[
+				"lightdi",
+				"dirLightDirection"
+			],
+			[
+				"ve",
+				"VEC4"
+			],
+			[
+				"setsha",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"rad1",
+				"RAD_180"
+			],
+			[
+				"matrot",
+				"MatrixRotateY(angle: f32) "
+			],
+			[
+				"DrawModel",
+				"DrawModelEx(model: Model, position: Vector3, rotationAxis: Vector3, rotationAngle: f32, scale: Vector3, tint: Color)"
+			],
+			[
+				"quaternionto",
+				"QuaternionToMatrix(q: Quaternion) "
+			],
+			[
+				"look",
+				"look_rot(start, lookDir, up: float3) "
+			],
+			[
+				"matrixrot",
+				"MatrixRotateY(angle: f32) "
+			],
+			[
+				"lookr",
+				"look_rot(start, lookDir, up: float3) "
+			],
+			[
+				"mode",
+				"model_skeleton_ranger"
+			],
+			[
+				"norm",
+				"normalTexture"
+			],
+			[
+				"no",
+				"normal_from_tex"
+			],
+			[
+				"sc",
+				"scene_lights_dirty"
+			],
+			[
+				"scene",
+				"scene_lights_dirty"
+			],
+			[
+				"sceneli",
+				"scene_lights_dirty"
+			],
+			[
+				"rang",
+				"rand_range(min, max: float) "
+			],
+			[
+				"fra",
+				"fragNormal"
+			],
+			[
+				"syt",
+				"synty_mat"
+			],
+			[
+				"scne",
+				"scene_lighting_values"
+			],
+			[
+				"color",
+				"ColorNormalize(color: Color) "
+			],
+			[
+				"amb",
+				"ambientColor"
+			],
+			[
+				"ambi",
+				"ambientLoc"
+			],
+			[
+				"colo",
+				"color_f32"
+			],
+			[
+				"setshaderva",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"inte",
+				"intensity"
+			],
+			[
+				"opt",
+				"Options"
+			],
+			[
+				"create_",
+				"create_console_logger(lowest := Level.Debug, opt := Default_Console_Logger_Opts, ident := \"\", allocator := context.allocator) "
+			],
+			[
+				"ty",
+				"type_infos"
+			],
+			[
+				"type_",
+				"type_of(x: expr) "
+			],
+			[
+				"struct",
+				"struct_field_types(T: typeid) "
+			],
+			[
+				"scn",
+				"scene_lighting_values"
+			],
+			[
+				"sce",
+				"scene_lighting_values"
+			],
+			[
+				"v",
+				"VEC4"
+			],
+			[
+				"defa",
+				"default_shader"
+			],
+			[
+				"setshval",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"fo",
+				"fogDensity"
+			],
+			[
+				"scenli",
+				"SceneLightingValues"
+			],
+			[
+				"loc_dirlight_",
+				"loc_dir_light_intensity"
+			],
+			[
+				"loc_dir",
+				"loc_dirlight_pos"
+			],
+			[
+				"sethader",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"rand",
+				"float3_rand() "
+			],
+			[
+				"light",
+				"sun_light"
+			],
+			[
+				"synt",
+				"synt_atlas_1"
+			],
+			[
+				"play",
+				"player_accel"
+			],
+			[
+				"plaer",
+				"player_accel"
+			],
+			[
+				"map",
+				"MAP_NORMAL"
+			],
+			[
+				"floor",
+				"floor_normal"
+			],
+			[
+				"getsha",
+				"GetShaderLocation(shader: Shader, uniformName: cstring) "
+			],
+			[
+				"setshader",
+				"SetShaderValue(shader: Shader, locIndex: c.int, value: rawptr, uniformType: ShaderUniformDataType)"
+			],
+			[
+				"ma",
+				"MaterialMap"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "enemy.odin",
+			"settings":
+			{
+				"buffer_size": 3223,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					2501,
+					1,
+					"insert",
+					{
+						"characters": "\ndbl"
+					},
+					"BAAAAE4IAAAAAAAAUwgAAAAAAAAAAAAAUwgAAAAAAABUCAAAAAAAAAAAAABUCAAAAAAAAFUIAAAAAAAAAAAAAFUIAAAAAAAAVggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATggAAAAAAABOCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2502,
+					1,
+					"insert_completion",
+					{
+						"completion": "log.debug(\"\")",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "dbl"
+					},
+					"AgAAAFMIAAAAAAAAUwgAAAAAAAADAAAAZGJsUwgAAAAAAABgCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVggAAAAAAABWCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2504,
+					1,
+					"insert",
+					{
+						"characters": "idle"
+					},
+					"BAAAAF4IAAAAAAAAXwgAAAAAAAAAAAAAXwgAAAAAAABgCAAAAAAAAAAAAABgCAAAAAAAAGEIAAAAAAAAAAAAAGEIAAAAAAAAYggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXggAAAAAAABeCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2509,
+					1,
+					"insert",
+					{
+						"characters": "\ndbl"
+					},
+					"BAAAANsIAAAAAAAA3wgAAAAAAAAAAAAA3wgAAAAAAADgCAAAAAAAAAAAAADgCAAAAAAAAOEIAAAAAAAAAAAAAOEIAAAAAAAA4ggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wgAAAAAAADbCAAAAAAAAP///////+9/"
+				],
+				[
+					2510,
+					1,
+					"insert_completion",
+					{
+						"completion": "log.debug(\"\")",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "dbl"
+					},
+					"AgAAAN8IAAAAAAAA3wgAAAAAAAADAAAAZGJs3wgAAAAAAADsCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4ggAAAAAAADiCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2511,
+					1,
+					"insert",
+					{
+						"characters": "see"
+					},
+					"AwAAAOwIAAAAAAAA7QgAAAAAAAAAAAAA7QgAAAAAAADuCAAAAAAAAAAAAADuCAAAAAAAAO8IAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AgAAAAAAADsCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2512,
+					3,
+					"left_delete",
+					null,
+					"AwAAAO4IAAAAAAAA7ggAAAAAAAABAAAAZe0IAAAAAAAA7QgAAAAAAAABAAAAZewIAAAAAAAA7AgAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAA7wgAAAAAAADvCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2514,
+					1,
+					"insert",
+					{
+						"characters": "seeking"
+					},
+					"BwAAAOoIAAAAAAAA6wgAAAAAAAAAAAAA6wgAAAAAAADsCAAAAAAAAAAAAADsCAAAAAAAAO0IAAAAAAAAAAAAAO0IAAAAAAAA7ggAAAAAAAAAAAAA7ggAAAAAAADvCAAAAAAAAAAAAADvCAAAAAAAAPAIAAAAAAAAAAAAAPAIAAAAAAAA8QgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6ggAAAAAAADqCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2516,
+					1,
+					"swap_line_down",
+					null,
+					"AgAAAGoIAAAAAAAAgAgAAAAAAAAAAAAATwgAAAAAAABPCAAAAAAAABYAAAAgICAgbG9nLmRlYnVnKCJpZGxlIikK",
+					"AQAAAAAAAAABAAAAZAgAAAAAAABkCAAAAAAAAAAAAAAAQGlA"
+				],
+				[
+					2518,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += dir_to_player * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 150
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAApwwAAAAAAACoDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICB9CiAgc3ByZWFkOiBmbG9hdCA9IGZsb2F0KGVuZW15Q291bnQpIC8gMgogIGUucG9zaXRpb24gPSBmbG9hdDN7MTAsIDAsIDEwfSArIGZsb2F0M3tyYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCksIDAsIHJhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKX0KICBlLmNvbGxpc2lvblJhZGl1c1NxciA9IDEKCiAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVJZGxle2FsZXJ0X2Rpc3RhbmNlID0gMTB9KQogIGFwcGVuZCgmZW5lbWllcywgaGFuZGxlKQogfQoKIGFwcGVuZCgmdXBkYXRlX3Byb2NzLCB1cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmbGF0ZV91cGRhdGVfcHJvY3MsIGxhdGVfdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmRyYXdfcHJvY3MsIGRyYXdfZW5lbWllcykKfQoKdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBwbGF5ZXIgOj0gZ2V0X2VudGl0eShwbGF5ZXJfaGFuZGxlKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBkaXJfdG9fcGxheWVyIDo9IHBsYXllci5wb3NpdGlvbiAtIGUucG9zaXRpb24KICBkaXN0X3RvX3BsYXllciA6PSBsaW5hbGcubGVuZ3RoKGRpcl90b19wbGF5ZXIpCiAgZGlyX3RvX3BsYXllciA9IG5vcm0oZGlyX3RvX3BsYXllcikKICBlLmZvcndhcmQgPSBkaXJfdG9fcGxheWVyCiAgZS5yb3RhdGlvbiA9IGxvb2tfcm90KGUucG9zaXRpb24sIHBsYXllci5wb3NpdGlvbiwgZmxvYXQzX3VwKQoKICBzd2l0Y2ggcyBpbiAmZS5lbmVteV9zdGF0ZSAKICB7CgogIGNhc2UgRW5lbXlTdGF0ZUlkbGU6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5hbGVydF9kaXN0YW5jZSB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZVNlZWtpbmd7fSkKICAgfQogICAgbG9nLmRlYnVnKCJpZGxlIikKCgogIGNhc2UgRW5lbXlTdGF0ZVNlZWtpbmc6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5zdG9wcGluZ19kaXN0IHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlQXR0YWNraW5ne30pCiAgIH0KICAgbG9nLmRlYnVnKCJzZWVraW5nIikKCiAgIGUucG9zaXRpb24gKz0gZGlyX3RvX3BsYXllciAqIGR0ICogZS5zdGF0cy5zcGVlZAoKICBjYXNlIEVuZW15U3RhdGVBdHRhY2tpbmc6CgoKICB9CgogfQp9CgpAKHByaXZhdGUgPSAiZmlsZSIpCnNldF9zdGF0ZSA6OiBwcm9jKGU6IF5FbnRpdHksIHN0YXRlOiBFbmVteVN0YXRlKSAKewogZS5lbmVteV9zdGF0ZSA9IHN0YXRlCn0KCmxhdGVfdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSwgaSBpbiBlbmVtaWVzIHsKICBlbmVteSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiAuZGVhZCBpbiBlbmVteS5mbGFncyB7CiAgIGRlc3Ryb3lfZW50aXR5KGVuZW15LmhhbmRsZSkKICAgdW5vcmRlcmVkX3JlbW92ZSgmZW5lbWllcywgaSkKICB9CiB9Cn0KCmRyYXdfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgbW9kZWwgOj0gZW50aXR5X21vZGVsc1tlLmlkeF9tb2RlbF0KICBmb3IgaSBpbiAwIC4uPCBtb2RlbC5tZXNoQ291bnQgewogICBybC5EcmF3TWVzaChtb2RlbC5tZXNoZXNbaV0sIG1vZGVsLm1hdGVyaWFsc1tpICsgMV0sIG1hdHJpeF90cnMoZS5wb3NpdGlvbiwgZmxvYXQzX29uZSwgZS5yb3RhdGlvbikpCiAgfQogfQp9CgoKZ2V0X2VuZW1pZXNfaW5fcmFuZ2UgOjogcHJvYyhyYW5nZTogZmxvYXQsIHBvczogZmxvYXQzKSAtPiBbZHluYW1pY11FbnRpdHlIYW5kbGUgCnsKIGxpc3QgOj0gbWFrZShbZHluYW1pY11FbnRpdHlIYW5kbGUsIGNvbnRleHQudGVtcF9hbGxvY2F0b3IpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIGxpbmFsZy5kaXN0YW5jZShlLnBvc2l0aW9uLCBwb3MpIDwgcmFuZ2UgewogICBhcHBlbmQoJmxpc3QsIGUuaGFuZGxlKQogIH0KIH0KIHJldHVybiBsaXN0Cn0K",
+					"AQAAAAAAAAABAAAAaQgAAAAAAABpCAAAAAAAAAAAAAAAQGlA"
+				],
+				[
+					2521,
+					1,
+					"insert",
+					{
+						"characters": "\ndbl"
+					},
+					"BAAAAE4IAAAAAAAAUwgAAAAAAAAAAAAAUwgAAAAAAABUCAAAAAAAAAAAAABUCAAAAAAAAFUIAAAAAAAAAAAAAFUIAAAAAAAAVggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATggAAAAAAABOCAAAAAAAAP///////+9/"
+				],
+				[
+					2522,
+					1,
+					"insert_completion",
+					{
+						"completion": "log.debug(\"\")",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "dbl"
+					},
+					"AgAAAFMIAAAAAAAAUwgAAAAAAAADAAAAZGJsUwgAAAAAAABgCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVggAAAAAAABWCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2524,
+					1,
+					"insert",
+					{
+						"characters": "idle"
+					},
+					"BAAAAF4IAAAAAAAAXwgAAAAAAAAAAAAAXwgAAAAAAABgCAAAAAAAAAAAAABgCAAAAAAAAGEIAAAAAAAAAAAAAGEIAAAAAAAAYggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXggAAAAAAABeCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2525,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAAGIIAAAAAAAAYwgAAAAAAAAAAAAAYwgAAAAAAABkCAAAAAAAAAAAAABkCAAAAAAAAGUIAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYggAAAAAAABiCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2526,
+					1,
+					"insert",
+					{
+						"characters": " seek"
+					},
+					"BQAAAGUIAAAAAAAAZggAAAAAAAAAAAAAZggAAAAAAABnCAAAAAAAAAAAAABnCAAAAAAAAGgIAAAAAAAAAAAAAGgIAAAAAAAAaQgAAAAAAAAAAAAAaQgAAAAAAABqCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZQgAAAAAAABlCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2528,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += dir_to_player * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 151
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAxQwAAAAAAADFDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICB9CiAgc3ByZWFkOiBmbG9hdCA9IGZsb2F0KGVuZW15Q291bnQpIC8gMgogIGUucG9zaXRpb24gPSBmbG9hdDN7MTAsIDAsIDEwfSArIGZsb2F0M3tyYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCksIDAsIHJhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKX0KICBlLmNvbGxpc2lvblJhZGl1c1NxciA9IDEKCiAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVJZGxle2FsZXJ0X2Rpc3RhbmNlID0gMTB9KQogIGFwcGVuZCgmZW5lbWllcywgaGFuZGxlKQogfQoKIGFwcGVuZCgmdXBkYXRlX3Byb2NzLCB1cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmbGF0ZV91cGRhdGVfcHJvY3MsIGxhdGVfdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmRyYXdfcHJvY3MsIGRyYXdfZW5lbWllcykKfQoKdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBwbGF5ZXIgOj0gZ2V0X2VudGl0eShwbGF5ZXJfaGFuZGxlKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBkaXJfdG9fcGxheWVyIDo9IHBsYXllci5wb3NpdGlvbiAtIGUucG9zaXRpb24KICBkaXN0X3RvX3BsYXllciA6PSBsaW5hbGcubGVuZ3RoKGRpcl90b19wbGF5ZXIpCiAgZGlyX3RvX3BsYXllciA9IG5vcm0oZGlyX3RvX3BsYXllcikKICBlLmZvcndhcmQgPSBkaXJfdG9fcGxheWVyCiAgZS5yb3RhdGlvbiA9IGxvb2tfcm90KGUucG9zaXRpb24sIHBsYXllci5wb3NpdGlvbiwgZmxvYXQzX3VwKQoKICBzd2l0Y2ggcyBpbiAmZS5lbmVteV9zdGF0ZSAKICB7CgogIGNhc2UgRW5lbXlTdGF0ZUlkbGU6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5hbGVydF9kaXN0YW5jZSB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZVNlZWtpbmd7fSkKICAgIGxvZy5kZWJ1ZygiaWRsZSB0byBzZWVrIikKICAgfQogICBsb2cuZGVidWcoImlkbGUiKQoKCiAgY2FzZSBFbmVteVN0YXRlU2Vla2luZzoKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLnN0b3BwaW5nX2Rpc3QgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVBdHRhY2tpbmd7fSkKICAgfQogICBsb2cuZGVidWcoInNlZWtpbmciKQoKICAgZS5wb3NpdGlvbiArPSBkaXJfdG9fcGxheWVyICogZHQgKiBlLnN0YXRzLnNwZWVkCgogIGNhc2UgRW5lbXlTdGF0ZUF0dGFja2luZzoKCgogIH0KCiB9Cn0KCkAocHJpdmF0ZSA9ICJmaWxlIikKc2V0X3N0YXRlIDo6IHByb2MoZTogXkVudGl0eSwgc3RhdGU6IEVuZW15U3RhdGUpIAp7CiBlLmVuZW15X3N0YXRlID0gc3RhdGUKfQoKbGF0ZV91cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlLCBpIGluIGVuZW1pZXMgewogIGVuZW15IDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIC5kZWFkIGluIGVuZW15LmZsYWdzIHsKICAgZGVzdHJveV9lbnRpdHkoZW5lbXkuaGFuZGxlKQogICB1bm9yZGVyZWRfcmVtb3ZlKCZlbmVtaWVzLCBpKQogIH0KIH0KfQoKZHJhd19lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBtb2RlbCA6PSBlbnRpdHlfbW9kZWxzW2UuaWR4X21vZGVsXQogIGZvciBpIGluIDAgLi48IG1vZGVsLm1lc2hDb3VudCB7CiAgIHJsLkRyYXdNZXNoKG1vZGVsLm1lc2hlc1tpXSwgbW9kZWwubWF0ZXJpYWxzW2kgKyAxXSwgbWF0cml4X3RycyhlLnBvc2l0aW9uLCBmbG9hdDNfb25lLCBlLnJvdGF0aW9uKSkKICB9CiB9Cn0KCgpnZXRfZW5lbWllc19pbl9yYW5nZSA6OiBwcm9jKHJhbmdlOiBmbG9hdCwgcG9zOiBmbG9hdDMpIC0+IFtkeW5hbWljXUVudGl0eUhhbmRsZSAKewogbGlzdCA6PSBtYWtlKFtkeW5hbWljXUVudGl0eUhhbmRsZSwgY29udGV4dC50ZW1wX2FsbG9jYXRvcikKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgbGluYWxnLmRpc3RhbmNlKGUucG9zaXRpb24sIHBvcykgPCByYW5nZSB7CiAgIGFwcGVuZCgmbGlzdCwgZS5oYW5kbGUpCiAgfQogfQogcmV0dXJuIGxpc3QKfQo",
+					"AQAAAAAAAAABAAAAaggAAAAAAABqCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2533,
+					1,
+					"insert",
+					{
+						"characters": "\ndbl"
+					},
+					"BAAAAPMIAAAAAAAA+AgAAAAAAAAAAAAA+AgAAAAAAAD5CAAAAAAAAAAAAAD5CAAAAAAAAPoIAAAAAAAAAAAAAPoIAAAAAAAA+wgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8wgAAAAAAADzCAAAAAAAAP///////+9/"
+				],
+				[
+					2534,
+					1,
+					"insert_completion",
+					{
+						"completion": "log.debug(\"\")",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "dbl"
+					},
+					"AgAAAPgIAAAAAAAA+AgAAAAAAAADAAAAZGJs+AgAAAAAAAAFCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+wgAAAAAAAD7CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2536,
+					1,
+					"insert",
+					{
+						"characters": "seek"
+					},
+					"BAAAAAMJAAAAAAAABAkAAAAAAAAAAAAABAkAAAAAAAAFCQAAAAAAAAAAAAAFCQAAAAAAAAYJAAAAAAAAAAAAAAYJAAAAAAAABwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwkAAAAAAAADCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2537,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAAAcJAAAAAAAACAkAAAAAAAAAAAAACAkAAAAAAAAJCQAAAAAAAAAAAAAJCQAAAAAAAAoJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABwkAAAAAAAAHCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2538,
+					1,
+					"insert",
+					{
+						"characters": " attack"
+					},
+					"BwAAAAoJAAAAAAAACwkAAAAAAAAAAAAACwkAAAAAAAAMCQAAAAAAAAAAAAAMCQAAAAAAAA0JAAAAAAAAAAAAAA0JAAAAAAAADgkAAAAAAAAAAAAADgkAAAAAAAAPCQAAAAAAAAAAAAAPCQAAAAAAABAJAAAAAAAAAAAAABAJAAAAAAAAEQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACgkAAAAAAAAKCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2541,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n    log.debug(\"seek to attack\")\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += dir_to_player * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 152
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA5QwAAAAAAADlDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICB9CiAgc3ByZWFkOiBmbG9hdCA9IGZsb2F0KGVuZW15Q291bnQpIC8gMgogIGUucG9zaXRpb24gPSBmbG9hdDN7MTAsIDAsIDEwfSArIGZsb2F0M3tyYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCksIDAsIHJhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKX0KICBlLmNvbGxpc2lvblJhZGl1c1NxciA9IDEKCiAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVJZGxle2FsZXJ0X2Rpc3RhbmNlID0gMTB9KQogIGFwcGVuZCgmZW5lbWllcywgaGFuZGxlKQogfQoKIGFwcGVuZCgmdXBkYXRlX3Byb2NzLCB1cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmbGF0ZV91cGRhdGVfcHJvY3MsIGxhdGVfdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmRyYXdfcHJvY3MsIGRyYXdfZW5lbWllcykKfQoKdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBwbGF5ZXIgOj0gZ2V0X2VudGl0eShwbGF5ZXJfaGFuZGxlKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBkaXJfdG9fcGxheWVyIDo9IHBsYXllci5wb3NpdGlvbiAtIGUucG9zaXRpb24KICBkaXN0X3RvX3BsYXllciA6PSBsaW5hbGcubGVuZ3RoKGRpcl90b19wbGF5ZXIpCiAgZGlyX3RvX3BsYXllciA9IG5vcm0oZGlyX3RvX3BsYXllcikKICBlLmZvcndhcmQgPSBkaXJfdG9fcGxheWVyCiAgZS5yb3RhdGlvbiA9IGxvb2tfcm90KGUucG9zaXRpb24sIHBsYXllci5wb3NpdGlvbiwgZmxvYXQzX3VwKQoKICBzd2l0Y2ggcyBpbiAmZS5lbmVteV9zdGF0ZSAKICB7CgogIGNhc2UgRW5lbXlTdGF0ZUlkbGU6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5hbGVydF9kaXN0YW5jZSB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZVNlZWtpbmd7fSkKICAgIGxvZy5kZWJ1ZygiaWRsZSB0byBzZWVrIikKICAgfQogICBsb2cuZGVidWcoImlkbGUiKQoKCiAgY2FzZSBFbmVteVN0YXRlU2Vla2luZzoKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLnN0b3BwaW5nX2Rpc3QgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVBdHRhY2tpbmd7fSkKICAgIGxvZy5kZWJ1Zygic2VlayB0byBhdHRhY2siKQogICB9CiAgIGxvZy5kZWJ1Zygic2Vla2luZyIpCgogICBlLnBvc2l0aW9uICs9IGRpcl90b19wbGF5ZXIgKiBkdCAqIGUuc3RhdHMuc3BlZWQKCiAgY2FzZSBFbmVteVN0YXRlQXR0YWNraW5nOgoKCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAEgkAAAAAAAASCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2544,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIIJAAAAAAAAggkAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAgwkAAAAAAACDCQAAAAAAAAAAAAAAAHJA"
+				],
+				[
+					2545,
+					1,
+					"insert",
+					{
+						"characters": "\ndbl"
+					},
+					"BAAAAIIJAAAAAAAAhQkAAAAAAAAAAAAAhQkAAAAAAACGCQAAAAAAAAAAAACGCQAAAAAAAIcJAAAAAAAAAAAAAIcJAAAAAAAAiAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAggkAAAAAAACCCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2546,
+					1,
+					"insert_completion",
+					{
+						"completion": "log.debug(\"\")",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "dbl"
+					},
+					"AgAAAIUJAAAAAAAAhQkAAAAAAAADAAAAZGJshQkAAAAAAACSCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiAkAAAAAAACICQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2547,
+					1,
+					"insert",
+					{
+						"characters": "at"
+					},
+					"AgAAAJIJAAAAAAAAkwkAAAAAAAAAAAAAkwkAAAAAAACUCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkgkAAAAAAACSCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2548,
+					2,
+					"left_delete",
+					null,
+					"AgAAAJMJAAAAAAAAkwkAAAAAAAABAAAAdJIJAAAAAAAAkgkAAAAAAAABAAAAYQ",
+					"AQAAAAAAAAABAAAAlAkAAAAAAACUCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2550,
+					1,
+					"insert",
+					{
+						"characters": "attacking"
+					},
+					"CQAAAJAJAAAAAAAAkQkAAAAAAAAAAAAAkQkAAAAAAACSCQAAAAAAAAAAAACSCQAAAAAAAJMJAAAAAAAAAAAAAJMJAAAAAAAAlAkAAAAAAAAAAAAAlAkAAAAAAACVCQAAAAAAAAAAAACVCQAAAAAAAJYJAAAAAAAAAAAAAJYJAAAAAAAAlwkAAAAAAAAAAAAAlwkAAAAAAACYCQAAAAAAAAAAAACYCQAAAAAAAJkJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkAkAAAAAAACQCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2552,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n    log.debug(\"seek to attack\")\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += dir_to_player * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n   log.debug(\"attacking\")\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 152
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA/gwAAAAAAAD9DAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICB9CiAgc3ByZWFkOiBmbG9hdCA9IGZsb2F0KGVuZW15Q291bnQpIC8gMgogIGUucG9zaXRpb24gPSBmbG9hdDN7MTAsIDAsIDEwfSArIGZsb2F0M3tyYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCksIDAsIHJhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKX0KICBlLmNvbGxpc2lvblJhZGl1c1NxciA9IDEKCiAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVJZGxle2FsZXJ0X2Rpc3RhbmNlID0gMTB9KQogIGFwcGVuZCgmZW5lbWllcywgaGFuZGxlKQogfQoKIGFwcGVuZCgmdXBkYXRlX3Byb2NzLCB1cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmbGF0ZV91cGRhdGVfcHJvY3MsIGxhdGVfdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmRyYXdfcHJvY3MsIGRyYXdfZW5lbWllcykKfQoKdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBwbGF5ZXIgOj0gZ2V0X2VudGl0eShwbGF5ZXJfaGFuZGxlKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBkaXJfdG9fcGxheWVyIDo9IHBsYXllci5wb3NpdGlvbiAtIGUucG9zaXRpb24KICBkaXN0X3RvX3BsYXllciA6PSBsaW5hbGcubGVuZ3RoKGRpcl90b19wbGF5ZXIpCiAgZGlyX3RvX3BsYXllciA9IG5vcm0oZGlyX3RvX3BsYXllcikKICBlLmZvcndhcmQgPSBkaXJfdG9fcGxheWVyCiAgZS5yb3RhdGlvbiA9IGxvb2tfcm90KGUucG9zaXRpb24sIHBsYXllci5wb3NpdGlvbiwgZmxvYXQzX3VwKQoKICBzd2l0Y2ggcyBpbiAmZS5lbmVteV9zdGF0ZSAKICB7CgogIGNhc2UgRW5lbXlTdGF0ZUlkbGU6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5hbGVydF9kaXN0YW5jZSB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZVNlZWtpbmd7fSkKICAgIGxvZy5kZWJ1ZygiaWRsZSB0byBzZWVrIikKICAgfQogICBsb2cuZGVidWcoImlkbGUiKQoKCiAgY2FzZSBFbmVteVN0YXRlU2Vla2luZzoKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLnN0b3BwaW5nX2Rpc3QgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVBdHRhY2tpbmd7fSkKICAgIGxvZy5kZWJ1Zygic2VlayB0byBhdHRhY2siKQogICB9CiAgIGxvZy5kZWJ1Zygic2Vla2luZyIpCgogICBlLnBvc2l0aW9uICs9IGRpcl90b19wbGF5ZXIgKiBkdCAqIGUuc3RhdHMuc3BlZWQKCiAgY2FzZSBFbmVteVN0YXRlQXR0YWNraW5nOgogIGxvZy5kZWJ1ZygiYXR0YWNraW5nIikKCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAmQkAAAAAAACZCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2557,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJoDAAAAAAAAmgMAAAAAAAABAAAAMA",
+					"AQAAAAAAAAABAAAAmwMAAAAAAACbAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2559,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n    log.debug(\"seek to attack\")\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += dir_to_player * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n   log.debug(\"attacking\")\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 152
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA/QwAAAAAAAD9DAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogIH0KICBzcHJlYWQ6IGZsb2F0ID0gZmxvYXQoZW5lbXlDb3VudCkgLyAyCiAgZS5wb3NpdGlvbiA9IGZsb2F0M3sxMCwgMCwgMTB9ICsgZmxvYXQze3JhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKSwgMCwgcmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpfQogIGUuY29sbGlzaW9uUmFkaXVzU3FyID0gMQoKICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUlkbGV7YWxlcnRfZGlzdGFuY2UgPSAxMH0pCiAgYXBwZW5kKCZlbmVtaWVzLCBoYW5kbGUpCiB9CgogYXBwZW5kKCZ1cGRhdGVfcHJvY3MsIHVwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZsYXRlX3VwZGF0ZV9wcm9jcywgbGF0ZV91cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmZHJhd19wcm9jcywgZHJhd19lbmVtaWVzKQp9Cgp1cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIHBsYXllciA6PSBnZXRfZW50aXR5KHBsYXllcl9oYW5kbGUpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGRpcl90b19wbGF5ZXIgOj0gcGxheWVyLnBvc2l0aW9uIC0gZS5wb3NpdGlvbgogIGRpc3RfdG9fcGxheWVyIDo9IGxpbmFsZy5sZW5ndGgoZGlyX3RvX3BsYXllcikKICBkaXJfdG9fcGxheWVyID0gbm9ybShkaXJfdG9fcGxheWVyKQogIGUuZm9yd2FyZCA9IGRpcl90b19wbGF5ZXIKICBlLnJvdGF0aW9uID0gbG9va19yb3QoZS5wb3NpdGlvbiwgcGxheWVyLnBvc2l0aW9uLCBmbG9hdDNfdXApCgogIHN3aXRjaCBzIGluICZlLmVuZW15X3N0YXRlIAogIHsKCiAgY2FzZSBFbmVteVN0YXRlSWRsZToKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLmFsZXJ0X2Rpc3RhbmNlIHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlU2Vla2luZ3t9KQogICAgbG9nLmRlYnVnKCJpZGxlIHRvIHNlZWsiKQogICB9CiAgIGxvZy5kZWJ1ZygiaWRsZSIpCgoKICBjYXNlIEVuZW15U3RhdGVTZWVraW5nOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuc3RvcHBpbmdfZGlzdCB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUF0dGFja2luZ3t9KQogICAgbG9nLmRlYnVnKCJzZWVrIHRvIGF0dGFjayIpCiAgIH0KICAgbG9nLmRlYnVnKCJzZWVraW5nIikKCiAgIGUucG9zaXRpb24gKz0gZGlyX3RvX3BsYXllciAqIGR0ICogZS5zdGF0cy5zcGVlZAoKICBjYXNlIEVuZW15U3RhdGVBdHRhY2tpbmc6CiAgIGxvZy5kZWJ1ZygiYXR0YWNraW5nIikKCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAmgMAAAAAAACaAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2569,
+					1,
+					"insert",
+					{
+						"characters": "e.poi"
+					},
+					"BQAAAEIJAAAAAAAAQwkAAAAAAAANAAAAZGlyX3RvX3BsYXllckMJAAAAAAAARAkAAAAAAAAAAAAARAkAAAAAAABFCQAAAAAAAAAAAABFCQAAAAAAAEYJAAAAAAAAAAAAAEYJAAAAAAAARwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQgkAAAAAAABPCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2570,
+					3,
+					"left_delete",
+					null,
+					"AwAAAEYJAAAAAAAARgkAAAAAAAABAAAAaUUJAAAAAAAARQkAAAAAAAABAAAAb0QJAAAAAAAARAkAAAAAAAABAAAAcA",
+					"AQAAAAAAAAABAAAARwkAAAAAAABHCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2571,
+					1,
+					"insert",
+					{
+						"characters": "for"
+					},
+					"AwAAAEQJAAAAAAAARQkAAAAAAAAAAAAARQkAAAAAAABGCQAAAAAAAAAAAABGCQAAAAAAAEcJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARAkAAAAAAABECQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2572,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":5,\"session_name\":\"odin\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "forward"
+					},
+					"AgAAAEQJAAAAAAAARAkAAAAAAAADAAAAZm9yRAkAAAAAAABLCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwkAAAAAAABHCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2575,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n    log.debug(\"seek to attack\")\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n   log.debug(\"attacking\")\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 152
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA+QwAAAAAAAD5DAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogIH0KICBzcHJlYWQ6IGZsb2F0ID0gZmxvYXQoZW5lbXlDb3VudCkgLyAyCiAgZS5wb3NpdGlvbiA9IGZsb2F0M3sxMCwgMCwgMTB9ICsgZmxvYXQze3JhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKSwgMCwgcmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpfQogIGUuY29sbGlzaW9uUmFkaXVzU3FyID0gMQoKICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUlkbGV7YWxlcnRfZGlzdGFuY2UgPSAxMH0pCiAgYXBwZW5kKCZlbmVtaWVzLCBoYW5kbGUpCiB9CgogYXBwZW5kKCZ1cGRhdGVfcHJvY3MsIHVwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZsYXRlX3VwZGF0ZV9wcm9jcywgbGF0ZV91cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmZHJhd19wcm9jcywgZHJhd19lbmVtaWVzKQp9Cgp1cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIHBsYXllciA6PSBnZXRfZW50aXR5KHBsYXllcl9oYW5kbGUpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGRpcl90b19wbGF5ZXIgOj0gcGxheWVyLnBvc2l0aW9uIC0gZS5wb3NpdGlvbgogIGRpc3RfdG9fcGxheWVyIDo9IGxpbmFsZy5sZW5ndGgoZGlyX3RvX3BsYXllcikKICBkaXJfdG9fcGxheWVyID0gbm9ybShkaXJfdG9fcGxheWVyKQogIGUuZm9yd2FyZCA9IGRpcl90b19wbGF5ZXIKICBlLnJvdGF0aW9uID0gbG9va19yb3QoZS5wb3NpdGlvbiwgcGxheWVyLnBvc2l0aW9uLCBmbG9hdDNfdXApCgogIHN3aXRjaCBzIGluICZlLmVuZW15X3N0YXRlIAogIHsKCiAgY2FzZSBFbmVteVN0YXRlSWRsZToKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLmFsZXJ0X2Rpc3RhbmNlIHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlU2Vla2luZ3t9KQogICAgbG9nLmRlYnVnKCJpZGxlIHRvIHNlZWsiKQogICB9CiAgIGxvZy5kZWJ1ZygiaWRsZSIpCgoKICBjYXNlIEVuZW15U3RhdGVTZWVraW5nOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuc3RvcHBpbmdfZGlzdCB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUF0dGFja2luZ3t9KQogICAgbG9nLmRlYnVnKCJzZWVrIHRvIGF0dGFjayIpCiAgIH0KICAgbG9nLmRlYnVnKCJzZWVraW5nIikKCiAgIGUucG9zaXRpb24gKz0gZS5mb3J3YXJkICogZHQgKiBlLnN0YXRzLnNwZWVkCgogIGNhc2UgRW5lbXlTdGF0ZUF0dGFja2luZzoKICAgbG9nLmRlYnVnKCJhdHRhY2tpbmciKQoKICB9CgogfQp9CgpAKHByaXZhdGUgPSAiZmlsZSIpCnNldF9zdGF0ZSA6OiBwcm9jKGU6IF5FbnRpdHksIHN0YXRlOiBFbmVteVN0YXRlKSAKewogZS5lbmVteV9zdGF0ZSA9IHN0YXRlCn0KCmxhdGVfdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSwgaSBpbiBlbmVtaWVzIHsKICBlbmVteSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiAuZGVhZCBpbiBlbmVteS5mbGFncyB7CiAgIGRlc3Ryb3lfZW50aXR5KGVuZW15LmhhbmRsZSkKICAgdW5vcmRlcmVkX3JlbW92ZSgmZW5lbWllcywgaSkKICB9CiB9Cn0KCmRyYXdfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgbW9kZWwgOj0gZW50aXR5X21vZGVsc1tlLmlkeF9tb2RlbF0KICBmb3IgaSBpbiAwIC4uPCBtb2RlbC5tZXNoQ291bnQgewogICBybC5EcmF3TWVzaChtb2RlbC5tZXNoZXNbaV0sIG1vZGVsLm1hdGVyaWFsc1tpICsgMV0sIG1hdHJpeF90cnMoZS5wb3NpdGlvbiwgZmxvYXQzX29uZSwgZS5yb3RhdGlvbikpCiAgfQogfQp9CgoKZ2V0X2VuZW1pZXNfaW5fcmFuZ2UgOjogcHJvYyhyYW5nZTogZmxvYXQsIHBvczogZmxvYXQzKSAtPiBbZHluYW1pY11FbnRpdHlIYW5kbGUgCnsKIGxpc3QgOj0gbWFrZShbZHluYW1pY11FbnRpdHlIYW5kbGUsIGNvbnRleHQudGVtcF9hbGxvY2F0b3IpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIGxpbmFsZy5kaXN0YW5jZShlLnBvc2l0aW9uLCBwb3MpIDwgcmFuZ2UgewogICBhcHBlbmQoJmxpc3QsIGUuaGFuZGxlKQogIH0KIH0KIHJldHVybiBsaXN0Cn0K",
+					"AQAAAAAAAAABAAAATAkAAAAAAABMCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2585,
+					1,
+					"insert",
+					{
+						"characters": "\nsp"
+					},
+					"AwAAAOoEAAAAAAAA7gQAAAAAAAAAAAAA7gQAAAAAAADvBAAAAAAAAAAAAADvBAAAAAAAAPAEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gQAAAAAAADqBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2586,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":3,\"session_name\":\"odin\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "speed"
+					},
+					"AgAAAO4EAAAAAAAA7gQAAAAAAAACAAAAc3DuBAAAAAAAAPMEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8AQAAAAAAADwBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2587,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAPMEAAAAAAAA9AQAAAAAAAAAAAAA9AQAAAAAAAD1BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8wQAAAAAAADzBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2588,
+					1,
+					"insert",
+					{
+						"characters": " 1,"
+					},
+					"AwAAAPUEAAAAAAAA9gQAAAAAAAAAAAAA9gQAAAAAAAD3BAAAAAAAAAAAAAD3BAAAAAAAAPgEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9QQAAAAAAAD1BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2590,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = 1,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n    log.debug(\"idle to seek\")\r\n   }\r\n   log.debug(\"idle\")\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n    log.debug(\"seek to attack\")\r\n   }\r\n   log.debug(\"seeking\")\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n   log.debug(\"attacking\")\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 153
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACA0AAAAAAAAHDQAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogICBzcGVlZCA9IDEsCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9IDEwfSkKICBhcHBlbmQoJmVuZW1pZXMsIGhhbmRsZSkKIH0KCiBhcHBlbmQoJnVwZGF0ZV9wcm9jcywgdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmxhdGVfdXBkYXRlX3Byb2NzLCBsYXRlX3VwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZkcmF3X3Byb2NzLCBkcmF3X2VuZW1pZXMpCn0KCnVwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogcGxheWVyIDo9IGdldF9lbnRpdHkocGxheWVyX2hhbmRsZSkKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgZGlyX3RvX3BsYXllciA6PSBwbGF5ZXIucG9zaXRpb24gLSBlLnBvc2l0aW9uCiAgZGlzdF90b19wbGF5ZXIgOj0gbGluYWxnLmxlbmd0aChkaXJfdG9fcGxheWVyKQogIGRpcl90b19wbGF5ZXIgPSBub3JtKGRpcl90b19wbGF5ZXIpCiAgZS5mb3J3YXJkID0gZGlyX3RvX3BsYXllcgogIGUucm90YXRpb24gPSBsb29rX3JvdChlLnBvc2l0aW9uLCBwbGF5ZXIucG9zaXRpb24sIGZsb2F0M191cCkKCiAgc3dpdGNoIHMgaW4gJmUuZW5lbXlfc3RhdGUgCiAgewoKICBjYXNlIEVuZW15U3RhdGVJZGxlOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuYWxlcnRfZGlzdGFuY2UgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVTZWVraW5ne30pCiAgICBsb2cuZGVidWcoImlkbGUgdG8gc2VlayIpCiAgIH0KICAgbG9nLmRlYnVnKCJpZGxlIikKCgogIGNhc2UgRW5lbXlTdGF0ZVNlZWtpbmc6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5zdG9wcGluZ19kaXN0IHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlQXR0YWNraW5ne30pCiAgICBsb2cuZGVidWcoInNlZWsgdG8gYXR0YWNrIikKICAgfQogICBsb2cuZGVidWcoInNlZWtpbmciKQoKICAgZS5wb3NpdGlvbiArPSBlLmZvcndhcmQgKiBkdCAqIGUuc3RhdHMuc3BlZWQKCiAgY2FzZSBFbmVteVN0YXRlQXR0YWNraW5nOgogICBsb2cuZGVidWcoImF0dGFja2luZyIpCgogIH0KCiB9Cn0KCkAocHJpdmF0ZSA9ICJmaWxlIikKc2V0X3N0YXRlIDo6IHByb2MoZTogXkVudGl0eSwgc3RhdGU6IEVuZW15U3RhdGUpIAp7CiBlLmVuZW15X3N0YXRlID0gc3RhdGUKfQoKbGF0ZV91cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlLCBpIGluIGVuZW1pZXMgewogIGVuZW15IDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIC5kZWFkIGluIGVuZW15LmZsYWdzIHsKICAgZGVzdHJveV9lbnRpdHkoZW5lbXkuaGFuZGxlKQogICB1bm9yZGVyZWRfcmVtb3ZlKCZlbmVtaWVzLCBpKQogIH0KIH0KfQoKZHJhd19lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBtb2RlbCA6PSBlbnRpdHlfbW9kZWxzW2UuaWR4X21vZGVsXQogIGZvciBpIGluIDAgLi48IG1vZGVsLm1lc2hDb3VudCB7CiAgIHJsLkRyYXdNZXNoKG1vZGVsLm1lc2hlc1tpXSwgbW9kZWwubWF0ZXJpYWxzW2kgKyAxXSwgbWF0cml4X3RycyhlLnBvc2l0aW9uLCBmbG9hdDNfb25lLCBlLnJvdGF0aW9uKSkKICB9CiB9Cn0KCgpnZXRfZW5lbWllc19pbl9yYW5nZSA6OiBwcm9jKHJhbmdlOiBmbG9hdCwgcG9zOiBmbG9hdDMpIC0+IFtkeW5hbWljXUVudGl0eUhhbmRsZSAKewogbGlzdCA6PSBtYWtlKFtkeW5hbWljXUVudGl0eUhhbmRsZSwgY29udGV4dC50ZW1wX2FsbG9jYXRvcikKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgbGluYWxnLmRpc3RhbmNlKGUucG9zaXRpb24sIHBvcykgPCByYW5nZSB7CiAgIGFwcGVuZCgmbGlzdCwgZS5oYW5kbGUpCiAgfQogfQogcmV0dXJuIGxpc3QKfQo",
+					"AQAAAAAAAAABAAAA+AQAAAAAAAD4BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2594,
+					1,
+					"cut",
+					null,
+					"AQAAAF0IAAAAAAAAXQgAAAAAAAAeAAAAICAgIGxvZy5kZWJ1ZygiaWRsZSB0byBzZWVrIikK",
+					"AQAAAAAAAAABAAAAYQgAAAAAAABhCAAAAAAAAAAAAAAAAENA"
+				],
+				[
+					2596,
+					1,
+					"cut",
+					null,
+					"AQAAAGIIAAAAAAAAYggAAAAAAAAVAAAAICAgbG9nLmRlYnVnKCJpZGxlIikK",
+					"AQAAAAAAAAABAAAAYggAAAAAAABiCAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					2598,
+					1,
+					"cut",
+					null,
+					"AQAAAM8IAAAAAAAAzwgAAAAAAAAgAAAAICAgIGxvZy5kZWJ1Zygic2VlayB0byBhdHRhY2siKQo",
+					"AQAAAAAAAAABAAAAzwgAAAAAAADPCAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					2600,
+					1,
+					"cut",
+					null,
+					"AQAAANQIAAAAAAAA1AgAAAAAAAAYAAAAICAgbG9nLmRlYnVnKCJzZWVraW5nIikK",
+					"AQAAAAAAAAABAAAA1AgAAAAAAADUCAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					2602,
+					2,
+					"cut",
+					null,
+					"AgAAACIJAAAAAAAAIgkAAAAAAAAaAAAAICAgbG9nLmRlYnVnKCJhdHRhY2tpbmciKQoiCQAAAAAAACIJAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAIgkAAAAAAAAiCQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					2604,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = 1,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 147
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAggwAAAAAAACCDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogICBzcGVlZCAgPSAxLAogIH0KICBzcHJlYWQ6IGZsb2F0ID0gZmxvYXQoZW5lbXlDb3VudCkgLyAyCiAgZS5wb3NpdGlvbiA9IGZsb2F0M3sxMCwgMCwgMTB9ICsgZmxvYXQze3JhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKSwgMCwgcmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpfQogIGUuY29sbGlzaW9uUmFkaXVzU3FyID0gMQoKICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUlkbGV7YWxlcnRfZGlzdGFuY2UgPSAxMH0pCiAgYXBwZW5kKCZlbmVtaWVzLCBoYW5kbGUpCiB9CgogYXBwZW5kKCZ1cGRhdGVfcHJvY3MsIHVwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZsYXRlX3VwZGF0ZV9wcm9jcywgbGF0ZV91cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmZHJhd19wcm9jcywgZHJhd19lbmVtaWVzKQp9Cgp1cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIHBsYXllciA6PSBnZXRfZW50aXR5KHBsYXllcl9oYW5kbGUpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGRpcl90b19wbGF5ZXIgOj0gcGxheWVyLnBvc2l0aW9uIC0gZS5wb3NpdGlvbgogIGRpc3RfdG9fcGxheWVyIDo9IGxpbmFsZy5sZW5ndGgoZGlyX3RvX3BsYXllcikKICBkaXJfdG9fcGxheWVyID0gbm9ybShkaXJfdG9fcGxheWVyKQogIGUuZm9yd2FyZCA9IGRpcl90b19wbGF5ZXIKICBlLnJvdGF0aW9uID0gbG9va19yb3QoZS5wb3NpdGlvbiwgcGxheWVyLnBvc2l0aW9uLCBmbG9hdDNfdXApCgogIHN3aXRjaCBzIGluICZlLmVuZW15X3N0YXRlIAogIHsKCiAgY2FzZSBFbmVteVN0YXRlSWRsZToKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLmFsZXJ0X2Rpc3RhbmNlIHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlU2Vla2luZ3t9KQogICB9CgoKICBjYXNlIEVuZW15U3RhdGVTZWVraW5nOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuc3RvcHBpbmdfZGlzdCB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUF0dGFja2luZ3t9KQogICB9CgogICBlLnBvc2l0aW9uICs9IGUuZm9yd2FyZCAqIGR0ICogZS5zdGF0cy5zcGVlZAoKICBjYXNlIEVuZW15U3RhdGVBdHRhY2tpbmc6CiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAIgkAAAAAAAAiCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2607,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACEJAAAAAAAAJAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQkAAAAAAAAhCQAAAAAAAP///////+9/"
+				],
+				[
+					2609,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = 1,\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 148
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAgwwAAAAAAACFDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogICBzcGVlZCAgPSAxLAogIH0KICBzcHJlYWQ6IGZsb2F0ID0gZmxvYXQoZW5lbXlDb3VudCkgLyAyCiAgZS5wb3NpdGlvbiA9IGZsb2F0M3sxMCwgMCwgMTB9ICsgZmxvYXQze3JhbmRfcmFuZ2UoLXNwcmVhZCwgc3ByZWFkKSwgMCwgcmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpfQogIGUuY29sbGlzaW9uUmFkaXVzU3FyID0gMQoKICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUlkbGV7YWxlcnRfZGlzdGFuY2UgPSAxMH0pCiAgYXBwZW5kKCZlbmVtaWVzLCBoYW5kbGUpCiB9CgogYXBwZW5kKCZ1cGRhdGVfcHJvY3MsIHVwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZsYXRlX3VwZGF0ZV9wcm9jcywgbGF0ZV91cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmZHJhd19wcm9jcywgZHJhd19lbmVtaWVzKQp9Cgp1cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIHBsYXllciA6PSBnZXRfZW50aXR5KHBsYXllcl9oYW5kbGUpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGRpcl90b19wbGF5ZXIgOj0gcGxheWVyLnBvc2l0aW9uIC0gZS5wb3NpdGlvbgogIGRpc3RfdG9fcGxheWVyIDo9IGxpbmFsZy5sZW5ndGgoZGlyX3RvX3BsYXllcikKICBkaXJfdG9fcGxheWVyID0gbm9ybShkaXJfdG9fcGxheWVyKQogIGUuZm9yd2FyZCA9IGRpcl90b19wbGF5ZXIKICBlLnJvdGF0aW9uID0gbG9va19yb3QoZS5wb3NpdGlvbiwgcGxheWVyLnBvc2l0aW9uLCBmbG9hdDNfdXApCgogIHN3aXRjaCBzIGluICZlLmVuZW15X3N0YXRlIAogIHsKCiAgY2FzZSBFbmVteVN0YXRlSWRsZToKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLmFsZXJ0X2Rpc3RhbmNlIHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlU2Vla2luZ3t9KQogICB9CgoKICBjYXNlIEVuZW15U3RhdGVTZWVraW5nOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuc3RvcHBpbmdfZGlzdCB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUF0dGFja2luZ3t9KQogICB9CgogICBlLnBvc2l0aW9uICs9IGUuZm9yd2FyZCAqIGR0ICogZS5zdGF0cy5zcGVlZAoKICBjYXNlIEVuZW15U3RhdGVBdHRhY2tpbmc6CiAgCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAJAkAAAAAAAAkCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2616,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPcEAAAAAAAA9wQAAAAAAAABAAAAMQ",
+					"AQAAAAAAAAABAAAA+AQAAAAAAAD4BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2617,
+					1,
+					"insert",
+					{
+						"characters": "randra"
+					},
+					"BgAAAPcEAAAAAAAA+AQAAAAAAAAAAAAA+AQAAAAAAAD5BAAAAAAAAAAAAAD5BAAAAAAAAPoEAAAAAAAAAAAAAPoEAAAAAAAA+wQAAAAAAAAAAAAA+wQAAAAAAAD8BAAAAAAAAAAAAAD8BAAAAAAAAP0EAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9wQAAAAAAAD3BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2618,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":0,\"session_name\":\"odin\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "rand_range(min, max: float) "
+					},
+					"AgAAAPcEAAAAAAAA9wQAAAAAAAAGAAAAcmFuZHJh9wQAAAAAAAABBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/QQAAAAAAAD9BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2619,
+					1,
+					"insert",
+					{
+						"characters": "(0"
+					},
+					"AgAAAAEFAAAAAAAAAgUAAAAAAAAAAAAAAgUAAAAAAAADBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQUAAAAAAAABBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2620,
+					1,
+					"insert",
+					{
+						"characters": ".9"
+					},
+					"AgAAAAMFAAAAAAAABAUAAAAAAAAAAAAABAUAAAAAAAAFBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwUAAAAAAAADBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2622,
+					1,
+					"insert",
+					{
+						"characters": "1.1)"
+					},
+					"BAAAAAYFAAAAAAAABwUAAAAAAAAAAAAABwUAAAAAAAAIBQAAAAAAAAAAAAAIBQAAAAAAAAkFAAAAAAAAAAAAAAkFAAAAAAAACgUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABgUAAAAAAAAGBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2625,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 1\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = rand_range(0.9, 1.1),\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 148
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAlgwAAAAAAACUDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMQogZm9yIGkgaW4gMCAuLjwgZW5lbXlDb3VudCB7CiAgaGFuZGxlIDo9IGNyZWF0ZV9lbnRpdHkoKQogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaGVhbHRoOiBmbG9hdAogIGlmIHJhbmQuaW50X21heCgzKSA9PSAxIHsKICAgZS5mbGFncyArPSB7LmVuZW15X3JhbmdlZH0KICAgZS5pZHhfbW9kZWwgPSBpZHhfcmFuZ2VyCiAgIGhlYWx0aCA9IDUwCiAgfSBlbHNlIHsKICAgZS5mbGFncyArPSB7LmVuZW15X2ZvZGRlcn0KICAgZS5pZHhfbW9kZWwgPSBpZHhfc2tlbGV0b24KICAgaGVhbHRoID0gMTAKICB9CiAgZS5zdGF0cyA9IEVudGl0eVN0YXRzIHsKICAgaGVhbHRoID0gaGVhbHRoLAogICBzcGVlZCAgPSByYW5kX3JhbmdlKDAuOSwxLjEpCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9IDEwfSkKICBhcHBlbmQoJmVuZW1pZXMsIGhhbmRsZSkKIH0KCiBhcHBlbmQoJnVwZGF0ZV9wcm9jcywgdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmxhdGVfdXBkYXRlX3Byb2NzLCBsYXRlX3VwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZkcmF3X3Byb2NzLCBkcmF3X2VuZW1pZXMpCn0KCnVwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogcGxheWVyIDo9IGdldF9lbnRpdHkocGxheWVyX2hhbmRsZSkKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgZGlyX3RvX3BsYXllciA6PSBwbGF5ZXIucG9zaXRpb24gLSBlLnBvc2l0aW9uCiAgZGlzdF90b19wbGF5ZXIgOj0gbGluYWxnLmxlbmd0aChkaXJfdG9fcGxheWVyKQogIGRpcl90b19wbGF5ZXIgPSBub3JtKGRpcl90b19wbGF5ZXIpCiAgZS5mb3J3YXJkID0gZGlyX3RvX3BsYXllcgogIGUucm90YXRpb24gPSBsb29rX3JvdChlLnBvc2l0aW9uLCBwbGF5ZXIucG9zaXRpb24sIGZsb2F0M191cCkKCiAgc3dpdGNoIHMgaW4gJmUuZW5lbXlfc3RhdGUgCiAgewoKICBjYXNlIEVuZW15U3RhdGVJZGxlOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuYWxlcnRfZGlzdGFuY2UgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVTZWVraW5ne30pCiAgIH0KCgogIGNhc2UgRW5lbXlTdGF0ZVNlZWtpbmc6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5zdG9wcGluZ19kaXN0IHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlQXR0YWNraW5ne30pCiAgIH0KCiAgIGUucG9zaXRpb24gKz0gZS5mb3J3YXJkICogZHQgKiBlLnN0YXRzLnNwZWVkCgogIGNhc2UgRW5lbXlTdGF0ZUF0dGFja2luZzoKCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAACwUAAAAAAAALBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2631,
+					1,
+					"insert",
+					{
+						"characters": "0"
+					},
+					"AQAAAJoDAAAAAAAAmwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmgMAAAAAAACaAwAAAAAAAAAAAAAA0HBA"
+				],
+				[
+					2633,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = rand_range(0.9, 1.1),\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 148
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAlwwAAAAAAACXDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICAgc3BlZWQgID0gcmFuZF9yYW5nZSgwLjksIDEuMSksCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9IDEwfSkKICBhcHBlbmQoJmVuZW1pZXMsIGhhbmRsZSkKIH0KCiBhcHBlbmQoJnVwZGF0ZV9wcm9jcywgdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmxhdGVfdXBkYXRlX3Byb2NzLCBsYXRlX3VwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZkcmF3X3Byb2NzLCBkcmF3X2VuZW1pZXMpCn0KCnVwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogcGxheWVyIDo9IGdldF9lbnRpdHkocGxheWVyX2hhbmRsZSkKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgZGlyX3RvX3BsYXllciA6PSBwbGF5ZXIucG9zaXRpb24gLSBlLnBvc2l0aW9uCiAgZGlzdF90b19wbGF5ZXIgOj0gbGluYWxnLmxlbmd0aChkaXJfdG9fcGxheWVyKQogIGRpcl90b19wbGF5ZXIgPSBub3JtKGRpcl90b19wbGF5ZXIpCiAgZS5mb3J3YXJkID0gZGlyX3RvX3BsYXllcgogIGUucm90YXRpb24gPSBsb29rX3JvdChlLnBvc2l0aW9uLCBwbGF5ZXIucG9zaXRpb24sIGZsb2F0M191cCkKCiAgc3dpdGNoIHMgaW4gJmUuZW5lbXlfc3RhdGUgCiAgewoKICBjYXNlIEVuZW15U3RhdGVJZGxlOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuYWxlcnRfZGlzdGFuY2UgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVTZWVraW5ne30pCiAgIH0KCgogIGNhc2UgRW5lbXlTdGF0ZVNlZWtpbmc6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5zdG9wcGluZ19kaXN0IHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlQXR0YWNraW5ne30pCiAgIH0KCiAgIGUucG9zaXRpb24gKz0gZS5mb3J3YXJkICogZHQgKiBlLnN0YXRzLnNwZWVkCgogIGNhc2UgRW5lbXlTdGF0ZUF0dGFja2luZzoKCiAgfQoKIH0KfQoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAmwMAAAAAAACbAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2636,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAEAJAAAAAAAAQQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQAkAAAAAAABACQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2638,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = rand_range(0.9, 1.1),\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 10})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 149
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAmAwAAAAAAACYDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICAgc3BlZWQgID0gcmFuZF9yYW5nZSgwLjksIDEuMSksCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9IDEwfSkKICBhcHBlbmQoJmVuZW1pZXMsIGhhbmRsZSkKIH0KCiBhcHBlbmQoJnVwZGF0ZV9wcm9jcywgdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmxhdGVfdXBkYXRlX3Byb2NzLCBsYXRlX3VwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZkcmF3X3Byb2NzLCBkcmF3X2VuZW1pZXMpCn0KCnVwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogcGxheWVyIDo9IGdldF9lbnRpdHkocGxheWVyX2hhbmRsZSkKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgZGlyX3RvX3BsYXllciA6PSBwbGF5ZXIucG9zaXRpb24gLSBlLnBvc2l0aW9uCiAgZGlzdF90b19wbGF5ZXIgOj0gbGluYWxnLmxlbmd0aChkaXJfdG9fcGxheWVyKQogIGRpcl90b19wbGF5ZXIgPSBub3JtKGRpcl90b19wbGF5ZXIpCiAgZS5mb3J3YXJkID0gZGlyX3RvX3BsYXllcgogIGUucm90YXRpb24gPSBsb29rX3JvdChlLnBvc2l0aW9uLCBwbGF5ZXIucG9zaXRpb24sIGZsb2F0M191cCkKCiAgc3dpdGNoIHMgaW4gJmUuZW5lbXlfc3RhdGUgCiAgewoKICBjYXNlIEVuZW15U3RhdGVJZGxlOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuYWxlcnRfZGlzdGFuY2UgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVTZWVraW5ne30pCiAgIH0KCgogIGNhc2UgRW5lbXlTdGF0ZVNlZWtpbmc6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5zdG9wcGluZ19kaXN0IHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlQXR0YWNraW5ne30pCiAgIH0KCiAgIGUucG9zaXRpb24gKz0gZS5mb3J3YXJkICogZHQgKiBlLnN0YXRzLnNwZWVkCgogIGNhc2UgRW5lbXlTdGF0ZUF0dGFja2luZzoKCiAgfQoKIH0KfQoKCkAocHJpdmF0ZSA9ICJmaWxlIikKc2V0X3N0YXRlIDo6IHByb2MoZTogXkVudGl0eSwgc3RhdGU6IEVuZW15U3RhdGUpIAp7CiBlLmVuZW15X3N0YXRlID0gc3RhdGUKfQoKbGF0ZV91cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlLCBpIGluIGVuZW1pZXMgewogIGVuZW15IDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIC5kZWFkIGluIGVuZW15LmZsYWdzIHsKICAgZGVzdHJveV9lbnRpdHkoZW5lbXkuaGFuZGxlKQogICB1bm9yZGVyZWRfcmVtb3ZlKCZlbmVtaWVzLCBpKQogIH0KIH0KfQoKZHJhd19lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBtb2RlbCA6PSBlbnRpdHlfbW9kZWxzW2UuaWR4X21vZGVsXQogIGZvciBpIGluIDAgLi48IG1vZGVsLm1lc2hDb3VudCB7CiAgIHJsLkRyYXdNZXNoKG1vZGVsLm1lc2hlc1tpXSwgbW9kZWwubWF0ZXJpYWxzW2kgKyAxXSwgbWF0cml4X3RycyhlLnBvc2l0aW9uLCBmbG9hdDNfb25lLCBlLnJvdGF0aW9uKSkKICB9CiB9Cn0KCgpnZXRfZW5lbWllc19pbl9yYW5nZSA6OiBwcm9jKHJhbmdlOiBmbG9hdCwgcG9zOiBmbG9hdDMpIC0+IFtkeW5hbWljXUVudGl0eUhhbmRsZSAKewogbGlzdCA6PSBtYWtlKFtkeW5hbWljXUVudGl0eUhhbmRsZSwgY29udGV4dC50ZW1wX2FsbG9jYXRvcikKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgbGluYWxnLmRpc3RhbmNlKGUucG9zaXRpb24sIHBvcykgPCByYW5nZSB7CiAgIGFwcGVuZCgmbGlzdCwgZS5oYW5kbGUpCiAgfQogfQogcmV0dXJuIGxpc3QKfQo",
+					"AQAAAAAAAAABAAAAQQkAAAAAAABBCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2712,
+					3,
+					"left_delete",
+					null,
+					"AwAAAO0FAAAAAAAA7QUAAAAAAAABAAAAMOwFAAAAAAAA7AUAAAAAAAABAAAAMesFAAAAAAAA6wUAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAA7gUAAAAAAADuBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2713,
+					1,
+					"insert",
+					{
+						"characters": "7"
+					},
+					"AQAAAOsFAAAAAAAA7AUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wUAAAAAAADrBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2715,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = rand_range(0.9, 1.1),\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 7})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 149
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAlwwAAAAAAACWDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICAgc3BlZWQgID0gcmFuZF9yYW5nZSgwLjksIDEuMSksCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9N30pCiAgYXBwZW5kKCZlbmVtaWVzLCBoYW5kbGUpCiB9CgogYXBwZW5kKCZ1cGRhdGVfcHJvY3MsIHVwZGF0ZV9lbmVtaWVzKQogYXBwZW5kKCZsYXRlX3VwZGF0ZV9wcm9jcywgbGF0ZV91cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmZHJhd19wcm9jcywgZHJhd19lbmVtaWVzKQp9Cgp1cGRhdGVfZW5lbWllcyA6OiBwcm9jKCkgCnsKIHBsYXllciA6PSBnZXRfZW50aXR5KHBsYXllcl9oYW5kbGUpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGRpcl90b19wbGF5ZXIgOj0gcGxheWVyLnBvc2l0aW9uIC0gZS5wb3NpdGlvbgogIGRpc3RfdG9fcGxheWVyIDo9IGxpbmFsZy5sZW5ndGgoZGlyX3RvX3BsYXllcikKICBkaXJfdG9fcGxheWVyID0gbm9ybShkaXJfdG9fcGxheWVyKQogIGUuZm9yd2FyZCA9IGRpcl90b19wbGF5ZXIKICBlLnJvdGF0aW9uID0gbG9va19yb3QoZS5wb3NpdGlvbiwgcGxheWVyLnBvc2l0aW9uLCBmbG9hdDNfdXApCgogIHN3aXRjaCBzIGluICZlLmVuZW15X3N0YXRlIAogIHsKCiAgY2FzZSBFbmVteVN0YXRlSWRsZToKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLmFsZXJ0X2Rpc3RhbmNlIHsKICAgIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlU2Vla2luZ3t9KQogICB9CgoKICBjYXNlIEVuZW15U3RhdGVTZWVraW5nOgogICBpZiBkaXN0X3RvX3BsYXllciA8IHMuc3RvcHBpbmdfZGlzdCB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZUF0dGFja2luZ3t9KQogICB9CgogICBlLnBvc2l0aW9uICs9IGUuZm9yd2FyZCAqIGR0ICogZS5zdGF0cy5zcGVlZAoKICBjYXNlIEVuZW15U3RhdGVBdHRhY2tpbmc6CgogIH0KCiB9Cn0KCgpAKHByaXZhdGUgPSAiZmlsZSIpCnNldF9zdGF0ZSA6OiBwcm9jKGU6IF5FbnRpdHksIHN0YXRlOiBFbmVteVN0YXRlKSAKewogZS5lbmVteV9zdGF0ZSA9IHN0YXRlCn0KCmxhdGVfdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSwgaSBpbiBlbmVtaWVzIHsKICBlbmVteSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiAuZGVhZCBpbiBlbmVteS5mbGFncyB7CiAgIGRlc3Ryb3lfZW50aXR5KGVuZW15LmhhbmRsZSkKICAgdW5vcmRlcmVkX3JlbW92ZSgmZW5lbWllcywgaSkKICB9CiB9Cn0KCmRyYXdfZW5lbWllcyA6OiBwcm9jKCkgCnsKIGZvciAmaGFuZGxlIGluIGVuZW1pZXMgewogIGUgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgbW9kZWwgOj0gZW50aXR5X21vZGVsc1tlLmlkeF9tb2RlbF0KICBmb3IgaSBpbiAwIC4uPCBtb2RlbC5tZXNoQ291bnQgewogICBybC5EcmF3TWVzaChtb2RlbC5tZXNoZXNbaV0sIG1vZGVsLm1hdGVyaWFsc1tpICsgMV0sIG1hdHJpeF90cnMoZS5wb3NpdGlvbiwgZmxvYXQzX29uZSwgZS5yb3RhdGlvbikpCiAgfQogfQp9CgoKZ2V0X2VuZW1pZXNfaW5fcmFuZ2UgOjogcHJvYyhyYW5nZTogZmxvYXQsIHBvczogZmxvYXQzKSAtPiBbZHluYW1pY11FbnRpdHlIYW5kbGUgCnsKIGxpc3QgOj0gbWFrZShbZHluYW1pY11FbnRpdHlIYW5kbGUsIGNvbnRleHQudGVtcF9hbGxvY2F0b3IpCiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGlmIGxpbmFsZy5kaXN0YW5jZShlLnBvc2l0aW9uLCBwb3MpIDwgcmFuZ2UgewogICBhcHBlbmQoJmxpc3QsIGUuaGFuZGxlKQogIH0KIH0KIHJldHVybiBsaXN0Cn0K",
+					"AQAAAAAAAAABAAAA7AUAAAAAAADsBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2719,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\nimport \"core:log\"\r\nimport \"core:math/linalg\"\r\nimport \"core:math/rand\"\r\nimport rl \"vendor:raylib\"\r\n\r\nenemies: [dynamic]EntityHandle\r\nentity_models: [dynamic]rl.Model\r\n\r\n\r\nEnemyStateSeeking :: struct {\r\n stopping_dist: float,\r\n}\r\nEnemyStateAttacking :: struct {\r\n}\r\nEnemyStateIdle :: struct {\r\n alert_distance: float,\r\n}\r\n\r\n\r\nEnemyState :: union {\r\n EnemyStateIdle,\r\n EnemyStateSeeking,\r\n EnemyStateAttacking,\r\n}\r\n\r\ninit_enemies :: proc() \r\n{\r\n idx_skeleton := load_entity_model(\"skeleton.glb\")\r\n idx_ranger := load_entity_model(\"skeleton_ranger.glb\")\r\n\r\n skeleton := entity_models[idx_skeleton]\r\n ranger := entity_models[idx_ranger]\r\n for i in 0 ..< skeleton.meshCount {\r\n  smooth_all_mesh_normals(&skeleton.meshes[i])\r\n }\r\n for i in 0 ..< ranger.meshCount {\r\n  smooth_all_mesh_normals(&ranger.meshes[i])\r\n }\r\n assign_material_all_mats(&skeleton, synty_mat)\r\n assign_material_all_mats(&ranger, synty_mat)\r\n\r\n //spawn 10 random enemies\r\n enemyCount := 10\r\n for i in 0 ..< enemyCount {\r\n  handle := create_entity()\r\n  e := get_entity(handle)\r\n  health: float\r\n  if rand.int_max(3) == 1 {\r\n   e.flags += {.enemy_ranged}\r\n   e.idx_model = idx_ranger\r\n   health = 50\r\n  } else {\r\n   e.flags += {.enemy_fodder}\r\n   e.idx_model = idx_skeleton\r\n   health = 10\r\n  }\r\n  e.stats = EntityStats {\r\n   health = health,\r\n   speed  = rand_range(0.9, 1.1),\r\n  }\r\n  spread: float = float(enemyCount) / 2\r\n  e.position = float3{10, 0, 10} + float3{rand_range(-spread, spread), 0, rand_range(-spread, spread)}\r\n  e.collisionRadiusSqr = 1\r\n\r\n  set_state(e, EnemyStateIdle{alert_distance = 7})\r\n  append(&enemies, handle)\r\n }\r\n\r\n append(&update_procs, update_enemies)\r\n append(&late_update_procs, late_update_enemies)\r\n append(&draw_procs, draw_enemies)\r\n}\r\n\r\nupdate_enemies :: proc() \r\n{\r\n player := get_entity(player_handle)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  dir_to_player := player.position - e.position\r\n  dist_to_player := linalg.length(dir_to_player)\r\n  dir_to_player = norm(dir_to_player)\r\n  e.forward = dir_to_player\r\n  e.rotation = look_rot(e.position, player.position, float3_up)\r\n\r\n  switch s in &e.enemy_state \r\n  {\r\n\r\n  case EnemyStateIdle:\r\n   if dist_to_player < s.alert_distance {\r\n    set_state(e, EnemyStateSeeking{})\r\n   }\r\n\r\n\r\n  case EnemyStateSeeking:\r\n   if dist_to_player < s.stopping_dist {\r\n    set_state(e, EnemyStateAttacking{})\r\n   }\r\n\r\n   e.position += e.forward * dt * e.stats.speed\r\n\r\n  case EnemyStateAttacking:\r\n\r\n  }\r\n\r\n }\r\n}\r\n\r\n\r\n@(private = \"file\")\r\nset_state :: proc(e: ^Entity, state: EnemyState) \r\n{\r\n e.enemy_state = state\r\n}\r\n\r\nlate_update_enemies :: proc() \r\n{\r\n for &handle, i in enemies {\r\n  enemy := get_entity(handle)\r\n  if .dead in enemy.flags {\r\n   destroy_entity(enemy.handle)\r\n   unordered_remove(&enemies, i)\r\n  }\r\n }\r\n}\r\n\r\ndraw_enemies :: proc() \r\n{\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  model := entity_models[e.idx_model]\r\n  for i in 0 ..< model.meshCount {\r\n   rl.DrawMesh(model.meshes[i], model.materials[i + 1], matrix_trs(e.position, float3_one, e.rotation))\r\n  }\r\n }\r\n}\r\n\r\n\r\nget_enemies_in_range :: proc(range: float, pos: float3) -> [dynamic]EntityHandle \r\n{\r\n list := make([dynamic]EntityHandle, context.temp_allocator)\r\n for &handle in enemies {\r\n  e := get_entity(handle)\r\n  if linalg.distance(e.position, pos) < range {\r\n   append(&list, e.handle)\r\n  }\r\n }\r\n return list\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 149
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAlwwAAAAAAACXDAAAcGFja2FnZSBtYWluCmltcG9ydCAiY29yZTpsb2ciCmltcG9ydCAiY29yZTptYXRoL2xpbmFsZyIKaW1wb3J0ICJjb3JlOm1hdGgvcmFuZCIKaW1wb3J0IHJsICJ2ZW5kb3I6cmF5bGliIgoKZW5lbWllczogW2R5bmFtaWNdRW50aXR5SGFuZGxlCmVudGl0eV9tb2RlbHM6IFtkeW5hbWljXXJsLk1vZGVsCgoKRW5lbXlTdGF0ZVNlZWtpbmcgOjogc3RydWN0IHsKIHN0b3BwaW5nX2Rpc3Q6IGZsb2F0LAp9CkVuZW15U3RhdGVBdHRhY2tpbmcgOjogc3RydWN0IHsKfQpFbmVteVN0YXRlSWRsZSA6OiBzdHJ1Y3QgewogYWxlcnRfZGlzdGFuY2U6IGZsb2F0LAp9CgoKRW5lbXlTdGF0ZSA6OiB1bmlvbiB7CiBFbmVteVN0YXRlSWRsZSwKIEVuZW15U3RhdGVTZWVraW5nLAogRW5lbXlTdGF0ZUF0dGFja2luZywKfQoKaW5pdF9lbmVtaWVzIDo6IHByb2MoKSAKewogaWR4X3NrZWxldG9uIDo9IGxvYWRfZW50aXR5X21vZGVsKCJza2VsZXRvbi5nbGIiKQogaWR4X3JhbmdlciA6PSBsb2FkX2VudGl0eV9tb2RlbCgic2tlbGV0b25fcmFuZ2VyLmdsYiIpCgogc2tlbGV0b24gOj0gZW50aXR5X21vZGVsc1tpZHhfc2tlbGV0b25dCiByYW5nZXIgOj0gZW50aXR5X21vZGVsc1tpZHhfcmFuZ2VyXQogZm9yIGkgaW4gMCAuLjwgc2tlbGV0b24ubWVzaENvdW50IHsKICBzbW9vdGhfYWxsX21lc2hfbm9ybWFscygmc2tlbGV0b24ubWVzaGVzW2ldKQogfQogZm9yIGkgaW4gMCAuLjwgcmFuZ2VyLm1lc2hDb3VudCB7CiAgc21vb3RoX2FsbF9tZXNoX25vcm1hbHMoJnJhbmdlci5tZXNoZXNbaV0pCiB9CiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnNrZWxldG9uLCBzeW50eV9tYXQpCiBhc3NpZ25fbWF0ZXJpYWxfYWxsX21hdHMoJnJhbmdlciwgc3ludHlfbWF0KQoKIC8vc3Bhd24gMTAgcmFuZG9tIGVuZW1pZXMKIGVuZW15Q291bnQgOj0gMTAKIGZvciBpIGluIDAgLi48IGVuZW15Q291bnQgewogIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIGhlYWx0aDogZmxvYXQKICBpZiByYW5kLmludF9tYXgoMykgPT0gMSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9yYW5nZWR9CiAgIGUuaWR4X21vZGVsID0gaWR4X3JhbmdlcgogICBoZWFsdGggPSA1MAogIH0gZWxzZSB7CiAgIGUuZmxhZ3MgKz0gey5lbmVteV9mb2RkZXJ9CiAgIGUuaWR4X21vZGVsID0gaWR4X3NrZWxldG9uCiAgIGhlYWx0aCA9IDEwCiAgfQogIGUuc3RhdHMgPSBFbnRpdHlTdGF0cyB7CiAgIGhlYWx0aCA9IGhlYWx0aCwKICAgc3BlZWQgID0gcmFuZF9yYW5nZSgwLjksIDEuMSksCiAgfQogIHNwcmVhZDogZmxvYXQgPSBmbG9hdChlbmVteUNvdW50KSAvIDIKICBlLnBvc2l0aW9uID0gZmxvYXQzezEwLCAwLCAxMH0gKyBmbG9hdDN7cmFuZF9yYW5nZSgtc3ByZWFkLCBzcHJlYWQpLCAwLCByYW5kX3JhbmdlKC1zcHJlYWQsIHNwcmVhZCl9CiAgZS5jb2xsaXNpb25SYWRpdXNTcXIgPSAxCgogIHNldF9zdGF0ZShlLCBFbmVteVN0YXRlSWRsZXthbGVydF9kaXN0YW5jZSA9IDd9KQogIGFwcGVuZCgmZW5lbWllcywgaGFuZGxlKQogfQoKIGFwcGVuZCgmdXBkYXRlX3Byb2NzLCB1cGRhdGVfZW5lbWllcykKIGFwcGVuZCgmbGF0ZV91cGRhdGVfcHJvY3MsIGxhdGVfdXBkYXRlX2VuZW1pZXMpCiBhcHBlbmQoJmRyYXdfcHJvY3MsIGRyYXdfZW5lbWllcykKfQoKdXBkYXRlX2VuZW1pZXMgOjogcHJvYygpIAp7CiBwbGF5ZXIgOj0gZ2V0X2VudGl0eShwbGF5ZXJfaGFuZGxlKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBkaXJfdG9fcGxheWVyIDo9IHBsYXllci5wb3NpdGlvbiAtIGUucG9zaXRpb24KICBkaXN0X3RvX3BsYXllciA6PSBsaW5hbGcubGVuZ3RoKGRpcl90b19wbGF5ZXIpCiAgZGlyX3RvX3BsYXllciA9IG5vcm0oZGlyX3RvX3BsYXllcikKICBlLmZvcndhcmQgPSBkaXJfdG9fcGxheWVyCiAgZS5yb3RhdGlvbiA9IGxvb2tfcm90KGUucG9zaXRpb24sIHBsYXllci5wb3NpdGlvbiwgZmxvYXQzX3VwKQoKICBzd2l0Y2ggcyBpbiAmZS5lbmVteV9zdGF0ZSAKICB7CgogIGNhc2UgRW5lbXlTdGF0ZUlkbGU6CiAgIGlmIGRpc3RfdG9fcGxheWVyIDwgcy5hbGVydF9kaXN0YW5jZSB7CiAgICBzZXRfc3RhdGUoZSwgRW5lbXlTdGF0ZVNlZWtpbmd7fSkKICAgfQoKCiAgY2FzZSBFbmVteVN0YXRlU2Vla2luZzoKICAgaWYgZGlzdF90b19wbGF5ZXIgPCBzLnN0b3BwaW5nX2Rpc3QgewogICAgc2V0X3N0YXRlKGUsIEVuZW15U3RhdGVBdHRhY2tpbmd7fSkKICAgfQoKICAgZS5wb3NpdGlvbiArPSBlLmZvcndhcmQgKiBkdCAqIGUuc3RhdHMuc3BlZWQKCiAgY2FzZSBFbmVteVN0YXRlQXR0YWNraW5nOgoKICB9CgogfQp9CgoKQChwcml2YXRlID0gImZpbGUiKQpzZXRfc3RhdGUgOjogcHJvYyhlOiBeRW50aXR5LCBzdGF0ZTogRW5lbXlTdGF0ZSkgCnsKIGUuZW5lbXlfc3RhdGUgPSBzdGF0ZQp9CgpsYXRlX3VwZGF0ZV9lbmVtaWVzIDo6IHByb2MoKSAKewogZm9yICZoYW5kbGUsIGkgaW4gZW5lbWllcyB7CiAgZW5lbXkgOj0gZ2V0X2VudGl0eShoYW5kbGUpCiAgaWYgLmRlYWQgaW4gZW5lbXkuZmxhZ3MgewogICBkZXN0cm95X2VudGl0eShlbmVteS5oYW5kbGUpCiAgIHVub3JkZXJlZF9yZW1vdmUoJmVuZW1pZXMsIGkpCiAgfQogfQp9CgpkcmF3X2VuZW1pZXMgOjogcHJvYygpIAp7CiBmb3IgJmhhbmRsZSBpbiBlbmVtaWVzIHsKICBlIDo9IGdldF9lbnRpdHkoaGFuZGxlKQogIG1vZGVsIDo9IGVudGl0eV9tb2RlbHNbZS5pZHhfbW9kZWxdCiAgZm9yIGkgaW4gMCAuLjwgbW9kZWwubWVzaENvdW50IHsKICAgcmwuRHJhd01lc2gobW9kZWwubWVzaGVzW2ldLCBtb2RlbC5tYXRlcmlhbHNbaSArIDFdLCBtYXRyaXhfdHJzKGUucG9zaXRpb24sIGZsb2F0M19vbmUsIGUucm90YXRpb24pKQogIH0KIH0KfQoKCmdldF9lbmVtaWVzX2luX3JhbmdlIDo6IHByb2MocmFuZ2U6IGZsb2F0LCBwb3M6IGZsb2F0MykgLT4gW2R5bmFtaWNdRW50aXR5SGFuZGxlIAp7CiBsaXN0IDo9IG1ha2UoW2R5bmFtaWNdRW50aXR5SGFuZGxlLCBjb250ZXh0LnRlbXBfYWxsb2NhdG9yKQogZm9yICZoYW5kbGUgaW4gZW5lbWllcyB7CiAgZSA6PSBnZXRfZW50aXR5KGhhbmRsZSkKICBpZiBsaW5hbGcuZGlzdGFuY2UoZS5wb3NpdGlvbiwgcG9zKSA8IHJhbmdlIHsKICAgYXBwZW5kKCZsaXN0LCBlLmhhbmRsZSkKICB9CiB9CiByZXR1cm4gbGlzdAp9Cg",
+					"AQAAAAAAAAABAAAAuQQAAAAAAAC5BAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/C/odin/core/reflect/reflect.odin",
+			"settings":
+			{
+				"buffer_size": 41221,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "/C/odin/vendor/raylib/raylib.odin",
+			"settings":
+			{
+				"buffer_size": 111827,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "bullets.odin",
+			"settings":
+			{
+				"buffer_size": 2797,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "entity.odin",
+			"settings":
+			{
+				"buffer_size": 3398,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "\nfs"
+					},
+					"AwAAAFsCAAAAAAAAXgIAAAAAAAAAAAAAXgIAAAAAAABfAgAAAAAAAAAAAABfAgAAAAAAAGACAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwIAAAAAAABbAgAAAAAAAP///////+9/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "m"
+					},
+					"AQAAAGACAAAAAAAAYQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYAIAAAAAAABgAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGECAAAAAAAAYgIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQIAAAAAAABhAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					3,
+					"left_delete",
+					null,
+					"AwAAAF4CAAAAAAAAXgIAAAAAAAAEAAAAZnNtIFwCAAAAAAAAXAIAAAAAAAACAAAAICBbAgAAAAAAAFsCAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAYgIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "\ns"
+					},
+					"AgAAAFsCAAAAAAAAXgIAAAAAAAAAAAAAXgIAAAAAAABfAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwIAAAAAAABbAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAAF4CAAAAAAAAXgIAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAXwIAAAAAAABfAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "fs"
+					},
+					"AgAAAF4CAAAAAAAAXwIAAAAAAAAAAAAAXwIAAAAAAABgAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					2,
+					"left_delete",
+					null,
+					"AgAAAF8CAAAAAAAAXwIAAAAAAAABAAAAc14CAAAAAAAAXgIAAAAAAAABAAAAZg",
+					"AQAAAAAAAAABAAAAYAIAAAAAAABgAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "state"
+					},
+					"BQAAAF4CAAAAAAAAXwIAAAAAAAAAAAAAXwIAAAAAAABgAgAAAAAAAAAAAABgAgAAAAAAAGECAAAAAAAAAAAAAGECAAAAAAAAYgIAAAAAAAAAAAAAYgIAAAAAAABjAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "Attack"
+					},
+					"BgAAAGMCAAAAAAAAZAIAAAAAAAAAAAAAZAIAAAAAAABlAgAAAAAAAAAAAABlAgAAAAAAAGYCAAAAAAAAAAAAAGYCAAAAAAAAZwIAAAAAAAAAAAAAZwIAAAAAAABoAgAAAAAAAAAAAABoAgAAAAAAAGkCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYwIAAAAAAABjAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": " :"
+					},
+					"AgAAAGkCAAAAAAAAagIAAAAAAAAAAAAAagIAAAAAAABrAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQIAAAAAAABpAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGsCAAAAAAAAbAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAawIAAAAAAABrAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					3,
+					"left_delete",
+					null,
+					"AwAAAF4CAAAAAAAAXgIAAAAAAAAOAAAAc3RhdGVBdHRhY2sgOiBcAgAAAAAAAFwCAAAAAAAAAgAAACAgWwIAAAAAAABbAgAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAAbAIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\n\r\nimport \"core:log\"\r\nimport \"core:reflect\"\r\nimport \"core:slice\"\r\nimport rl \"vendor:raylib\"\r\n\r\n\r\n// Entity struct, stored directly in a dynamic array\r\nEntity :: struct \r\n{\r\n stats:              EntityStats,\r\n rotation:           quaternion,\r\n position:           float3,\r\n forward:            float3,\r\n idx_model:          int,\r\n target:             EntityHandle,\r\n handle:             EntityHandle,\r\n yRot:               float,\r\n collisionRadiusSqr: float,\r\n active:             bool,\r\n flags:              bit_set[Entity_Flags],\r\n aabb:               rl.BoundingBox,\r\n knockback:          Knockback,\r\n}\r\n\r\nEntity_Flags :: enum \r\n{\r\n player,\r\n bullet,\r\n dead,\r\n enemy_fodder,\r\n enemy_ranged,\r\n static,\r\n aabb_dirty,\r\n}\r\n\r\nEntityStats :: struct \r\n{\r\n health:    float,\r\n speed:     float,\r\n lifetime:  float,\r\n damage:    float,\r\n shield:    float,\r\n speedMode: SpeedDecreaseMode,\r\n}\r\n\r\n\r\nSpeedDecreaseMode :: enum byte \r\n{\r\n None = 0,\r\n Linear,\r\n Cubic,\r\n Circ,\r\n}\r\n\r\nEntityHandle :: struct \r\n{\r\n index:      u32, // Index into the entity array\r\n generation: i32, // Generation to ensure handle validity\r\n}\r\n\r\nEntityManager :: struct \r\n{\r\n entities:     [dynamic]Entity,\r\n free_indices: [dynamic]u32,\r\n}\r\n\r\nentity_debug_names: map[EntityHandle]string\r\n\r\nzero_handle :: EntityHandle{0, -1}\r\n\r\ninit_entity_manager :: proc() -> EntityManager \r\n{\r\n entity_debug_names = make(map[EntityHandle]string)\r\n reserve(&entity_debug_names, MAX_ENTITIES)\r\n return EntityManager{entities = make([dynamic]Entity, 0, MAX_ENTITIES), free_indices = make([dynamic]u32)}\r\n}\r\n\r\ndestroy_entity_manager :: proc() \r\n{\r\n delete(manager.entities)\r\n delete(manager.free_indices)\r\n}\r\n\r\ncreate_and_get_entity :: proc() -> ^Entity \r\n{\r\n handle := create_entity()\r\n return get_entity(handle)\r\n}\r\n\r\nset_entity_debug_name :: proc(name: string, handle: EntityHandle) \r\n{\r\n if handle not_in entity_debug_names \r\n {\r\n  entity_debug_names[handle] = name\r\n }\r\n}\r\n\r\nget_entity_debug_name :: proc(name: string, handle: EntityHandle) -> string \r\n{\r\n if handle in entity_debug_names \r\n {\r\n  return entity_debug_names[handle]\r\n }\r\n return \"DEBUG NAME NOT FOUND\"\r\n}\r\n\r\ncreate_entity :: proc() -> EntityHandle \r\n{\r\n index: u32\r\n generation: i32\r\n\r\n // Reuse a free index if available\r\n if len(manager.free_indices) > 0 \r\n {\r\n  index = pop(&manager.free_indices)\r\n  generation = manager.entities[index].handle.generation\r\n }\r\n  else \r\n {\r\n  // Append a new entity\r\n  index = u32(len(manager.entities))\r\n  generation = 0\r\n  append(&manager.entities, Entity{})\r\n }\r\n\r\n manager.entities[index] = Entity \\\r\n {\r\n  handle = EntityHandle{index = index, generation = generation},\r\n  active = true,\r\n }\r\n\r\n return EntityHandle{index, generation}\r\n}\r\n\r\ndestroy_entity :: proc(handle: EntityHandle) -> bool \r\n{\r\n if !is_valid_handle(handle) \r\n {\r\n  return false\r\n }\r\n manager.entities[handle.index].active = false\r\n manager.entities[handle.index].handle.generation += 1\r\n manager.entities[handle.index].flags = {}\r\n append(&manager.free_indices, handle.index)\r\n return true\r\n}\r\n\r\nis_valid_handle :: proc(handle: EntityHandle) -> bool \r\n{\r\n if handle.index >= u32(len(manager.entities)) \r\n {\r\n  return false\r\n }\r\n entity := manager.entities[handle.index]\r\n return entity.active && entity.handle.generation == handle.generation\r\n}\r\n\r\nget_entity :: proc(handle: EntityHandle) -> ^Entity \r\n{\r\n if !is_valid_handle(handle) \r\n {\r\n  return nil\r\n }\r\n return &manager.entities[handle.index]\r\n}\r\n\r\n\r\nset_entity :: proc(entity: Entity) \r\n{\r\n manager.entities[entity.handle.index] = entity\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 158
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAJQ0AAAAAAABsDQAAcGFja2FnZSBtYWluCgppbXBvcnQgImNvcmU6bG9nIgppbXBvcnQgImNvcmU6cmVmbGVjdCIKaW1wb3J0ICJjb3JlOnNsaWNlIgppbXBvcnQgcmwgInZlbmRvcjpyYXlsaWIiCgoKLy8gRW50aXR5IHN0cnVjdCwgc3RvcmVkIGRpcmVjdGx5IGluIGEgZHluYW1pYyBhcnJheQpFbnRpdHkgOjogc3RydWN0IHsKICBzdGF0czogICAgICAgICAgICAgIEVudGl0eVN0YXRzLAogIHJvdGF0aW9uOiAgICAgICAgICAgcXVhdGVybmlvbiwKICBwb3NpdGlvbjogICAgICAgICAgIGZsb2F0MywKICBmb3J3YXJkOiAgICAgICAgICAgIGZsb2F0MywKICBpZHhfbW9kZWw6ICAgICAgICAgIGludCwKICB0YXJnZXQ6ICAgICAgICAgICAgIEVudGl0eUhhbmRsZSwKICBoYW5kbGU6ICAgICAgICAgICAgIEVudGl0eUhhbmRsZSwKICB5Um90OiAgICAgICAgICAgICAgIGZsb2F0LAogIGNvbGxpc2lvblJhZGl1c1NxcjogZmxvYXQsCiAgYWN0aXZlOiAgICAgICAgICAgICBib29sLAogIGZsYWdzOiAgICAgICAgICAgICAgYml0X3NldFtFbnRpdHlfRmxhZ3NdLAogIGFhYmI6ICAgICAgICAgICAgICAgcmwuQm91bmRpbmdCb3gsCiAga25vY2tiYWNrOiAgICAgICAgICBLbm9ja2JhY2ssCn0KCkVudGl0eV9GbGFncyA6OiBlbnVtIHsKICBwbGF5ZXIsCiAgYnVsbGV0LAogIGRlYWQsCiAgZW5lbXlfZm9kZGVyLAogIGVuZW15X3JhbmdlZCwKICBzdGF0aWMsCiAgYWFiYl9kaXJ0eSwKfQoKRW50aXR5U3RhdHMgOjogc3RydWN0IHsKICBoZWFsdGg6ICAgIGZsb2F0LAogIHNwZWVkOiAgICAgZmxvYXQsCiAgbGlmZXRpbWU6ICBmbG9hdCwKICBkYW1hZ2U6ICAgIGZsb2F0LAogIHNoaWVsZDogICAgZmxvYXQsCiAgc3BlZWRNb2RlOiBTcGVlZERlY3JlYXNlTW9kZSwKfQoKClNwZWVkRGVjcmVhc2VNb2RlIDo6IGVudW0gYnl0ZSB7CiAgTm9uZSA9IDAsCiAgTGluZWFyLAogIEN1YmljLAogIENpcmMsCn0KCkVudGl0eUhhbmRsZSA6OiBzdHJ1Y3QgewogIGluZGV4OiAgICAgIHUzMiwgLy8gSW5kZXggaW50byB0aGUgZW50aXR5IGFycmF5CiAgZ2VuZXJhdGlvbjogaTMyLCAvLyBHZW5lcmF0aW9uIHRvIGVuc3VyZSBoYW5kbGUgdmFsaWRpdHkKfQoKRW50aXR5TWFuYWdlciA6OiBzdHJ1Y3QgewogIGVudGl0aWVzOiAgICAgW2R5bmFtaWNdRW50aXR5LAogIGZyZWVfaW5kaWNlczogW2R5bmFtaWNddTMyLAp9CgplbnRpdHlfZGVidWdfbmFtZXM6IG1hcFtFbnRpdHlIYW5kbGVdc3RyaW5nCgp6ZXJvX2hhbmRsZSA6OiBFbnRpdHlIYW5kbGV7MCwgLTF9Cgppbml0X2VudGl0eV9tYW5hZ2VyIDo6IHByb2MoKSAtPiBFbnRpdHlNYW5hZ2VyIAp7CiAgZW50aXR5X2RlYnVnX25hbWVzID0gbWFrZShtYXBbRW50aXR5SGFuZGxlXXN0cmluZykKICByZXNlcnZlKCZlbnRpdHlfZGVidWdfbmFtZXMsIE1BWF9FTlRJVElFUykKICByZXR1cm4gRW50aXR5TWFuYWdlcntlbnRpdGllcyA9IG1ha2UoW2R5bmFtaWNdRW50aXR5LCAwLCBNQVhfRU5USVRJRVMpLCBmcmVlX2luZGljZXMgPSBtYWtlKFtkeW5hbWljXXUzMil9Cn0KCmRlc3Ryb3lfZW50aXR5X21hbmFnZXIgOjogcHJvYygpIAp7CiAgZGVsZXRlKG1hbmFnZXIuZW50aXRpZXMpCiAgZGVsZXRlKG1hbmFnZXIuZnJlZV9pbmRpY2VzKQp9CgpjcmVhdGVfYW5kX2dldF9lbnRpdHkgOjogcHJvYygpIC0+IF5FbnRpdHkgCnsKICBoYW5kbGUgOj0gY3JlYXRlX2VudGl0eSgpCiAgcmV0dXJuIGdldF9lbnRpdHkoaGFuZGxlKQp9CgpzZXRfZW50aXR5X2RlYnVnX25hbWUgOjogcHJvYyhuYW1lOiBzdHJpbmcsIGhhbmRsZTogRW50aXR5SGFuZGxlKSAKewogIGlmIGhhbmRsZSBub3RfaW4gZW50aXR5X2RlYnVnX25hbWVzIHsKICAgIGVudGl0eV9kZWJ1Z19uYW1lc1toYW5kbGVdID0gbmFtZQogIH0KfQoKZ2V0X2VudGl0eV9kZWJ1Z19uYW1lIDo6IHByb2MobmFtZTogc3RyaW5nLCBoYW5kbGU6IEVudGl0eUhhbmRsZSkgLT4gc3RyaW5nIAp7CiAgaWYgaGFuZGxlIGluIGVudGl0eV9kZWJ1Z19uYW1lcyB7CiAgICByZXR1cm4gZW50aXR5X2RlYnVnX25hbWVzW2hhbmRsZV0KICB9CiAgcmV0dXJuICJERUJVRyBOQU1FIE5PVCBGT1VORCIKfQoKY3JlYXRlX2VudGl0eSA6OiBwcm9jKCkgLT4gRW50aXR5SGFuZGxlIAp7CiAgaW5kZXg6IHUzMgogIGdlbmVyYXRpb246IGkzMgoKICAvLyBSZXVzZSBhIGZyZWUgaW5kZXggaWYgYXZhaWxhYmxlCiAgaWYgbGVuKG1hbmFnZXIuZnJlZV9pbmRpY2VzKSA+IDAgewogICAgaW5kZXggPSBwb3AoJm1hbmFnZXIuZnJlZV9pbmRpY2VzKQogICAgZ2VuZXJhdGlvbiA9IG1hbmFnZXIuZW50aXRpZXNbaW5kZXhdLmhhbmRsZS5nZW5lcmF0aW9uCiAgfSBlbHNlIHsKICAgIC8vIEFwcGVuZCBhIG5ldyBlbnRpdHkKICAgIGluZGV4ID0gdTMyKGxlbihtYW5hZ2VyLmVudGl0aWVzKSkKICAgIGdlbmVyYXRpb24gPSAwCiAgICBhcHBlbmQoJm1hbmFnZXIuZW50aXRpZXMsIEVudGl0eXt9KQogIH0KCiAgbWFuYWdlci5lbnRpdGllc1tpbmRleF0gPSBFbnRpdHkgewogICAgaGFuZGxlID0gRW50aXR5SGFuZGxle2luZGV4ID0gaW5kZXgsIGdlbmVyYXRpb24gPSBnZW5lcmF0aW9ufSwKICAgIGFjdGl2ZSA9IHRydWUsCiAgfQoKICByZXR1cm4gRW50aXR5SGFuZGxle2luZGV4LCBnZW5lcmF0aW9ufQp9CgpkZXN0cm95X2VudGl0eSA6OiBwcm9jKGhhbmRsZTogRW50aXR5SGFuZGxlKSAtPiBib29sIAp7CiAgaWYgIWlzX3ZhbGlkX2hhbmRsZShoYW5kbGUpIHsKICAgIHJldHVybiBmYWxzZQogIH0KICBtYW5hZ2VyLmVudGl0aWVzW2hhbmRsZS5pbmRleF0uYWN0aXZlID0gZmFsc2UKICBtYW5hZ2VyLmVudGl0aWVzW2hhbmRsZS5pbmRleF0uaGFuZGxlLmdlbmVyYXRpb24gKz0gMQogIG1hbmFnZXIuZW50aXRpZXNbaGFuZGxlLmluZGV4XS5mbGFncyA9IHt9CiAgYXBwZW5kKCZtYW5hZ2VyLmZyZWVfaW5kaWNlcywgaGFuZGxlLmluZGV4KQogIHJldHVybiB0cnVlCn0KCmlzX3ZhbGlkX2hhbmRsZSA6OiBwcm9jKGhhbmRsZTogRW50aXR5SGFuZGxlKSAtPiBib29sIAp7CiAgaWYgaGFuZGxlLmluZGV4ID49IHUzMihsZW4obWFuYWdlci5lbnRpdGllcykpIHsKICAgIHJldHVybiBmYWxzZQogIH0KICBlbnRpdHkgOj0gbWFuYWdlci5lbnRpdGllc1toYW5kbGUuaW5kZXhdCiAgcmV0dXJuIGVudGl0eS5hY3RpdmUgJiYgZW50aXR5LmhhbmRsZS5nZW5lcmF0aW9uID09IGhhbmRsZS5nZW5lcmF0aW9uCn0KCmdldF9lbnRpdHkgOjogcHJvYyhoYW5kbGU6IEVudGl0eUhhbmRsZSkgLT4gXkVudGl0eSAKewogIGlmICFpc192YWxpZF9oYW5kbGUoaGFuZGxlKSB7CiAgICByZXR1cm4gbmlsCiAgfQogIHJldHVybiAmbWFuYWdlci5lbnRpdGllc1toYW5kbGUuaW5kZXhdCn0KCgpzZXRfZW50aXR5IDo6IHByb2MoZW50aXR5OiBFbnRpdHkpIAp7CiAgbWFuYWdlci5lbnRpdGllc1tlbnRpdHkuaGFuZGxlLmluZGV4XSA9IGVudGl0eQp9Cg",
+					"AQAAAAAAAAABAAAAWwIAAAAAAABbAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "\ns"
+					},
+					"AgAAAE8CAAAAAAAAUQIAAAAAAAAAAAAAUQIAAAAAAABSAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATwIAAAAAAABPAgAAAAAAAP///////+9/"
+				],
+				[
+					28,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFECAAAAAAAAUQIAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAUgIAAAAAAABSAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": "enemy_state"
+					},
+					"CwAAAFECAAAAAAAAUgIAAAAAAAAAAAAAUgIAAAAAAABTAgAAAAAAAAAAAABTAgAAAAAAAFQCAAAAAAAAAAAAAFQCAAAAAAAAVQIAAAAAAAAAAAAAVQIAAAAAAABWAgAAAAAAAAAAAABWAgAAAAAAAFcCAAAAAAAAAAAAAFcCAAAAAAAAWAIAAAAAAAAAAAAAWAIAAAAAAABZAgAAAAAAAAAAAABZAgAAAAAAAFoCAAAAAAAAAAAAAFoCAAAAAAAAWwIAAAAAAAAAAAAAWwIAAAAAAABcAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQIAAAAAAABRAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": " :"
+					},
+					"AgAAAFwCAAAAAAAAXQIAAAAAAAAAAAAAXQIAAAAAAABeAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXAIAAAAAAABcAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " en"
+					},
+					"AwAAAF4CAAAAAAAAXwIAAAAAAAAAAAAAXwIAAAAAAABgAgAAAAAAAAAAAABgAgAAAAAAAGECAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "emyst"
+					},
+					"BQAAAGECAAAAAAAAYgIAAAAAAAAAAAAAYgIAAAAAAABjAgAAAAAAAAAAAABjAgAAAAAAAGQCAAAAAAAAAAAAAGQCAAAAAAAAZQIAAAAAAAAAAAAAZQIAAAAAAABmAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQIAAAAAAABhAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":0,\"session_name\":\"odin\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "EnemyState"
+					},
+					"AgAAAF8CAAAAAAAAXwIAAAAAAAAHAAAAZW5lbXlzdF8CAAAAAAAAaQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZgIAAAAAAABmAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAGkCAAAAAAAAagIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQIAAAAAAABpAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "package main\r\n\r\nimport \"core:log\"\r\nimport \"core:reflect\"\r\nimport \"core:slice\"\r\nimport rl \"vendor:raylib\"\r\n\r\n\r\n// Entity struct, stored directly in a dynamic array\r\nEntity :: struct \r\n{\r\n stats:              EntityStats,\r\n rotation:           quaternion,\r\n position:           float3,\r\n forward:            float3,\r\n idx_model:          int,\r\n target:             EntityHandle,\r\n handle:             EntityHandle,\r\n yRot:               float,\r\n collisionRadiusSqr: float,\r\n active:             bool,\r\n flags:              bit_set[Entity_Flags],\r\n aabb:               rl.BoundingBox,\r\n knockback:          Knockback,\r\n enemy_state:        EnemyState,\r\n}\r\n\r\nEntity_Flags :: enum \r\n{\r\n player,\r\n bullet,\r\n dead,\r\n enemy_fodder,\r\n enemy_ranged,\r\n static,\r\n aabb_dirty,\r\n}\r\n\r\nEntityStats :: struct \r\n{\r\n health:    float,\r\n speed:     float,\r\n lifetime:  float,\r\n damage:    float,\r\n shield:    float,\r\n speedMode: SpeedDecreaseMode,\r\n}\r\n\r\n\r\nSpeedDecreaseMode :: enum byte \r\n{\r\n None = 0,\r\n Linear,\r\n Cubic,\r\n Circ,\r\n}\r\n\r\nEntityHandle :: struct \r\n{\r\n index:      u32, // Index into the entity array\r\n generation: i32, // Generation to ensure handle validity\r\n}\r\n\r\nEntityManager :: struct \r\n{\r\n entities:     [dynamic]Entity,\r\n free_indices: [dynamic]u32,\r\n}\r\n\r\nentity_debug_names: map[EntityHandle]string\r\n\r\nzero_handle :: EntityHandle{0, -1}\r\n\r\ninit_entity_manager :: proc() -> EntityManager \r\n{\r\n entity_debug_names = make(map[EntityHandle]string)\r\n reserve(&entity_debug_names, MAX_ENTITIES)\r\n return EntityManager{entities = make([dynamic]Entity, 0, MAX_ENTITIES), free_indices = make([dynamic]u32)}\r\n}\r\n\r\ndestroy_entity_manager :: proc() \r\n{\r\n delete(manager.entities)\r\n delete(manager.free_indices)\r\n}\r\n\r\ncreate_and_get_entity :: proc() -> ^Entity \r\n{\r\n handle := create_entity()\r\n return get_entity(handle)\r\n}\r\n\r\nset_entity_debug_name :: proc(name: string, handle: EntityHandle) \r\n{\r\n if handle not_in entity_debug_names \r\n {\r\n  entity_debug_names[handle] = name\r\n }\r\n}\r\n\r\nget_entity_debug_name :: proc(name: string, handle: EntityHandle) -> string \r\n{\r\n if handle in entity_debug_names \r\n {\r\n  return entity_debug_names[handle]\r\n }\r\n return \"DEBUG NAME NOT FOUND\"\r\n}\r\n\r\ncreate_entity :: proc() -> EntityHandle \r\n{\r\n index: u32\r\n generation: i32\r\n\r\n // Reuse a free index if available\r\n if len(manager.free_indices) > 0 \r\n {\r\n  index = pop(&manager.free_indices)\r\n  generation = manager.entities[index].handle.generation\r\n }\r\n  else \r\n {\r\n  // Append a new entity\r\n  index = u32(len(manager.entities))\r\n  generation = 0\r\n  append(&manager.entities, Entity{})\r\n }\r\n\r\n manager.entities[index] = Entity \\\r\n {\r\n  handle = EntityHandle{index = index, generation = generation},\r\n  active = true,\r\n }\r\n\r\n return EntityHandle{index, generation}\r\n}\r\n\r\ndestroy_entity :: proc(handle: EntityHandle) -> bool \r\n{\r\n if !is_valid_handle(handle) \r\n {\r\n  return false\r\n }\r\n manager.entities[handle.index].active = false\r\n manager.entities[handle.index].handle.generation += 1\r\n manager.entities[handle.index].flags = {}\r\n append(&manager.free_indices, handle.index)\r\n return true\r\n}\r\n\r\nis_valid_handle :: proc(handle: EntityHandle) -> bool \r\n{\r\n if handle.index >= u32(len(manager.entities)) \r\n {\r\n  return false\r\n }\r\n entity := manager.entities[handle.index]\r\n return entity.active && entity.handle.generation == handle.generation\r\n}\r\n\r\nget_entity :: proc(handle: EntityHandle) -> ^Entity \r\n{\r\n if !is_valid_handle(handle) \r\n {\r\n  return nil\r\n }\r\n return &manager.entities[handle.index]\r\n}\r\n\r\n\r\nset_entity :: proc(entity: Entity) \r\n{\r\n manager.entities[entity.handle.index] = entity\r\n}\r\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 174
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAARg0AAAAAAABADQAAcGFja2FnZSBtYWluCgppbXBvcnQgImNvcmU6bG9nIgppbXBvcnQgImNvcmU6cmVmbGVjdCIKaW1wb3J0ICJjb3JlOnNsaWNlIgppbXBvcnQgcmwgInZlbmRvcjpyYXlsaWIiCgoKLy8gRW50aXR5IHN0cnVjdCwgc3RvcmVkIGRpcmVjdGx5IGluIGEgZHluYW1pYyBhcnJheQpFbnRpdHkgOjogc3RydWN0IAp7CiBzdGF0czogICAgICAgICAgICAgIEVudGl0eVN0YXRzLAogcm90YXRpb246ICAgICAgICAgICBxdWF0ZXJuaW9uLAogcG9zaXRpb246ICAgICAgICAgICBmbG9hdDMsCiBmb3J3YXJkOiAgICAgICAgICAgIGZsb2F0MywKIGlkeF9tb2RlbDogICAgICAgICAgaW50LAogdGFyZ2V0OiAgICAgICAgICAgICBFbnRpdHlIYW5kbGUsCiBoYW5kbGU6ICAgICAgICAgICAgIEVudGl0eUhhbmRsZSwKIHlSb3Q6ICAgICAgICAgICAgICAgZmxvYXQsCiBjb2xsaXNpb25SYWRpdXNTcXI6IGZsb2F0LAogYWN0aXZlOiAgICAgICAgICAgICBib29sLAogZmxhZ3M6ICAgICAgICAgICAgICBiaXRfc2V0W0VudGl0eV9GbGFnc10sCiBhYWJiOiAgICAgICAgICAgICAgIHJsLkJvdW5kaW5nQm94LAoga25vY2tiYWNrOiAgICAgICAgICBLbm9ja2JhY2ssCiBlbmVteV9zdGF0ZSA6IEVuZW15U3RhdGUsCn0KCkVudGl0eV9GbGFncyA6OiBlbnVtIAp7CiBwbGF5ZXIsCiBidWxsZXQsCiBkZWFkLAogZW5lbXlfZm9kZGVyLAogZW5lbXlfcmFuZ2VkLAogc3RhdGljLAogYWFiYl9kaXJ0eSwKfQoKRW50aXR5U3RhdHMgOjogc3RydWN0IAp7CiBoZWFsdGg6ICAgIGZsb2F0LAogc3BlZWQ6ICAgICBmbG9hdCwKIGxpZmV0aW1lOiAgZmxvYXQsCiBkYW1hZ2U6ICAgIGZsb2F0LAogc2hpZWxkOiAgICBmbG9hdCwKIHNwZWVkTW9kZTogU3BlZWREZWNyZWFzZU1vZGUsCn0KCgpTcGVlZERlY3JlYXNlTW9kZSA6OiBlbnVtIGJ5dGUgCnsKIE5vbmUgPSAwLAogTGluZWFyLAogQ3ViaWMsCiBDaXJjLAp9CgpFbnRpdHlIYW5kbGUgOjogc3RydWN0IAp7CiBpbmRleDogICAgICB1MzIsIC8vIEluZGV4IGludG8gdGhlIGVudGl0eSBhcnJheQogZ2VuZXJhdGlvbjogaTMyLCAvLyBHZW5lcmF0aW9uIHRvIGVuc3VyZSBoYW5kbGUgdmFsaWRpdHkKfQoKRW50aXR5TWFuYWdlciA6OiBzdHJ1Y3QgCnsKIGVudGl0aWVzOiAgICAgW2R5bmFtaWNdRW50aXR5LAogZnJlZV9pbmRpY2VzOiBbZHluYW1pY111MzIsCn0KCmVudGl0eV9kZWJ1Z19uYW1lczogbWFwW0VudGl0eUhhbmRsZV1zdHJpbmcKCnplcm9faGFuZGxlIDo6IEVudGl0eUhhbmRsZXswLCAtMX0KCmluaXRfZW50aXR5X21hbmFnZXIgOjogcHJvYygpIC0+IEVudGl0eU1hbmFnZXIgCnsKIGVudGl0eV9kZWJ1Z19uYW1lcyA9IG1ha2UobWFwW0VudGl0eUhhbmRsZV1zdHJpbmcpCiByZXNlcnZlKCZlbnRpdHlfZGVidWdfbmFtZXMsIE1BWF9FTlRJVElFUykKIHJldHVybiBFbnRpdHlNYW5hZ2Vye2VudGl0aWVzID0gbWFrZShbZHluYW1pY11FbnRpdHksIDAsIE1BWF9FTlRJVElFUyksIGZyZWVfaW5kaWNlcyA9IG1ha2UoW2R5bmFtaWNddTMyKX0KfQoKZGVzdHJveV9lbnRpdHlfbWFuYWdlciA6OiBwcm9jKCkgCnsKIGRlbGV0ZShtYW5hZ2VyLmVudGl0aWVzKQogZGVsZXRlKG1hbmFnZXIuZnJlZV9pbmRpY2VzKQp9CgpjcmVhdGVfYW5kX2dldF9lbnRpdHkgOjogcHJvYygpIC0+IF5FbnRpdHkgCnsKIGhhbmRsZSA6PSBjcmVhdGVfZW50aXR5KCkKIHJldHVybiBnZXRfZW50aXR5KGhhbmRsZSkKfQoKc2V0X2VudGl0eV9kZWJ1Z19uYW1lIDo6IHByb2MobmFtZTogc3RyaW5nLCBoYW5kbGU6IEVudGl0eUhhbmRsZSkgCnsKIGlmIGhhbmRsZSBub3RfaW4gZW50aXR5X2RlYnVnX25hbWVzIAogewogIGVudGl0eV9kZWJ1Z19uYW1lc1toYW5kbGVdID0gbmFtZQogfQp9CgpnZXRfZW50aXR5X2RlYnVnX25hbWUgOjogcHJvYyhuYW1lOiBzdHJpbmcsIGhhbmRsZTogRW50aXR5SGFuZGxlKSAtPiBzdHJpbmcgCnsKIGlmIGhhbmRsZSBpbiBlbnRpdHlfZGVidWdfbmFtZXMgCiB7CiAgcmV0dXJuIGVudGl0eV9kZWJ1Z19uYW1lc1toYW5kbGVdCiB9CiByZXR1cm4gIkRFQlVHIE5BTUUgTk9UIEZPVU5EIgp9CgpjcmVhdGVfZW50aXR5IDo6IHByb2MoKSAtPiBFbnRpdHlIYW5kbGUgCnsKIGluZGV4OiB1MzIKIGdlbmVyYXRpb246IGkzMgoKIC8vIFJldXNlIGEgZnJlZSBpbmRleCBpZiBhdmFpbGFibGUKIGlmIGxlbihtYW5hZ2VyLmZyZWVfaW5kaWNlcykgPiAwIAogewogIGluZGV4ID0gcG9wKCZtYW5hZ2VyLmZyZWVfaW5kaWNlcykKICBnZW5lcmF0aW9uID0gbWFuYWdlci5lbnRpdGllc1tpbmRleF0uaGFuZGxlLmdlbmVyYXRpb24KIH0KICBlbHNlIAogewogIC8vIEFwcGVuZCBhIG5ldyBlbnRpdHkKICBpbmRleCA9IHUzMihsZW4obWFuYWdlci5lbnRpdGllcykpCiAgZ2VuZXJhdGlvbiA9IDAKICBhcHBlbmQoJm1hbmFnZXIuZW50aXRpZXMsIEVudGl0eXt9KQogfQoKIG1hbmFnZXIuZW50aXRpZXNbaW5kZXhdID0gRW50aXR5IFwKIHsKICBoYW5kbGUgPSBFbnRpdHlIYW5kbGV7aW5kZXggPSBpbmRleCwgZ2VuZXJhdGlvbiA9IGdlbmVyYXRpb259LAogIGFjdGl2ZSA9IHRydWUsCiB9CgogcmV0dXJuIEVudGl0eUhhbmRsZXtpbmRleCwgZ2VuZXJhdGlvbn0KfQoKZGVzdHJveV9lbnRpdHkgOjogcHJvYyhoYW5kbGU6IEVudGl0eUhhbmRsZSkgLT4gYm9vbCAKewogaWYgIWlzX3ZhbGlkX2hhbmRsZShoYW5kbGUpIAogewogIHJldHVybiBmYWxzZQogfQogbWFuYWdlci5lbnRpdGllc1toYW5kbGUuaW5kZXhdLmFjdGl2ZSA9IGZhbHNlCiBtYW5hZ2VyLmVudGl0aWVzW2hhbmRsZS5pbmRleF0uaGFuZGxlLmdlbmVyYXRpb24gKz0gMQogbWFuYWdlci5lbnRpdGllc1toYW5kbGUuaW5kZXhdLmZsYWdzID0ge30KIGFwcGVuZCgmbWFuYWdlci5mcmVlX2luZGljZXMsIGhhbmRsZS5pbmRleCkKIHJldHVybiB0cnVlCn0KCmlzX3ZhbGlkX2hhbmRsZSA6OiBwcm9jKGhhbmRsZTogRW50aXR5SGFuZGxlKSAtPiBib29sIAp7CiBpZiBoYW5kbGUuaW5kZXggPj0gdTMyKGxlbihtYW5hZ2VyLmVudGl0aWVzKSkgCiB7CiAgcmV0dXJuIGZhbHNlCiB9CiBlbnRpdHkgOj0gbWFuYWdlci5lbnRpdGllc1toYW5kbGUuaW5kZXhdCiByZXR1cm4gZW50aXR5LmFjdGl2ZSAmJiBlbnRpdHkuaGFuZGxlLmdlbmVyYXRpb24gPT0gaGFuZGxlLmdlbmVyYXRpb24KfQoKZ2V0X2VudGl0eSA6OiBwcm9jKGhhbmRsZTogRW50aXR5SGFuZGxlKSAtPiBeRW50aXR5IAp7CiBpZiAhaXNfdmFsaWRfaGFuZGxlKGhhbmRsZSkgCiB7CiAgcmV0dXJuIG5pbAogfQogcmV0dXJuICZtYW5hZ2VyLmVudGl0aWVzW2hhbmRsZS5pbmRleF0KfQoKCnNldF9lbnRpdHkgOjogcHJvYyhlbnRpdHk6IEVudGl0eSkgCnsKIG1hbmFnZXIuZW50aXRpZXNbZW50aXR5LmhhbmRsZS5pbmRleF0gPSBlbnRpdHkKfQo",
+					"AQAAAAAAAAABAAAAagIAAAAAAABqAgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"scehe",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"schee",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"build",
+				"Build With: odin"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"new vi",
+				"File: New View into File"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"installpackage",
+				"Package Control: Install Package"
+			],
+			[
+				"lsp enable",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"dista",
+				"Preferences: Settings – Distraction Free"
+			],
+			[
+				"enable lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"lsp set",
+				"Preferences: LSP Settings"
+			],
+			[
+				"lsp sett",
+				"Preferences: LSP Settings"
+			],
+			[
+				"lsp",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 376.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src"
+	],
+	"file_history":
+	[
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/meshutils.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/eventsystem.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/entity.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/bullets.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/main.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/render.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/player.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/enemy.odin",
+		"/C/odin/vendor/raylib/raylib.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/utils.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/ability_divine_weapons.odin",
+		"/C/odin/core/math/linalg/general.odin",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/resources/shaders/default_lighting.fs",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/odinprojectfile.sublime-project",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/camera.odin",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/odin.sublime-build",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/odin",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/testbuildsystem",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/odin_sublime.project",
+		"/D/Odin Projects/Odin_Roguelite_Scratch/src/doom_combat.sublime-project",
+		"/D/Odin Projects/Doom_Combat/src/resources/shaders/default_lighting.vs",
+		"/D/Odin Projects/Doom_Combat/src/resources/shaders/default_lighting.fs",
+		"/D/Odin Projects/Doom_Combat/src/actionmap.odin",
+		"/D/Odin Projects/Doom_Combat/src/render.odin",
+		"/D/Odin Projects/Doom_Combat/src/player.odin",
+		"/D/Odin Projects/Doom_Combat/src/doom_combat.sublime-project",
+		"/D/Odin Projects/Doom_Combat/src/aabb.odin",
+		"/D/Odin Projects/Doom_Combat/src/entity.odin",
+		"/D/Odin Projects/Doom_Combat/src/abilty_data.odin",
+		"/D/Odin Projects/Doom_Combat/src/utils.odin",
+		"/D/Odin Projects/Doom_Combat/src/shotgun.odin",
+		"/D/Odin Projects/Doom_Combat/src/enemy.odin",
+		"/D/Odin Projects/Doom_Combat/src/ability_divine_weapons.odin",
+		"/D/Odin Projects/Doom_Combat/src/ability_shield_dash.odin",
+		"/D/Odin Projects/Doom_Combat/src/ability_divine_armor.odin",
+		"/D/Odin Projects/Doom_Combat/src/eventsystem.odin",
+		"/C/odin/core/time/time.odin",
+		"/D/Odin Projects/Doom_Combat/src/rifle.odin",
+		"/D/Odin Projects/Doom_Combat/src/camera.odin",
+		"/D/Odin Projects/Doom_Combat/src/crossbow.odin",
+		"/D/Odin Projects/Doom_Combat/src/main.odin",
+		"/D/Odin Projects/Doom_Combat/src/build.bat",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/D/Odin Projects/Doom_Combat/src/playerstats.odin",
+		"/D/Odin Projects/Doom_Combat/src/knockback.odin",
+		"/D/Odin Projects/Doom_Combat/src/bullets.odin",
+		"/D/Odin Projects/Doom_Combat/src/resources/Models/Prop_Barrel.glb",
+		"/D/Odin Projects/Doom_Combat/src/lights.odin",
+		"/D/Odin Projects/Doom_Combat/src/level_generator.odin",
+		"/C/odin/vendor/raylib/raymath.odin",
+		"/D/Odin Projects/Doom_Combat/src/meshutils.odin",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/LSP.sublime-settings",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/LSP/LSP.sublime-settings",
+		"/C/odin/core/strings/strings.odin",
+		"/C/odin/core/math/linalg/specific.odin",
+		"/C/odin/core/math/linalg/extended.odin",
+		"/C/odin/core/math/linalg/specific_euler_angles_f32.odin",
+		"/C/odin/core/math/linalg/specific_euler_angles_f16.odin",
+		"/C/odin/core/math/linalg/specific_euler_angles.odin",
+		"/D/Odin Projects/Doom_Combat/src/resources/shaders/lighting.fs",
+		"/C/odin/core/container/queue/queue.odin",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/PackageResourceViewer/README.md",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/ZenTabs.sublime-settings",
+		"/D/Odin Projects/Doom_Combat/LICENSE",
+		"/D/Odin Projects/Doom_Combat/src/resources/shaders/lighting_instanced.vs",
+		"/C/odin/core/reflect/reflect.odin",
+		"/C/odin/core/log/log.odin",
+		"/C/odin/core/fmt/fmt_os.odin",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/dbl.sublime-snippet",
+		"/C/odin/core/mem/alloc.odin",
+		"/D/Odin Projects/Doom_Combat/src/resources/shaders/lighting.vs",
+		"/D/Odin Projects/OdinTest1/src/particlesystem.odin",
+		"/D/Unity Projects/SyntyDarkFantasyPack/Assets/Editor/ObjExporterScript.cs",
+		"/D/Unity Projects/SyntyDarkFantasyPack/Assets/ObjExporter",
+		"/D/Odin Projects/Doom_Combat/.gitignore",
+		"/D/Odin Projects/Doom_Combat/gitignore",
+		"/D/Odin Projects/EntitySystem/src/actionmap.odin",
+		"/D/Odin Projects/EntitySystem/src/rifle.odin",
+		"/D/Odin Projects/EntitySystem/src/bullets.odin",
+		"/D/Odin Projects/EntitySystem/src/entity.odin",
+		"/D/Odin Projects/EntitySystem/src/enemy.odin",
+		"/D/Odin Projects/EntitySystem/src/camera.odin",
+		"/D/Odin Projects/EntitySystem/src/player.odin",
+		"/D/Odin Projects/EntitySystem/src/projectile.odin",
+		"/D/Odin Projects/EntitySystem/src/main.odin",
+		"/D/Odin Projects/EntitySystem/src/utils.odin",
+		"/C/odin/core/sort/sort.odin",
+		"/C/odin/core/slice/sort.odin",
+		"/C/odin/core/flags/internal_parsing.odin",
+		"/D/Odin Projects/EntitySystem/src/render.odin",
+		"/D/Odin Projects/EntitySystem/src/level_generator.odin",
+		"/C/odin/base/runtime/core.odin",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/bright.fs",
+		"/C/odin/core/text/table/utility.odin",
+		"/C/odin/vendor/raylib/easings.odin",
+		"/C/odin/core/math/rand/rand.odin",
+		"/C/odin/core/math/math.odin",
+		"/D/Odin Projects/EntitySystem/src/build.bat",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/blur.fs",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/unlit.fs",
+		"/C/odin/core/sys/posix/unistd_libc.odin",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/lighting.fs",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/default.vert",
+		"/D/Odin Projects/EntitySystem/src/bin/resources/shaders/bloom.fs",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/brightness_extraction.frag",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/composition.frag",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/gaussian_blur.frag",
+		"/D/Odin Projects/EntitySystem/src/resources/shaders/bloom.fs",
+		"/C/odin/vendor/raylib/rlgl/rlgl.odin",
+		"/D/Odin Projects/EntitySystem/src/input.odin",
+		"/D/Odin Projects/EntitySystem/src/bloom.fs",
+		"/C/odin/core/crypto/ristretto255/ristretto255.odin",
+		"/D/Odin Projects/EntitySystem/src/playerstats.odin",
+		"/C/odin/vendor/cgltf/cgltf.odin",
+		"/D/Work/DRG/Assets/Scripts/Player.cs",
+		"/D/Odin Projects/OdinTest1/src/Player.odin",
+		"/C/odin/core/math/noise/opensimplex2.odin",
+		"/D/Odin Projects/EntitySystem/src/camerashake.odin",
+		"/C/odin/core/crypto/shake/shake.odin",
+		"/D/Odin Projects/EntitySystem/src/PlayerStats",
+		"/D/Odin Projects/EntitySystem/odinfmt.json",
+		"/C/odin/ols-master/odinfmt.schema.json",
+		"/C/Users/Martin/AppData/Roaming/Sublime Text/Packages/User/Nord.sublime-color-scheme"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"width_full",
+			"get_e",
+			"gete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "enemy.odin",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1209,
+								1209
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"color_helper.refresh": true,
+							"color_helper.scan":
+							{
+								"allow_scanning": false,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".odin",
+								"current_syntax": "Odin/Odin",
+								"enabled": true,
+								"last_updated": 1754596226.91,
+								"scanning": "-comment"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///D:/Odin%20Projects/Odin_Roguelite_Scratch/src/enemy.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/odin/core/reflect/reflect.odin",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19046,
+								19046
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"color_helper.scan":
+							{
+								"allow_scanning": false,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".odin",
+								"current_syntax": "Odin/Odin",
+								"enabled": true,
+								"last_updated": 1754596226.91,
+								"scanning": "-comment"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/odin/core/reflect/reflect.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15888.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/odin/vendor/raylib/raylib.odin",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 111827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87131,
+								87131
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"color_helper.scan":
+							{
+								"allow_scanning": false,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".odin",
+								"current_syntax": "Odin/Odin",
+								"enabled": true,
+								"last_updated": 1754596226.91,
+								"scanning": "-comment"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/odin/vendor/raylib/raylib.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 29650.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bullets.odin",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"color_helper.scan":
+							{
+								"allow_scanning": false,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".odin",
+								"current_syntax": "Odin/Odin",
+								"enabled": true,
+								"last_updated": 1754596226.91,
+								"scanning": "-comment"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///D:/Odin%20Projects/Odin_Roguelite_Scratch/src/bullets.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "entity.odin",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"color_helper.scan":
+							{
+								"allow_scanning": false,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".odin",
+								"current_syntax": "Odin/Odin",
+								"enabled": true,
+								"last_updated": 1754596226.91,
+								"scanning": "-comment"
+							},
+							"lsp_active": true,
+							"lsp_uri": "file:///D:/Odin%20Projects/Odin_Roguelite_Scratch/src/entity.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 273.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Odin",
+	"project": "odinprojectfile.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bull",
+				"src\\bullets.odin"
+			],
+			[
+				"ent",
+				"src\\entity.odin"
+			],
+			[
+				"enemy",
+				"src\\enemy.odin"
+			],
+			[
+				"meshut",
+				"src\\meshutils.odin"
+			],
+			[
+				"main",
+				"main.odin"
+			],
+			[
+				"bul",
+				"bullets.odin"
+			],
+			[
+				"enem",
+				"enemy.odin"
+			],
+			[
+				"render",
+				"render.odin"
+			],
+			[
+				"player",
+				"player.odin"
+			],
+			[
+				"weapon",
+				"ability_divine_weapons.odin"
+			],
+			[
+				"fs",
+				"resources\\shaders\\default_lighting.fs"
+			],
+			[
+				".fs",
+				"resources\\shaders\\default_lighting.fs"
+			],
+			[
+				"ren",
+				"render.odin"
+			],
+			[
+				"abi",
+				"abilty_data.odin"
+			],
+			[
+				"dvi",
+				"src\\ability_divine_weapons.odin"
+			],
+			[
+				"shot",
+				"src\\shotgun.odin"
+			],
+			[
+				"divin",
+				"src\\ability_divine_armor.odin"
+			],
+			[
+				"play",
+				"src\\player.odin"
+			],
+			[
+				"ab",
+				"src\\ability_divine_armor.odin"
+			],
+			[
+				"enti",
+				"src\\entity.odin"
+			],
+			[
+				"enen",
+				"src\\enemy.odin"
+			],
+			[
+				"acio",
+				"src\\actionmap.odin"
+			],
+			[
+				"shotg",
+				"src\\shotgun.odin"
+			],
+			[
+				"b",
+				"src\\build.bat"
+			],
+			[
+				"pla",
+				"src\\player.odin"
+			],
+			[
+				"ene",
+				"src\\enemy.odin"
+			],
+			[
+				"even",
+				"src\\eventsystem_enemydeath.odin"
+			],
+			[
+				"utis",
+				"src\\utils.odin"
+			],
+			[
+				"pro",
+				"src\\resources\\Models\\Prop_Barrel.glb"
+			],
+			[
+				"lig",
+				"src\\lights.odin"
+			],
+			[
+				"cam",
+				"src\\camera.odin"
+			],
+			[
+				"level",
+				"src\\level_generator.odin"
+			],
+			[
+				"light",
+				"src\\lights.odin"
+			],
+			[
+				"rif",
+				"src\\rifle.odin"
+			],
+			[
+				"utils",
+				"src\\utils.odin"
+			],
+			[
+				"crossb",
+				"src\\crossbow.odin"
+			],
+			[
+				"ligh",
+				"src\\lights.odin"
+			],
+			[
+				"ut",
+				"src\\utils.odin"
+			],
+			[
+				"ma",
+				"src\\main.odin"
+			],
+			[
+				"def",
+				"src\\resources\\shaders\\default_lighting.fs"
+			],
+			[
+				"cross",
+				"src\\crossbow.odin"
+			],
+			[
+				"bui",
+				"src\\build.bat"
+			],
+			[
+				".vs",
+				"src\\resources\\shaders\\default_lighting.vs"
+			],
+			[
+				"crossbo",
+				"src\\crossbow.odin"
+			],
+			[
+				"en",
+				"src\\enemy.odin"
+			],
+			[
+				"cro",
+				"src\\crossbow.odin"
+			],
+			[
+				"leve",
+				"src\\level_generator.odin"
+			],
+			[
+				"pl",
+				"src\\player.odin"
+			],
+			[
+				"bullet",
+				"Doom_Combat\\src\\bullets.odin"
+			],
+			[
+				"levelg",
+				"Doom_Combat\\src\\level_generator.odin"
+			],
+			[
+				"li",
+				"Doom_Combat\\src\\lights.odin"
+			],
+			[
+				"bullets",
+				"Doom_Combat\\src\\bullets.odin"
+			],
+			[
+				"",
+				"Doom_Combat\\src\\bullets.odin"
+			],
+			[
+				"levle",
+				"Doom_Combat\\src\\level_generator.odin"
+			],
+			[
+				"levl",
+				"Doom_Combat\\src\\level_generator.odin"
+			],
+			[
+				"leveg",
+				"Doom_Combat\\src\\level_generator.odin"
+			],
+			[
+				"lightin",
+				"Doom_Combat\\src\\resources\\shaders\\lighting_instanced.vs"
+			],
+			[
+				"lights",
+				"Doom_Combat\\src\\lights.odin"
+			],
+			[
+				"actio",
+				"Doom_Combat\\src\\actionmap.odin"
+			],
+			[
+				"rifle",
+				"src\\rifle.odin"
+			],
+			[
+				"camera",
+				"src\\camera.odin"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"proj",
+				"EntitySystem\\src\\projectile.odin"
+			],
+			[
+				"action",
+				"EntitySystem\\src\\actionmap.odin"
+			],
+			[
+				"inp",
+				"core\\flags\\internal_parsing.odin"
+			],
+			[
+				"rend",
+				"EntitySystem\\src\\render.odin"
+			],
+			[
+				"porj",
+				"EntitySystem\\src\\projectile.odin"
+			],
+			[
+				"ply",
+				"EntitySystem\\src\\player.odin"
+			],
+			[
+				"entiy",
+				"EntitySystem\\src\\entity.odin"
+			],
+			[
+				"builtin",
+				"core\\text\\table\\utility.odin"
+			],
+			[
+				"re",
+				"EntitySystem\\src\\render.odin"
+			],
+			[
+				"uti",
+				"EntitySystem\\src\\utils.odin"
+			],
+			[
+				"easin",
+				"vendor\\raylib\\easings.odin"
+			],
+			[
+				"pr",
+				"EntitySystem\\src\\projectile.odin"
+			],
+			[
+				"unlit",
+				"EntitySystem\\src\\resources\\shaders\\unlit.fs"
+			],
+			[
+				"unl",
+				"core\\sys\\posix\\unistd_libc.odin"
+			],
+			[
+				"ri",
+				"EntitySystem\\src\\rifle.odin"
+			],
+			[
+				"blur",
+				"EntitySystem\\src\\resources\\shaders\\blur.fs"
+			],
+			[
+				"bri",
+				"EntitySystem\\src\\resources\\shaders\\bright.fs"
+			],
+			[
+				"blo",
+				"EntitySystem\\src\\bin\\resources\\shaders\\bloom.fs"
+			],
+			[
+				"bloo",
+				"EntitySystem\\src\\resources\\shaders\\bloom.fs"
+			],
+			[
+				"rifl",
+				"EntitySystem\\src\\rifle.odin"
+			],
+			[
+				"input.",
+				"EntitySystem\\src\\input.odin"
+			],
+			[
+				"compo",
+				"EntitySystem\\src\\resources\\shaders\\composition.frag"
+			],
+			[
+				"bloom",
+				"EntitySystem\\src\\resources\\shaders\\bloom.fs"
+			],
+			[
+				"m",
+				"EntitySystem\\src\\main.odin"
+			],
+			[
+				"mai",
+				"EntitySystem\\src\\main.odin"
+			],
+			[
+				"ca",
+				"EntitySystem\\src\\camera.odin"
+			],
+			[
+				"playeri",
+				"EntitySystem\\src\\player.odin"
+			],
+			[
+				"eas",
+				"vendor\\raylib\\easings.odin"
+			],
+			[
+				"playersta",
+				"EntitySystem\\src\\playerstats.odin"
+			],
+			[
+				"lev",
+				"EntitySystem\\src\\level_generator.odin"
+			],
+			[
+				"cameras",
+				"EntitySystem\\src\\camerashake.odin"
+			],
+			[
+				"shak",
+				"core\\crypto\\shake\\shake.odin"
+			],
+			[
+				"cams",
+				"src\\camerashake.odin"
+			],
+			[
+				"sha",
+				"src\\camerashake.odin"
+			],
+			[
+				"camer",
+				"src\\camerashake.odin"
+			],
+			[
+				"ps",
+				"src\\playerstats.odin"
+			],
+			[
+				"playersts",
+				"src\\PlayerStats"
+			],
+			[
+				"stats",
+				"src\\PlayerStats"
+			],
+			[
+				"players",
+				"src\\playerstats.odin"
+			],
+			[
+				"playest",
+				"src\\PlayerStats"
+			],
+			[
+				"e",
+				"src\\entity.odin"
+			],
+			[
+				"plau",
+				"core\\sys\\info\\platform_linux.odin"
+			],
+			[
+				"buid",
+				"EntitySystem\\src\\build.bat"
+			],
+			[
+				"part",
+				"OdinTest1\\src\\particlesystem.odin"
+			],
+			[
+				"build",
+				"OdinTest1\\build.bat"
+			],
+			[
+				"par",
+				"src\\particlesystem.odin"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 323.0,
+		"last_filter": "parti",
+		"selected_items":
+		[
+			[
+				"parti",
+				"Particle"
+			],
+			[
+				"particle",
+				"ParticleSystem"
+			],
+			[
+				"tick_pl",
+				"tick_player"
+			],
+			[
+				"particlesys",
+				"ParticleSystem"
+			],
+			[
+				"main",
+				"main"
+			],
+			[
+				"tickplayer",
+				"tick_player"
+			],
+			[
+				"tick_pla",
+				"tick_player"
+			],
+			[
+				"init_part",
+				"init_particlesystems"
+			],
+			[
+				"player",
+				"init_player"
+			],
+			[
+				"player_",
+				"Player_Input"
+			],
+			[
+				"init_pla",
+				"init_player"
+			],
+			[
+				"partci",
+				"VK_PERFORMANCE_PARAMETER_TYPE_HW_COUNTERS_SUPPORTED_INTEL"
+			],
+			[
+				"particles",
+				"draw_particles"
+			],
+			[
+				"tickpar",
+				"tick_particles"
+			],
+			[
+				"spawnpar",
+				"spawn_particlesystem_test"
+			],
+			[
+				"particlete",
+				"spawn_particlesystem_test"
+			],
+			[
+				"drawpar",
+				"draw_particles"
+			],
+			[
+				"float3_z",
+				"float3_zero"
+			],
+			[
+				"float3",
+				"float3"
+			],
+			[
+				"alg",
+				"alg"
+			],
+			[
+				"camera",
+				"Camera"
+			],
+			[
+				"draw_pa",
+				"draw_particles"
+			],
+			[
+				"drawpart",
+				"draw_particles"
+			],
+			[
+				"drawpa",
+				"DrawPlane"
+			],
+			[
+				"tick pa",
+				"tick_particles"
+			],
+			[
+				"tick pl",
+				"tick_player"
+			],
+			[
+				"draw",
+				"draw_particles"
+			],
+			[
+				"eitter",
+				"ParticleEmitterMode"
+			],
+			[
+				"pa",
+				"ParticleSystem"
+			],
+			[
+				"partic",
+				"ParticleEmitter"
+			],
+			[
+				"part",
+				"ParticleSystem"
+			],
+			[
+				"par",
+				"ParticleSystem"
+			],
+			[
+				"init",
+				"init_player"
+			],
+			[
+				"tick",
+				"tick_particles"
+			],
+			[
+				"ent",
+				"Entity"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

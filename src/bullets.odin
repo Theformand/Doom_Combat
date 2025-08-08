@@ -14,104 +14,117 @@ white: rl.Color
 
 init_projectiles :: proc() 
 {
-  projectiles = make([dynamic]EntityHandle, context.allocator)
-  projectileModel = rl.LoadModelFromMesh(rl.GenMeshSphere(0.125, 6, 6))
+ projectiles = make([dynamic]EntityHandle, context.allocator)
+ projectileModel = rl.LoadModelFromMesh(rl.GenMeshSphere(0.125, 6, 6))
 
-  white = rl.PURPLE
+ white = rl.PURPLE
 
-  projectileMat = rl.LoadMaterialDefault()
-  shader := rl.LoadShader(nil, "resources/shaders/unlit.fs")
+ projectileMat = rl.LoadMaterialDefault()
+ shader := rl.LoadShader(nil, "resources/shaders/unlit.fs")
 
-  projectileMat.shader = shader
-  projectileModel.materials[0] = projectileMat
-  rl.SetShaderValue(shader, rl.GetShaderLocation(shader, "colDiffuse"), &white, rl.ShaderUniformDataType.VEC4)
+ projectileMat.shader = shader
+ projectileModel.materials[0] = projectileMat
+ rl.SetShaderValue(shader, rl.GetShaderLocation(shader, "colDiffuse"), &white, rl.ShaderUniformDataType.VEC4)
 
 
-  append(&update_procs, update_projectiles)
-  append(&late_update_procs, late_update_projectiles)
-  append(&draw_procs, draw_projectiles)
+ append(&update_procs, update_projectiles)
+ append(&late_update_procs, late_update_projectiles)
+ append(&draw_procs, draw_projectiles)
 }
 
 make_projectile :: proc() -> EntityHandle 
 {
-  handle := create_entity()
-  get_entity(handle).flags = {.bullet}
-  append(&projectiles, handle)
-  return handle
+ handle := create_entity()
+ get_entity(handle).flags = {.bullet}
+ append(&projectiles, handle)
+ return handle
 }
 
 
-BulletHit :: struct {
-  bullet: EntityHandle,
-  target: EntityHandle,
-  pos:    float3,
+BulletHit :: struct 
+{
+ bullet: EntityHandle,
+ target: EntityHandle,
+ pos:    float3,
 }
 
 update_projectiles :: proc() 
 {
-  hits := make([dynamic]BulletHit, context.temp_allocator)
-  for &handle in projectiles {
-    bullet := get_entity(handle)
+ hits := make([dynamic]BulletHit, context.temp_allocator)
+ for &handle in projectiles 
+ {
+  bullet := get_entity(handle)
 
-    bullet.stats.lifetime -= dt
-    bullet.position += bullet.forward * dt * bullet.stats.speed
+  bullet.stats.lifetime -= dt
+  bullet.position += bullet.forward * dt * bullet.stats.speed
 
-    modify_bullet_speed(bullet)
+  decrease_bullet_speed(bullet)
 
-    if bullet.stats.lifetime < 0 {
-      bullet.flags += {.dead}
-    }
-
-    //COLLISION CHECK
-    for &handle in enemies {
-      enemy := get_entity(handle)
-      distToEnemy := alg.vector_length2(bullet.position - enemy.position)
-      if distToEnemy - bullet.collisionRadiusSqr - enemy.collisionRadiusSqr < 0 {
-        bullet.flags += {.dead}
-        append(&hits, BulletHit{bullet = handle, target = handle, pos = enemy.position})
-        //TODO: damage code
-      }
-    }
+  if bullet.stats.lifetime < 0 
+  {
+   bullet.flags += {.dead}
   }
 
-
-  //RESOLVE HITS
-  for hit in hits {
-    enemy := get_entity(hit.target)
-    bullet := get_entity(hit.bullet)
-    enemy.stats.health -= bullet.stats.damage
-    if enemy.stats.health < 0 {
-      enemy.flags += {.dead}
-    }
+  //COLLISION CHECK
+  for &handle in enemies 
+  {
+   enemy := get_entity(handle)
+   distToEnemy := alg.vector_length2(bullet.position - enemy.position)
+   if distToEnemy - bullet.collisionRadiusSqr - enemy.collisionRadiusSqr < 0 
+   {
+    bullet.flags += {.dead}
+    append(&hits, BulletHit{bullet = handle, target = handle, pos = enemy.position})
+    //TODO: damage code
+   }
   }
+ }
+
+
+ //RESOLVE HITS
+ for hit in hits 
+ {
+  enemy := get_entity(hit.target)
+  bullet := get_entity(hit.bullet)
+  enemy.stats.health -= bullet.stats.damage
+  if enemy.stats.health < 0 
+  {
+   enemy.flags += {.dead}
+  }
+ }
 }
 
 
 @(private = "file")
-modify_bullet_speed :: proc(e: ^Entity) 
+decrease_bullet_speed :: proc(e: ^Entity) 
 {
-  #partial switch e.stats.speedMode {
-  case .Linear: e.stats.speed = math.clamp(e.stats.speed - (dt * 50), 20, 100)
-  case .Cubic: e.stats.speed = math.clamp(e.stats.speed - ease_cubic_out(e.stats.speed * .005), 20, 100)
-  case .Circ: e.stats.speed = math.clamp(e.stats.speed - ease_circ_out(e.stats.speed * .0025), 20, 100)
-  }
+ #partial switch e.stats.speedMode 
+ {
+ case .Linear: e.stats.speed = math.clamp(e.stats.speed - (dt * 50), 20, 100)
+ case .Cubic: e.stats.speed = math.clamp(e.stats.speed - ease_cubic_out(e.stats.speed * .005), 20, 100)
+ case .Circ: e.stats.speed = math.clamp(e.stats.speed - ease_circ_out(e.stats.speed * .0025), 20, 100)
+ case .None:
+  return
+ }
 }
 
 late_update_projectiles :: proc() 
 {
-  for &handle, i in projectiles {
-    e := get_entity(handle)
-    if .dead in e.flags {
-      destroy_entity(handle)
-      unordered_remove(&projectiles, i)
-    }
+ for &handle, i in projectiles 
+ {
+  e := get_entity(handle)
+  if .dead in e.flags 
+  {
+   destroy_entity(handle)
+   unordered_remove(&projectiles, i)
   }
+ }
 }
 
 draw_projectiles :: proc() 
 {
-  for &h in projectiles {
-    ent := get_entity(h)
-    rl.DrawModel(projectileModel, ent.position, 1.5, rl.PURPLE * 3)
-  }
+ for &h in projectiles 
+ {
+  ent := get_entity(h)
+  rl.DrawModel(projectileModel, ent.position, 1.5, rl.PURPLE * 3)
+ }
 }

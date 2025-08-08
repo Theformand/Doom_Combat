@@ -141,3 +141,8 @@ ease_cubic_in :: proc(x: float) -> float
 {
   return x * x * x
 }
+
+ease_inout_quint :: proc(x: float) -> float 
+{
+  return x < 0.5 ? 16 * x * x * x * x * x : 1 - math.pow(-2 * x + 2, 5) / 2
+}
